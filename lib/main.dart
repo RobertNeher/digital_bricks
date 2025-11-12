@@ -1,4 +1,5 @@
 import 'package:digital_bricks/src/and_gate_simulator.dart';
+import 'package:digital_bricks/src/backplane.dart';
 import 'package:flutter/material.dart';
 // Assuming your OrGateSimulator and MyOrGateApp are in the same project structure.
 // If OrGateSimulator is in a separate file, you'd import it here.
@@ -6,26 +7,30 @@ import 'package:flutter/material.dart';
 void main() {
   // 1. This is the main entry point of the Dart application.
   // 2. It calls runApp() to start the Flutter framework.
-  runApp(const MyApp());
+  runApp(const DigitalBricksApp());
 }
 
 // A simple root widget to wrap the entire application
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class DigitalBricksApp extends StatelessWidget {
+  final String title = 'Flexible AND Gate Simulator';
+  const DigitalBricksApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'AND Gate Simulator',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      // Use the MyOrGateApp (which contains the simulator) as the home screen
-      home: const MyOrGateApp(),
+    return Backplane(
+      child: MaterialApp(
+        title: title,
+        theme: ThemeData(primarySwatch: Colors.blue),
+        // Use the MyOrGateApp (which contains the simulator) as the home screen
+        home: MyOrGateApp(title: title),
+      ),
     );
   }
 }
 
 class MyOrGateApp extends StatefulWidget {
-  const MyOrGateApp({super.key});
+  final String title;
+  const MyOrGateApp({super.key, required this.title});
 
   @override
   State<MyOrGateApp> createState() => _MyOrGateAppState();
@@ -37,7 +42,7 @@ class _MyOrGateAppState extends State<MyOrGateApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Flexible AND Gate Simulation')),
+      appBar: AppBar(title: Text(widget.title)),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
