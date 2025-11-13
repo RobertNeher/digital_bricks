@@ -12,7 +12,7 @@ class Backplane extends InheritedWidget {
   final bool power = true; // Always powered on: 5 Volts (High)
   final bool ground = false; // Always grounded: 0 Volts (Low)
 
-  Backplane({Key? key, required Widget child}) : super(key: key, child: child) {
+  Backplane({super.key, required super.child}) {
     timer = Timer.periodic(
       Duration(milliseconds: (1000 / clockFrequency).round()),
       (Timer t) {
@@ -27,6 +27,6 @@ class Backplane extends InheritedWidget {
 
   @override
   bool updateShouldNotify(Backplane oldWidget) {
-    return true;
+    return (clock != oldWidget.clock);
   }
 }
