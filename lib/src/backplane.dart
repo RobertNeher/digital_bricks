@@ -39,6 +39,6 @@ class Backplane extends InheritedWidget {
 
   @override
   bool updateShouldNotify(Backplane oldWidget) {
-    return true;
+    return (clock != oldWidget.clock);
   }
 }
