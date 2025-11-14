@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class ORGatePainter extends CustomPainter {
+class XORGatePainter extends CustomPainter {
   final List<bool> inputs;
   final bool output;
   final List<Color> inputColors;
   final Color outputColor;
 
-  ORGatePainter({
+  XORGatePainter({
     required this.inputs,
     required this.output,
     required this.inputColors,
@@ -20,7 +20,7 @@ class ORGatePainter extends CustomPainter {
     final double centerX = width / 2;
     final double centerY = height / 2;
 
-    // --- 1. Draw the OR Gate Shape ---
+    // --- 1. Draw the XOR Gate Shape ---
 
     final gatePaint = Paint()
       ..color = Colors.blueGrey
@@ -35,7 +35,6 @@ class ORGatePainter extends CustomPainter {
       ),
       gatePaint,
     );
-
     // --- 2. Draw Inputs and Output ---
 
     final double inputSpacing = height / (inputs.length + 1);
@@ -76,13 +75,13 @@ class ORGatePainter extends CustomPainter {
     // Draw a small circle/dot for the output
     canvas.drawCircle(Offset(centerX + 110, centerY), 4, outputPaint);
 
-    // Optional: Draw 'OR' text
+    // Optional: Draw 'XOR' text
     final textStyle = TextStyle(
       color: Colors.black,
       fontSize: 30,
       fontWeight: FontWeight.bold,
     );
-    final textSpan = TextSpan(text: '≥ 1', style: textStyle);
+    final textSpan = TextSpan(text: '= 1', style: textStyle);
     final textPainter = TextPainter(
       text: textSpan,
       textDirection: TextDirection.ltr,
@@ -98,7 +97,7 @@ class ORGatePainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant ORGatePainter oldDelegate) {
+  bool shouldRepaint(covariant XORGatePainter oldDelegate) {
     // Repaint only if the number of inputs or the state of inputs/output changes
     return oldDelegate.inputs.length != inputs.length ||
         oldDelegate.inputs.toString() != inputs.toString() ||

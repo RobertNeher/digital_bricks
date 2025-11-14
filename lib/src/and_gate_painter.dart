@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class AndGatePainter extends CustomPainter {
+class ANDGatePainter extends CustomPainter {
   final List<bool> inputs;
   final bool output;
   final List<Color> inputColors;
   final Color outputColor;
 
-  AndGatePainter({
+  ANDGatePainter({
     required this.inputs,
     required this.output,
     required this.inputColors,
@@ -27,46 +27,21 @@ class AndGatePainter extends CustomPainter {
       ..style = PaintingStyle.stroke
       ..strokeWidth = 3.0;
 
-    final Path path = Path();
-
-    // Starting point (back-left corner)
-    path.moveTo(centerX - 50, centerY - 40);
-
-    // Front arc (curved part)
-    // Bezier curve to simulate the AND gate's front-facing shape
-    path.cubicTo(
-      centerX - 30,
-      centerY - 60, // Control point 1 (pull up)
-      centerX + 70,
-      centerY - 20, // Control point 2 (pull right-up)
-      centerX + 70,
-      centerY, // End point (center-right)
+    canvas.drawRect(
+      Rect.fromCenter(
+        center: Offset(centerX + 10, centerY),
+        width: 120,
+        height: 90,
+      ),
+      gatePaint,
     );
-    path.cubicTo(
-      centerX + 70,
-      centerY + 20, // Control point 1 (pull right-down)
-      centerX - 30,
-      centerY + 60, // Control point 2 (pull down)
-      centerX - 50,
-      centerY + 40, // End point (back-left corner)
-    );
-
-    // Back curve (the rounded rear of the gate)
-    path.arcToPoint(
-      Offset(centerX - 50, centerY - 40), // Target point (start of the gate)
-      radius: const Radius.circular(50.0), // The radius of the arc
-      clockwise: false,
-      largeArc: true,
-    );
-
-    // Draw the gate's body
-    canvas.drawPath(path, gatePaint);
 
     // --- 2. Draw Inputs and Output ---
 
     final double inputSpacing = height / (inputs.length + 1);
 
     // Draw Input Lines and Status
+    print(inputs);
     for (int i = 0; i < inputs.length; i++) {
       final double inputY = (i + 1) * inputSpacing;
       final inputColor = inputColors[i];
@@ -105,10 +80,10 @@ class AndGatePainter extends CustomPainter {
     // Optional: Draw 'AND' text
     final textStyle = TextStyle(
       color: Colors.black,
-      fontSize: 20,
+      fontSize: 30,
       fontWeight: FontWeight.bold,
     );
-    final textSpan = TextSpan(text: 'AND', style: textStyle);
+    final textSpan = TextSpan(text: '&', style: textStyle);
     final textPainter = TextPainter(
       text: textSpan,
       textDirection: TextDirection.ltr,
@@ -124,7 +99,7 @@ class AndGatePainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant AndGatePainter oldDelegate) {
+  bool shouldRepaint(covariant ANDGatePainter oldDelegate) {
     // Repaint only if the number of inputs or the state of inputs/output changes
     return oldDelegate.inputs.length != inputs.length ||
         oldDelegate.inputs.toString() != inputs.toString() ||

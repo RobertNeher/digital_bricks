@@ -1,29 +1,33 @@
 import 'package:digital_bricks/src/and_gate_simulator.dart';
 import 'package:digital_bricks/src/backplane.dart';
 import 'package:flutter/material.dart';
-// Assuming your OrGateSimulator and MyOrGateApp are in the same project structure.
-// If OrGateSimulator is in a separate file, you'd import it here.
 
 void main() {
-  // 1. This is the main entry point of the Dart application.
-  // 2. It calls runApp() to start the Flutter framework.
-  runApp(const DigitalBricksApp());
+  runApp(DigitalBricksApp());
 }
 
-// A simple root widget to wrap the entire application
 class DigitalBricksApp extends StatelessWidget {
   final String title = 'Flexible AND Gate Simulator';
-  const DigitalBricksApp({super.key});
+  double counter = 0;
+  DigitalBricksApp({super.key});
+
+  VoidCallback get listener => () {
+    print(counter++);
+  };
 
   @override
   Widget build(BuildContext context) {
-    return Backplane(
-      child: MaterialApp(
-        title: title,
-        theme: ThemeData(primarySwatch: Colors.blue),
-        // Use the MyOrGateApp (which contains the simulator) as the home screen
-        home: MyOrGateApp(title: title),
-      ),
+    counter = 0;
+    return MaterialApp(
+      title: title,
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.blue),
+      // Use the MyOrGateApp (which contains the simulator) as the home screen
+      home: Backplane(
+        clockFrequency: 1,
+        listener: listener,
+        child: MyOrGateApp(title: title),
+      ), // No-op listener for Backplane
     );
   }
 }
@@ -46,13 +50,12 @@ class _MyOrGateAppState extends State<MyOrGateApp> {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
-          child: AndGateSimulator(
+          child: ANDGateSimulator(
             numberOfInputs: 3, // Change this number to vary the inputs
             onOutputChanged: (newOutput) {
               setState(() {
                 currentGateOutput = newOutput;
               });
-              // You can perform other actions here when the gate's output changes
             },
           ),
         ),

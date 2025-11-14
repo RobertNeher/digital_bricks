@@ -1,28 +1,28 @@
-import 'package:digital_bricks/src/and_gate_painter.dart';
+import 'package:digital_bricks/src/xor_gate_painter.dart';
 import 'package:flutter/material.dart';
 
-// The main widget for the AND Gate simulator
-class ANDGateSimulator extends StatefulWidget {
+// The main widget for the OR Gate simulator
+class XORGateSimulator extends StatefulWidget {
   // A callback function to notify the parent widget when the output changes.
   final ValueChanged<bool> onOutputChanged;
 
   // The number of boolean inputs the gate should have.
   final int numberOfInputs;
 
-  const ANDGateSimulator({
+  const XORGateSimulator({
     Key? key,
     required this.numberOfInputs,
     required this.onOutputChanged,
   }) : super(key: key);
 
   @override
-  _ANDGateSimulatorState createState() => _ANDGateSimulatorState();
+  _XORGateSimulatorState createState() => _XORGateSimulatorState();
 }
 
-class _ANDGateSimulatorState extends State<ANDGateSimulator> {
+class _XORGateSimulatorState extends State<XORGateSimulator> {
   // List of booleans representing the gate's inputs.
   late List<bool> inputs;
-  // The output of the AND gate (true if all inputs are true).
+  // The output of the OR gate (true if any input is true).
   bool output = false;
 
   @override
@@ -33,9 +33,9 @@ class _ANDGateSimulatorState extends State<ANDGateSimulator> {
     _calculateOutput(); // Calculate initial output.
   }
 
-  // Logic to calculate the AND gate's output: true if all inputs are true.
+  // Logic to calculate the OR gate's output: true if at least one input is true.
   void _calculateOutput() {
-    bool newOutput = !inputs.contains(false);
+    bool newOutput = inputs.contains(true);
     if (newOutput != output) {
       setState(() {
         output = newOutput;
@@ -54,7 +54,6 @@ class _ANDGateSimulatorState extends State<ANDGateSimulator> {
 
   @override
   Widget build(BuildContext context) {
-    print('build');
     // Determine colors for the visualization
     Color outputColor = output ? Colors.green : Colors.red;
 
@@ -80,26 +79,27 @@ class _ANDGateSimulatorState extends State<ANDGateSimulator> {
 
         const SizedBox(height: 20),
 
-        // 2. AND Gate Visual (CustomPainter)
+        // 2. OR Gate Visual (CustomPainter)
         SizedBox(
           width: 200,
           height: 150,
           child: CustomPaint(
-            painter: ANDGatePainter(
+            painter: XORGatePainter(
               inputs: inputs,
               output: output,
               inputColors: inputs
-                  .map((i) => i ? Colors.green : Colors.red)
+                  .map((b) => b ? Colors.green : Colors.red)
                   .toList(),
               outputColor: outputColor,
             ),
           ),
         ),
+
         const SizedBox(height: 20),
 
         // 3. Output Display
         Text(
-          'Output (A and B and...): $output',
+          'Output (A xor B xor...): $output',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,

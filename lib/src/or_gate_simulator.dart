@@ -2,24 +2,24 @@ import 'package:digital_bricks/src/or_gate_painter.dart';
 import 'package:flutter/material.dart';
 
 // The main widget for the OR Gate simulator
-class OrGateSimulator extends StatefulWidget {
+class ORGateSimulator extends StatefulWidget {
   // A callback function to notify the parent widget when the output changes.
   final ValueChanged<bool> onOutputChanged;
 
   // The number of boolean inputs the gate should have.
   final int numberOfInputs;
 
-  const OrGateSimulator({
+  const ORGateSimulator({
     Key? key,
     required this.numberOfInputs,
     required this.onOutputChanged,
   }) : super(key: key);
 
   @override
-  _OrGateSimulatorState createState() => _OrGateSimulatorState();
+  _ORGateSimulatorState createState() => _ORGateSimulatorState();
 }
 
-class _OrGateSimulatorState extends State<OrGateSimulator> {
+class _ORGateSimulatorState extends State<ORGateSimulator> {
   // List of booleans representing the gate's inputs.
   late List<bool> inputs;
   // The output of the OR gate (true if any input is true).
@@ -84,7 +84,7 @@ class _OrGateSimulatorState extends State<OrGateSimulator> {
           width: 200,
           height: 150,
           child: CustomPaint(
-            painter: OrGatePainter(
+            painter: ORGatePainter(
               inputs: inputs,
               output: output,
               inputColors: inputs
