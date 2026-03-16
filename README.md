@@ -162,6 +162,12 @@ Generates a 12-bit counter with synchronous increment, load, and reset, supporti
 py python_generators/gen_12bit_pc.py
 ```
 
+### 🧮 Accumulator & Status
+Generates a 4-bit accumulator and 1-bit carry flag with independent load enables and synchronous reset.
+```bash
+py python_generators/gen_accumulator.py
+```
+
 ---
 
 ## 🚀 Programming Your Memory (Workflow)
