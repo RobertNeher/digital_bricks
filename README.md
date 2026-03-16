@@ -156,6 +156,12 @@ Generates a bank of 16 registers (4 bits each) with address-mapped reading and w
 py python_generators/gen_register_file.py
 ```
 
+### 🧭 12-bit Program Counter (PC)
+Generates a 12-bit counter with synchronous increment, load, and reset, supporting full CPU memory addressing.
+```bash
+py python_generators/gen_12bit_pc.py
+```
+
 ---
 
 ## 🚀 Programming Your Memory (Workflow)
