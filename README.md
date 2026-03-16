@@ -89,4 +89,29 @@ Modularize your designs by creating custom **Integrated Circuits (ICs)**.
 
 ---
 
+## 🛠️ Python Generators
+
+We provide Python scripts to automate the creation of complex Integrated Circuits. These scripts are located in the `python_generators/` directory.
+
+### 🏁 Intel 4004 Command Decoder
+Generates an IC that decodes 8-bit Intel 4004 opcodes into individual control signals.
+```bash
+py python_generators/gen_i4004_decoder.py
+```
+
+### 💾 Generic ROM Generator
+Generates a Read-Only Memory IC from either a list of values or an external hex file.
+
+**Example: Generate from data list**
+```bash
+py python_generators/gen_rom.py --addr 4 --word 4 --data 0,1,2,4,8,7,15,0... --out assets/my_rom.json
+```
+
+**Example: Generate from hex file**
+```bash
+py python_generators/gen_rom.py --addr 4 --word 8 --file sample_program.hex --out assets/sample_program_rom.json
+```
+
+---
+
 *Built with ❤️ using Flutter for cross-platform precision.*
