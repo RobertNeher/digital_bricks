@@ -99,6 +99,24 @@ Generates an IC that decodes 8-bit Intel 4004 opcodes into individual control si
 py python_generators/gen_i4004_decoder.py
 ```
 
+### ✍️ Intel 4004 Assembler
+Translates Intel 4004 mnemonics into a hex file.
+
+#### Supported Instructions
+
+| Group | Instructions |
+| :--- | :--- |
+| **Control** | `NOP`, `KBP` |
+| **Data Transfer** | `FIM`, `SRC`, `LD`, `XCH`, `LDM` |
+| **Memory** | `RDM`, `WRM`, `ADM`, `SBM`, `WMP`, `WRR`, `WPM`, `RDR` |
+| **Status** | `RD0-RD3`, `WR0-WR3` |
+
+- **External Resource**: [Intel 4004 Instruction Set (szyc.org)](http://e4004.szyc.org/iset.html)
+
+```bash
+py python_generators/asm_4004.py my_program.asm -o my_program.hex
+```
+
 ### 💾 Generic ROM Generator
 Generates a Read-Only Memory IC from either a list of values or an external hex file.
 
@@ -111,6 +129,27 @@ py python_generators/gen_rom.py --addr 4 --word 4 --data 0,1,2,4,8,7,15,0... --o
 ```bash
 py python_generators/gen_rom.py --addr 4 --word 8 --file sample_program.hex --out assets/sample_program_rom.json
 ```
+
+---
+
+## 🚀 Programming Your Memory (Workflow)
+
+Follow these steps to create and run custom programs in your Intel 4004 circuit:
+
+1.  **Write Assembly**: Create a `.asm` file using the supported mnemonics (e.g., `LDM`, `XCH`, `WRM`).
+    - Example: [test_program.asm](file:///c:/Users/Robert/Documents/digital_bricks/test_program.asm)
+2.  **Compile to Hex**: Use the assembler to translate your mnemonics into raw hex values.
+    ```bash
+    py python_generators/asm_4004.py my_program.asm -o my_program.hex
+    ```
+3.  **Generate ROM IC**: Use the ROM generator to create a logic circuit asset from your hex file.
+    ```bash
+    py python_generators/gen_rom.py --addr 4 --word 8 --file my_program.hex --out assets/my_rom.json
+    ```
+4.  **Load into Simulator**:
+    - Open the Digital Bricks simulator.
+    - Load your `my_rom.json` as an **Integrated Circuit**.
+    - Connect the address pins to your program counter/address bus and data pins to your data bus.
 
 ---
 
