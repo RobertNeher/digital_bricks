@@ -1,0 +1,163 @@
+{
+  "components": [
+    {
+      "id": "a96f2881-820d-4ec8-8e4c-bfa07db214b0",
+      "type": 13,
+      "position_dx": 1092.6666870117188,
+      "position_dy": 2598,
+      "inputs": [
+        {
+          "id": "a96f2881-820d-4ec8-8e4c-bfa07db214b0-in-0",
+          "componentId": "a96f2881-820d-4ec8-8e4c-bfa07db214b0",
+          "type": 0,
+          "label": null,
+          "value": false
+        }
+      ],
+      "outputs": [],
+      "label": "D7"
+    },
+    {
+      "id": "8158943e-5d98-43c0-ad00-95e3647c1cb5",
+      "type": 13,
+      "position_dx": 1092.6666870117188,
+      "position_dy": 2698,
+      "inputs": [
+        {
+          "id": "8158943e-5d98-43c0-ad00-95e3647c1cb5-in-0",
+          "componentId": "8158943e-5d98-43c0-ad00-95e3647c1cb5",
+          "type": 0,
+          "label": null,
+          "value": false
+        }
+      ],
+      "outputs": [],
+      "label": "D6"
+    },
+    {
+      "id": "40ba8584-2be7-4576-9eda-038809cf63ba",
+      "type": 13,
+      "position_dx": 1092.6666870117188,
+      "position_dy": 2798,
+      "inputs": [
+        {
+          "id": "40ba8584-2be7-4576-9eda-038809cf63ba-in-0",
+          "componentId": "40ba8584-2be7-4576-9eda-038809cf63ba",
+          "type": 0,
+          "label": null,
+          "value": false
+        }
+      ],
+      "outputs": [],
+      "label": "D5"
+    },
+    {
+      "id": "702b83ba-b544-4cc6-ae6a-052c09e5f819",
+      "type": 13,
+      "position_dx": 1092.6666870117188,
+      "position_dy": 2898,
+      "inputs": [
+        {
+          "id": "702b83ba-b544-4cc6-ae6a-052c09e5f819-in-0",
+          "componentId": "702b83ba-b544-4cc6-ae6a-052c09e5f819",
+          "type": 0,
+          "label": null,
+          "value": false
+        }
+      ],
+      "outputs": [],
+      "label": "OUT_4"
+    },
+    {
+      "id": "67bb6f23-81f1-48f8-9632-2953b7cf8a7e",
+      "type": 13,
+      "position_dx": 1092.6666870117188,
+      "position_dy": 2998,
+      "inputs": [
+        {
+          "id": "67bb6f23-81f1-48f8-9632-2953b7cf8a7e-in-0",
+          "componentId": "67bb6f23-81f1-48f8-9632-2953b7cf8a7e",
+          "type": 0,
+          "label": null,
+          "value": false
+        }
+      ],
+      "outputs": [],
+      "label": "OUT_3"
+    },
+    {
+      "id": "954aa396-653e-4fec-9d2e-4ede041d9a0b",
+      "type": 13,
+      "position_dx": 1092.6666870117188,
+      "position_dy": 3098,
+      "inputs": [
+        {
+          "id": "954aa396-653e-4fec-9d2e-4ede041d9a0b-in-0",
+          "componentId": "954aa396-653e-4fec-9d2e-4ede041d9a0b",
+          "type": 0,
+          "label": null,
+          "value": false
+        }
+      ],
+      "outputs": [],
+      "label": "OUT_2"
+    },
+    {
+      "id": "8d92fc60-099c-4e4d-b6f2-d3d09e79ee14",
+      "type": 13,
+      "position_dx": 1092.6666870117188,
+      "position_dy": 3198,
+      "inputs": [
+        {
+          "id": "8d92fc60-099c-4e4d-b6f2-d3d09e79ee14-in-0",
+          "componentId": "8d92fc60-099c-4e4d-b6f2-d3d09e79ee14",
+          "type": 0,
+          "label": null,
+          "value": false
+        }
+      ],
+      "outputs": [],
+      "label": "OUT_1"
+    },
+    {
+      "id": "7cd881e0-5b06-41b2-8a6d-3156a6b926e0",
+      "type": 13,
+      "position_dx": 1052.6666870117188,
+      "position_dy": 3458,
+      "inputs": [
+        {
+          "id": "7cd881e0-5b06-41b2-8a6d-3156a6b926e0-in-0",
+          "componentId": "7cd881e0-5b06-41b2-8a6d-3156a6b926e0",
+          "type": 0,
+          "label": null,
+          "value": false
+        }
+      ],
+      "outputs": [],
+      "label": "OUT_0"
+    }
+  ],
+  "connections": [],
+  "inputPorts": [],
+  "inputLabels": [],
+  "outputPorts": [
+    "a96f2881-820d-4ec8-8e4c-bfa07db214b0-in-0",
+    "8158943e-5d98-43c0-ad00-95e3647c1cb5-in-0",
+    "40ba8584-2be7-4576-9eda-038809cf63ba-in-0",
+    "702b83ba-b544-4cc6-ae6a-052c09e5f819-in-0",
+    "67bb6f23-81f1-48f8-9632-2953b7cf8a7e-in-0",
+    "954aa396-653e-4fec-9d2e-4ede041d9a0b-in-0",
+    "8d92fc60-099c-4e4d-b6f2-d3d09e79ee14-in-0",
+    "7cd881e0-5b06-41b2-8a6d-3156a6b926e0-in-0"
+  ],
+  "outputLabels": [
+    "D7",
+    "D6",
+    "D5",
+    "OUT_4",
+    "OUT_3",
+    "OUT_2",
+    "OUT_1",
+    "OUT_0"
+  ]
+}

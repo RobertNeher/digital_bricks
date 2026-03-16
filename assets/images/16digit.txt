@@ -1,0 +1,27 @@
+       A1  A2
+     F \  |  / B
+     H  \ I / J
+        G1  G2
+     M  / L \ K
+     E /  |  \ C
+       D2  D1
+
+  A1 = 1 << 0; // Top Left Horiz
+  A2 = 1 << 1; // Top Right Horiz
+  B = 1 << 2; // Right Top Vert
+  C = 1 << 3; // Right Bottom Vert
+  D1 = 1 << 4; // Bottom Right Horiz
+  D2 = 1 << 5; // Bottom Left Horiz
+  E = 1 << 6; // Left Bottom Vert
+  F = 1 << 7; // Left Top Vert
+
+  G1 = 1 << 8; // Middle Left Horiz
+  G2 = 1 << 9; // Middle Right Horiz
+
+  H = 1 << 10; // Top Left Diag (inner)
+  I = 1 << 11; // Top Vert (inner)
+  J = 1 << 12; // Top Right Diag (inner)
+
+  K = 1 << 13; // Bottom Right Diag (inner)
+  L = 1 << 14; // Bottom Vert (inner)
+  M = 1 << 15; // Bottom Left Diag (inner)

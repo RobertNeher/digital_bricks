@@ -1,0 +1,163 @@
+{
+  "components": [
+    {
+      "id": "2d6a26c6-b78b-414c-ae8c-a86d73ed53ea",
+      "type": 12,
+      "position_dx": 1000,
+      "position_dy": 2720,
+      "inputs": [],
+      "outputs": [
+        {
+          "id": "2d6a26c6-b78b-414c-ae8c-a86d73ed53ea-out-0",
+          "componentId": "2d6a26c6-b78b-414c-ae8c-a86d73ed53ea",
+          "type": 1,
+          "label": null,
+          "value": false
+        }
+      ],
+      "label": "A3"
+    },
+    {
+      "id": "e1d0688f-7753-4284-8cb1-4c3282659c00",
+      "type": 12,
+      "position_dx": 1000,
+      "position_dy": 2820,
+      "inputs": [],
+      "outputs": [
+        {
+          "id": "e1d0688f-7753-4284-8cb1-4c3282659c00-out-0",
+          "componentId": "e1d0688f-7753-4284-8cb1-4c3282659c00",
+          "type": 1,
+          "label": null,
+          "value": false
+        }
+      ],
+      "label": "A2"
+    },
+    {
+      "id": "a6382358-ceea-457d-a5ca-2544343cfc8f",
+      "type": 12,
+      "position_dx": 1000,
+      "position_dy": 2920,
+      "inputs": [],
+      "outputs": [
+        {
+          "id": "a6382358-ceea-457d-a5ca-2544343cfc8f-out-0",
+          "componentId": "a6382358-ceea-457d-a5ca-2544343cfc8f",
+          "type": 1,
+          "label": null,
+          "value": false
+        }
+      ],
+      "label": "A1"
+    },
+    {
+      "id": "2076e2a4-54b4-4b06-a47a-857687619b44",
+      "type": 12,
+      "position_dx": 1000,
+      "position_dy": 3020,
+      "inputs": [],
+      "outputs": [
+        {
+          "id": "2076e2a4-54b4-4b06-a47a-857687619b44-out-0",
+          "componentId": "2076e2a4-54b4-4b06-a47a-857687619b44",
+          "type": 1,
+          "label": null,
+          "value": false
+        }
+      ],
+      "label": "A0"
+    },
+    {
+      "id": "c0b77dc1-4270-4b26-b6bf-ee5200690e64",
+      "type": 12,
+      "position_dx": 1000,
+      "position_dy": 2620,
+      "inputs": [],
+      "outputs": [
+        {
+          "id": "c0b77dc1-4270-4b26-b6bf-ee5200690e64-out-0",
+          "componentId": "c0b77dc1-4270-4b26-b6bf-ee5200690e64",
+          "type": 1,
+          "label": null,
+          "value": false
+        }
+      ],
+      "label": "A4"
+    },
+    {
+      "id": "c6705f38-218b-4a49-a4b8-dd78ece91f0a",
+      "type": 12,
+      "position_dx": 1000,
+      "position_dy": 2520,
+      "inputs": [],
+      "outputs": [
+        {
+          "id": "c6705f38-218b-4a49-a4b8-dd78ece91f0a-out-0",
+          "componentId": "c6705f38-218b-4a49-a4b8-dd78ece91f0a",
+          "type": 1,
+          "label": null,
+          "value": false
+        }
+      ],
+      "label": "A5"
+    },
+    {
+      "id": "b8e3156f-f132-46cd-a32c-d82b0bbda8f8",
+      "type": 12,
+      "position_dx": 1000,
+      "position_dy": 2420,
+      "inputs": [],
+      "outputs": [
+        {
+          "id": "b8e3156f-f132-46cd-a32c-d82b0bbda8f8-out-0",
+          "componentId": "b8e3156f-f132-46cd-a32c-d82b0bbda8f8",
+          "type": 1,
+          "label": null,
+          "value": false
+        }
+      ],
+      "label": "A6"
+    },
+    {
+      "id": "a5f45515-34ca-4d09-b75c-6619ab930102",
+      "type": 12,
+      "position_dx": 1000,
+      "position_dy": 2320,
+      "inputs": [],
+      "outputs": [
+        {
+          "id": "a5f45515-34ca-4d09-b75c-6619ab930102-out-0",
+          "componentId": "a5f45515-34ca-4d09-b75c-6619ab930102",
+          "type": 1,
+          "label": null,
+          "value": false
+        }
+      ],
+      "label": "A7"
+    }
+  ],
+  "connections": [],
+  "inputPorts": [
+    "a5f45515-34ca-4d09-b75c-6619ab930102-out-0",
+    "b8e3156f-f132-46cd-a32c-d82b0bbda8f8-out-0",
+    "c6705f38-218b-4a49-a4b8-dd78ece91f0a-out-0",
+    "c0b77dc1-4270-4b26-b6bf-ee5200690e64-out-0",
+    "2d6a26c6-b78b-414c-ae8c-a86d73ed53ea-out-0",
+    "e1d0688f-7753-4284-8cb1-4c3282659c00-out-0",
+    "a6382358-ceea-457d-a5ca-2544343cfc8f-out-0",
+    "2076e2a4-54b4-4b06-a47a-857687619b44-out-0"
+  ],
+  "inputLabels": [
+    "A7",
+    "A6",
+    "A5",
+    "A4",
+    "A3",
+    "A2",
+    "A1",
+    "A0"
+  ],
+  "outputPorts": [],
+  "outputLabels": []
+}
