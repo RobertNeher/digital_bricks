@@ -168,6 +168,12 @@ Generates a 4-bit accumulator and 1-bit carry flag with independent load enables
 py python_generators/gen_accumulator.py
 ```
 
+### 🔄 Multi-cycle Controller
+Generates a state-tracking IC for instructions that take more than one 4-phase cycle (e.g., JUMP, CALL, FIM).
+```bash
+py python_generators/gen_multicycle_ctrl.py
+```
+
 ---
 
 ## 🚀 Programming Your Memory (Workflow)
