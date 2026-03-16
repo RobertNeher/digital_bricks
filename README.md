@@ -144,7 +144,18 @@ Generates a timing IC that provides four sequential phases (T0, T1, T2, T3) for 
 py python_generators/gen_timing_generator.py
 ```
 
->>>>>>> ram-concept
+### 📥 Instruction Register (8-bit)
+Generates an 8-bit register with synchronous load (LIR) and reset, used to hold opcodes during execution.
+```bash
+py python_generators/gen_instruction_register.py
+```
+
+### 📋 Register File (16x4-bit)
+Generates a bank of 16 registers (4 bits each) with address-mapped reading and writing.
+```bash
+py python_generators/gen_register_file.py
+```
+
 ---
 
 ## 🚀 Programming Your Memory (Workflow)
