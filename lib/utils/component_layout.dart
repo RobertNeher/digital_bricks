@@ -53,16 +53,21 @@ class ComponentLayout {
     double bodyWidth = baseWidth;
     if (component is MarkdownComponent) {
       bodyWidth = 250.0;
+      // We show a placeholder in the UI if text is empty, so we must measure it too.
+      String textToMeasure = component.text.isEmpty
+          ? MarkdownComponent.defaultTemplate
+          : component.text;
+
       final textPainter = TextPainter(
         text: TextSpan(
-          text: component.text,
+          text: textToMeasure,
           style: const TextStyle(fontSize: 12),
         ),
         textDirection: TextDirection.ltr,
       );
       textPainter.layout(maxWidth: bodyWidth - 24);
       double multiplier = component.text.contains('|') ? 4.0 : 2.0;
-      bodyHeight = ((textPainter.height * multiplier) + 80.0).ceilToDouble();
+      bodyHeight = (textPainter.height * multiplier + 120.0).ceilToDouble();
       bodyWidth = bodyWidth.ceilToDouble();
     } else if (component is IntegratedCircuit) {
       final textPainter = TextPainter(

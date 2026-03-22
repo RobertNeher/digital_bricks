@@ -857,7 +857,11 @@ class _MarkdownEditorWidgetState extends State<_MarkdownEditorWidget> {
   @override
   void initState() {
     super.initState();
-    _controller = TextEditingController(text: widget.component.text);
+    _controller = TextEditingController(
+      text: widget.component.text.isEmpty
+          ? MarkdownComponent.defaultTemplate
+          : widget.component.text,
+    );
     // Request focus in next frame once textfield is built
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted && widget.component.isEditing) {
@@ -884,34 +888,43 @@ class _MarkdownEditorWidgetState extends State<_MarkdownEditorWidget> {
             Provider.of<CircuitProvider>(context, listen: false).refresh();
           });
         },
-        child: Container(
-          padding: const EdgeInsets.all(4),
+        child: Material(
           color: Colors.transparent,
-          child: GestureDetector(
-            onTap: () {
-              // Ensure focus on tap explicitly
-              _focusNode.requestFocus();
-            },
-            child: TextField(
-              controller: _controller,
-              focusNode: _focusNode,
-              maxLines: null,
-              expands: true,
-              autofocus: true,
-              onChanged: (val) {
-                widget.component.text = val;
-                Provider.of<CircuitProvider>(context, listen: false).refresh();
+          child: Container(
+            padding: const EdgeInsets.all(4),
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.9),
+              border: Border.all(color: Colors.blue.withOpacity(0.5), width: 1.0),
+              borderRadius: BorderRadius.circular(4),
+            ),
+            child: GestureDetector(
+              onTap: () {
+                _focusNode.requestFocus();
               },
-              style: const TextStyle(
-                fontSize: 12,
-                fontFamily: 'monospace',
-                color: Colors.black,
-              ),
-              cursorColor: Colors.black,
-              decoration: const InputDecoration(
-                border: InputBorder.none,
-                isDense: true,
-                contentPadding: EdgeInsets.zero,
+              child: TextField(
+                controller: _controller,
+                focusNode: _focusNode,
+                maxLines: null,
+                expands: true,
+                autofocus: true,
+                onChanged: (val) {
+                  widget.component.text = val;
+                  Provider.of<CircuitProvider>(context, listen: false).refresh();
+                },
+                style: TextStyle(
+                  fontSize: 12,
+                  fontFamily: 'monospace',
+                  color: Theme.of(context).textTheme.bodyMedium?.color ?? Colors.black,
+                  height: 1.2,
+                ),
+                cursorColor: Theme.of(context).primaryColor,
+                decoration: const InputDecoration(
+                  border: InputBorder.none,
+                  isDense: true,
+                  contentPadding: EdgeInsets.zero,
+                  hintText: 'Enter Markdown...',
+                  hintStyle: TextStyle(fontSize: 10, color: Colors.grey),
+                ),
               ),
             ),
           ),
@@ -931,36 +944,14 @@ class _MarkdownEditorWidgetState extends State<_MarkdownEditorWidget> {
               shrinkWrap: true,
               fitContent: true,
               data: widget.component.text.isEmpty
-                  ? """*Double click to edit*:
-
-# 7400 #
-
-## Features ##
-Quadruple 2-Input Positive-NAND Gates
-
-|     |     |
-| --- | --- |
-| Number of channels | 4 |
-| Inputs per channel | 2 |
-
-## Documentation ##
-[7400](https://www.ti.com/document-viewer/sn7400/datasheet)
-
-##  Applications ##
-
-## Description ##
-
-
-## PIN Layout ##
-![]()
-
-## Truth Table ##
-| A | B | Y |
-|---|---|---|
-| 0 | 0 | 1 |
-"""
+                  ? MarkdownComponent.defaultTemplate
                   : widget.component.text,
-
+              styleSheet: MarkdownStyleSheet.fromTheme(Theme.of(context)).copyWith(
+                p: const TextStyle(color: Colors.black, fontSize: 12),
+                h1: const TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
+                h2: const TextStyle(color: Colors.black, fontSize: 14, fontWeight: FontWeight.bold),
+                tableBody: const TextStyle(color: Colors.black, fontSize: 11),
+              ),
               extensionSet: md.ExtensionSet.gitHubFlavored,
             ),
           ),
