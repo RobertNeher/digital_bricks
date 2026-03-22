@@ -71,7 +71,7 @@
           "id": "64b3255f-a89d-400b-881d-c19c653dadbf-out-1",
           "componentId": "64b3255f-a89d-400b-881d-c19c653dadbf",
           "type": 1,
-          "label": "Q\u00cc\u201e",
+          "label": "QÌ„",
           "value": true
         }
       ],
@@ -148,7 +148,7 @@
           "id": "dd58eadf-2efd-48f7-bfcf-9500773a0a02-out-1",
           "componentId": "dd58eadf-2efd-48f7-bfcf-9500773a0a02",
           "type": 1,
-          "label": "Q\u00cc\u201e",
+          "label": "QÌ„",
           "value": true
         }
       ],
@@ -208,7 +208,7 @@
           "id": "58dededb-f7e6-449d-a1d4-a7cd93dd7363-out-1",
           "componentId": "58dededb-f7e6-449d-a1d4-a7cd93dd7363",
           "type": 1,
-          "label": "Q\u00cc\u201e",
+          "label": "QÌ„",
           "value": true
         }
       ],
@@ -319,7 +319,7 @@
           "id": "033701a8-ae3a-4905-84f8-9b8149b1bf78-out-1",
           "componentId": "033701a8-ae3a-4905-84f8-9b8149b1bf78",
           "type": 1,
-          "label": "Q\u00cc\u201e",
+          "label": "QÌ„",
           "value": true
         }
       ],
@@ -508,15 +508,15 @@
     "CLK"
   ],
   "outputPorts": [
-    "8eb0ed14-72bc-4571-af0c-501635e6d872-in-0",
-    "9e74c04f-6a61-47c8-a607-c26f088d5892-in-0",
+    "43020d11-821b-4d2c-9993-72420a3eecb8-in-0",
     "1a009a15-079e-46d3-8162-f124b988aa3d-in-0",
-    "43020d11-821b-4d2c-9993-72420a3eecb8-in-0"
+    "9e74c04f-6a61-47c8-a607-c26f088d5892-in-0",
+    "8eb0ed14-72bc-4571-af0c-501635e6d872-in-0"
   ],
   "outputLabels": [
-    "Q0",
-    "Q1",
+    "Q3",
     "Q2",
-    "Q3"
+    "Q1",
+    "Q0"
   ]
 }

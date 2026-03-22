@@ -195,11 +195,12 @@
           "value": false
         }
       ],
-      "isPressed": false
+      "isPressed": false,
+      "label": "UP/DOWN"
     },
     {
       "id": "fa0c96f4-4646-4a67-93da-0f1f9da63bce",
-      "type": 7,
+      "type": 12,
       "position_dx": 180,
       "position_dy": 520,
       "inputs": [],
@@ -211,7 +212,7 @@
           "value": false
         }
       ],
-      "frequency": 5
+      "label": "CLK"
     },
     {
       "id": "e880ce8d-e4a3-45c5-afda-457311f451b8",
@@ -227,6 +228,7 @@
         }
       ],
       "outputs": [],
+      "label": "Q0",
       "colorHigh": 4294901760,
       "colorLow": 4283760640
     },
@@ -244,6 +246,7 @@
         }
       ],
       "outputs": [],
+      "label": "Q1",
       "colorHigh": 4294901760,
       "colorLow": 4283760640
     },
@@ -261,6 +264,7 @@
         }
       ],
       "outputs": [],
+      "label": "Q2",
       "colorHigh": 4294901760,
       "colorLow": 4283760640
     },
@@ -434,6 +438,7 @@
         }
       ],
       "outputs": [],
+      "label": "Q3",
       "colorHigh": 4294901760,
       "colorLow": 4283760640
     },
@@ -736,15 +741,15 @@
     "In 0"
   ],
   "outputPorts": [
-    "1104f348-fa64-4444-a9d2-7c8ebc4cac43-in-0",
     "84b93f0d-2582-4e22-8c70-24217783b8e2-in-0",
-    "e880ce8d-e4a3-45c5-afda-457311f451b8-in-0",
-    "f6b35c55-0036-4a1b-a05f-2ce196276670-in-0"
+    "1104f348-fa64-4444-a9d2-7c8ebc4cac43-in-0",
+    "f6b35c55-0036-4a1b-a05f-2ce196276670-in-0",
+    "e880ce8d-e4a3-45c5-afda-457311f451b8-in-0"
   ],
   "outputLabels": [
-    "Out 2",
     "Out 3",
-    "Out 0",
-    "Out 1"
+    "Out 2",
+    "Out 1",
+    "Out 0"
   ]
 }

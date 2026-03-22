@@ -259,7 +259,7 @@
           "id": "b2463e64-0de6-4362-ac13-c9a663e60c8c-out-1",
           "componentId": "b2463e64-0de6-4362-ac13-c9a663e60c8c",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -414,7 +414,7 @@
           "id": "c534f305-6f91-4be4-b286-6d1c68228494-out-1",
           "componentId": "c534f305-6f91-4be4-b286-6d1c68228494",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -569,7 +569,7 @@
           "id": "791de8b4-5e9c-4a7b-87ec-ac446a55f007-out-1",
           "componentId": "791de8b4-5e9c-4a7b-87ec-ac446a55f007",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -724,7 +724,7 @@
           "id": "32eb30f9-d2fc-4474-990e-815b2fa0755d-out-1",
           "componentId": "32eb30f9-d2fc-4474-990e-815b2fa0755d",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -936,31 +936,31 @@
     }
   ],
   "inputPorts": [
-    "dd29d846-ff0a-42cd-bbdb-ceb603f11378-out-0",
-    "8e85f781-1c6e-47a5-b549-21fb1ed5878e-out-0",
-    "662aa541-3afc-48e7-b409-dd10534d4726-out-0",
     "a66d34e9-0d15-4d30-84d7-66cc34f968a7-out-0",
+    "662aa541-3afc-48e7-b409-dd10534d4726-out-0",
+    "8e85f781-1c6e-47a5-b549-21fb1ed5878e-out-0",
+    "dd29d846-ff0a-42cd-bbdb-ceb603f11378-out-0",
     "1f2376a4-3e23-4af0-a8ba-7299b2f4502b-out-0",
     "fd5b15d9-9dd8-46f8-b487-694a2be091e9-out-0"
   ],
   "outputPorts": [
-    "3d607f37-a010-48be-a5ae-f5e6cb8ac92c-in-0",
-    "021ee499-3adb-4c14-9ccc-ea67b5898d2c-in-0",
+    "53c4740d-203c-428f-b0a0-04948c36543b-in-0",
     "3c96be46-3263-403c-a818-b7e32769d53d-in-0",
-    "53c4740d-203c-428f-b0a0-04948c36543b-in-0"
+    "021ee499-3adb-4c14-9ccc-ea67b5898d2c-in-0",
+    "3d607f37-a010-48be-a5ae-f5e6cb8ac92c-in-0"
   ],
   "inputLabels": [
-    "D0",
-    "D1",
-    "D2",
     "D3",
+    "D2",
+    "D1",
+    "D0",
     "EN",
     "CLK"
   ],
   "outputLabels": [
-    "Q0",
-    "Q1",
+    "Q3",
     "Q2",
-    "Q3"
+    "Q1",
+    "Q0"
   ]
 }

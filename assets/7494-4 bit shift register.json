@@ -211,7 +211,7 @@
           "id": "71283600-5dd7-4a51-aecc-7f31647545e9-out-1",
           "componentId": "71283600-5dd7-4a51-aecc-7f31647545e9",
           "type": 1,
-          "label": "Q\u00cc\u201e",
+          "label": "QÌ„",
           "value": true
         }
       ],
@@ -253,14 +253,14 @@
   "inputPorts": [
     "f32fc0cb-8b7c-4683-8e16-8fe26a5c0ecb-out-0",
     "f913ef15-7ad2-4a82-912b-ad73d153abcb-out-0",
-    "b935cc29-a754-4d8e-83a4-06fdb5038168-out-0",
-    "a1beffae-5874-45e0-aeeb-a7eda249e07e-out-0"
+    "a1beffae-5874-45e0-aeeb-a7eda249e07e-out-0",
+    "b935cc29-a754-4d8e-83a4-06fdb5038168-out-0"
   ],
   "inputLabels": [
     "P1A",
     "P2A",
-    "PE1",
-    "PE2"
+    "PE2",
+    "PE1"
   ],
   "outputPorts": [],
   "outputLabels": []

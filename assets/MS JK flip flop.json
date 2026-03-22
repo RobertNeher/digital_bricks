@@ -621,30 +621,30 @@
   ],
   "inputPorts": [
     "750b26ab-3eaa-4533-8a1c-18940bdc9f1e-out-0",
+    "38ac24f4-e49a-428c-a56e-7898ff82da8c-out-0",
+    "a1374f7c-5aa8-42dc-a266-6c0e51996ebf-out-0",
     "eff89ff7-6d8d-47ee-99fe-789f88f4f3b8-out-0",
     "399620fe-9d3f-47ad-ae4c-0fcab086d89d-out-0",
-    "38ac24f4-e49a-428c-a56e-7898ff82da8c-out-0",
-    "f23bd89e-5872-4855-b484-16b8f83d9ee4-out-0",
-    "a1374f7c-5aa8-42dc-a266-6c0e51996ebf-out-0"
+    "f23bd89e-5872-4855-b484-16b8f83d9ee4-out-0"
   ],
   "inputLabels": [
     "Label",
+    "Label",
+    "Label",
     "J",
     "CLK",
-    "Label",
-    "K",
-    "Label"
+    "K"
   ],
   "outputPorts": [
+    "46a01845-fb36-4ccb-9af8-5ee12efff8c8-in-0",
     "f8e1ff79-529b-46ac-985c-9f00c8f7a93c-in-0",
     "9c60596e-b339-469b-81d6-cd2eea89ef7c-in-0",
-    "e01c6299-e881-4d43-bcf7-a150c14ce1cb-in-0",
-    "46a01845-fb36-4ccb-9af8-5ee12efff8c8-in-0"
+    "e01c6299-e881-4d43-bcf7-a150c14ce1cb-in-0"
   ],
   "outputLabels": [
+    "Out 3",
     "Out 2",
     "Q",
-    "/Q",
-    "Out 3"
+    "/Q"
   ]
 }

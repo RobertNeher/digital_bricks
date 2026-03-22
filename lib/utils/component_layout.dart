@@ -62,11 +62,23 @@ class ComponentLayout {
       );
       textPainter.layout(maxWidth: bodyWidth - 24);
       double multiplier = component.text.contains('|') ? 4.0 : 2.0;
-      bodyHeight = (textPainter.height * multiplier) + 80.0;
+      bodyHeight = ((textPainter.height * multiplier) + 80.0).ceilToDouble();
+      bodyWidth = bodyWidth.ceilToDouble();
     } else if (component is IntegratedCircuit) {
-      bodyWidth = 120.0;
+      final textPainter = TextPainter(
+        text: TextSpan(
+          text: component.name,
+          style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+        ),
+        textDirection: TextDirection.ltr,
+      );
+      textPainter.layout();
+      bodyWidth = (textPainter.width + 40.0).ceilToDouble(); // 20px padding on each side
+      if (bodyWidth < 120.0) bodyWidth = 120.0;
       // Height is already handled by maxPins logic
-    } else if (component is SegmentDisplay) {
+      bodyHeight = bodyHeight.ceilToDouble();
+    }
+ else if (component is SegmentDisplay) {
       double fontH = component.fontSize;
       if (fontH < 30) fontH = 30;
       double pinH = component.inputs.length * heightPerPin;
@@ -76,20 +88,53 @@ class ComponentLayout {
     }
 
     // 2. Calculate Column Widths (Pins + Labels)
-    bool anyInputLabel = component.inputs.any((p) => p.label != null);
-    if (component is SegmentDisplay) anyInputLabel = true;
+    double maxInputLabelWidth = 0;
+    for (var p in component.inputs) {
+      if (p.label != null) {
+        final textPainter = TextPainter(
+          text: TextSpan(
+            text: p.label,
+            style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+          ),
+          textDirection: TextDirection.ltr,
+        );
+        textPainter.layout();
+        if (textPainter.width > maxInputLabelWidth) {
+          maxInputLabelWidth = textPainter.width;
+        }
+      }
+    }
 
-    bool anyOutputLabel = component.outputs.any((p) => p.label != null);
+    double maxOutputLabelWidth = 0;
+    for (var p in component.outputs) {
+      if (p.label != null) {
+        final textPainter = TextPainter(
+          text: TextSpan(
+            text: p.label,
+            style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+          ),
+          textDirection: TextDirection.ltr,
+        );
+        textPainter.layout();
+        if (textPainter.width > maxOutputLabelWidth) {
+          maxOutputLabelWidth = textPainter.width;
+        }
+      }
+    }
 
-    double inputColWidth = pinSize + (anyInputLabel ? 48.0 : 0);
-    double outputColWidth = pinSize + (anyOutputLabel ? 48.0 : 0);
+    if (component is SegmentDisplay && maxInputLabelWidth < 20) {
+      maxInputLabelWidth = 20; // Default for segment indices
+    }
+
+    double inputColWidth = pinSize + (maxInputLabelWidth > 0 ? maxInputLabelWidth + 8.0 : 0);
+    double outputColWidth = pinSize + (maxOutputLabelWidth > 0 ? maxOutputLabelWidth + 8.0 : 0);
 
     double totalWidth =
-        inputColWidth +
+        (inputColWidth +
         bodyWidth +
         outputColWidth +
-        8.0; // +8 for 4px horizontal padding
-    double totalHeight = bodyHeight + 8.0; // +8 for 4px vertical padding
+        8.0).ceilToDouble(); // +8 for 4px horizontal padding
+    double totalHeight = (bodyHeight + 8.0).ceilToDouble(); // +8 for 4px vertical padding
 
     return ComponentLayoutMetadata(
       totalWidth: totalWidth,

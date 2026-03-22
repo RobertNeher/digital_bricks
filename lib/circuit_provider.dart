@@ -784,15 +784,29 @@ class CircuitProvider extends ChangeNotifier {
         }
         break;
       case ComponentType.integratedCircuit:
-        final internalCompsJson = json['internalComponents'] as List;
-        final internalConnsJson = json['internalConnections'] as List;
+        final internalCompsJson = json['internalComponents'] as List? ?? [];
+        final internalConnsJson = json['internalConnections'] as List? ?? [];
         final internalComps = internalCompsJson
-            .map((e) => _deserializeComponent(e as Map<String, dynamic>))
+            .map((e) {
+              try {
+                return _deserializeComponent(e as Map<String, dynamic>);
+              } catch (e) {
+                return null;
+              }
+            })
             .whereType<LogicComponent>()
             .toList();
         final internalConns = internalConnsJson
-            .map((e) => Connection.fromJson(e as Map<String, dynamic>))
+            .map((e) {
+              try {
+                return Connection.fromJson(e as Map<String, dynamic>);
+              } catch (e) {
+                return null;
+              }
+            })
+            .whereType<Connection>()
             .toList();
+
         comp = IntegratedCircuit(
           id: id,
           name: json['name'] ?? "IC",

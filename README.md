@@ -130,7 +130,7 @@ py python_generators/gen_rom.py --addr 4 --word 4 --data 0,1,2,4,8,7,15,0... --o
 py python_generators/gen_rom.py --addr 4 --word 8 --file sample_program.hex --out assets/sample_program_rom.json
 ```
 
-<<<<<<< HEAD
+
 =======
 ### 🧠 Generic RAM Generator (Random Access Memory)
 Generates a RAM IC with configurable address and word sizes.

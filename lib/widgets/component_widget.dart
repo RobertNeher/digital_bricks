@@ -210,8 +210,8 @@ class ComponentWidget extends StatelessWidget {
                                           component as IntegratedCircuit,
                                         ),
                                         size: Size(
-                                          meta.bodyWidth,
-                                          meta.bodyHeight,
+                                          meta.bodyWidth - 10,
+                                          meta.bodyHeight - 10,
                                         ),
                                       ),
                                     ),

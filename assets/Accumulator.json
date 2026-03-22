@@ -393,7 +393,7 @@
           "id": "aaf8db42-c258-47cb-9962-8063b1932310-out-1",
           "componentId": "aaf8db42-c258-47cb-9962-8063b1932310",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -581,7 +581,7 @@
           "id": "f4978470-a6c6-4087-86b0-9ff63cda240e-out-1",
           "componentId": "f4978470-a6c6-4087-86b0-9ff63cda240e",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -769,7 +769,7 @@
           "id": "b246fea2-e8dd-4311-be02-61dfa3204b43-out-1",
           "componentId": "b246fea2-e8dd-4311-be02-61dfa3204b43",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -957,7 +957,7 @@
           "id": "98dd5ed7-dfa2-4ae6-8962-7cb40cacaebb-out-1",
           "componentId": "98dd5ed7-dfa2-4ae6-8962-7cb40cacaebb",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -1145,7 +1145,7 @@
           "id": "07c83d3f-933e-45bc-a1c0-29bf36b7e8e6-out-1",
           "componentId": "07c83d3f-933e-45bc-a1c0-29bf36b7e8e6",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -1462,10 +1462,10 @@
     }
   ],
   "inputPorts": [
-    "251cc1b4-382c-4ec4-962c-1635e4cc642b-out-0",
-    "e56f6e57-55eb-4b75-b58b-b415ae41b1cd-out-0",
-    "6b5e6f77-4320-4392-89de-5bbe3aaae8ae-out-0",
     "f5edca5a-6350-4f72-972c-7dfada0b7098-out-0",
+    "6b5e6f77-4320-4392-89de-5bbe3aaae8ae-out-0",
+    "e56f6e57-55eb-4b75-b58b-b415ae41b1cd-out-0",
+    "251cc1b4-382c-4ec4-962c-1635e4cc642b-out-0",
     "3cbe9b61-64d7-499e-8e5d-94c00576abab-out-0",
     "88cb6cbb-9cd7-43d4-b402-c1dcddac25e1-out-0",
     "fe517b91-b318-4bad-862e-989549594027-out-0",
@@ -1473,17 +1473,17 @@
     "a9b600ae-3e37-4e0b-8e7e-06a1aaa1ba74-out-0"
   ],
   "outputPorts": [
-    "c48f7ce4-fd2f-4287-906b-77152726eddd-in-0",
-    "e86d3be1-8e74-4f88-97b0-9f5fe0d89c6a-in-0",
-    "4522cc7f-cd30-4ce2-bf2c-03c20408d34b-in-0",
     "f071edbd-1dc7-4aea-ae60-44ae54e0e2a5-in-0",
+    "4522cc7f-cd30-4ce2-bf2c-03c20408d34b-in-0",
+    "e86d3be1-8e74-4f88-97b0-9f5fe0d89c6a-in-0",
+    "c48f7ce4-fd2f-4287-906b-77152726eddd-in-0",
     "adc63c33-e871-410a-889d-5f750572e3ce-in-0"
   ],
   "inputLabels": [
-    "D_IN0",
-    "D_IN1",
-    "D_IN2",
     "D_IN3",
+    "D_IN2",
+    "D_IN1",
+    "D_IN0",
     "C_IN",
     "ACC_WE",
     "C_WE",
@@ -1491,10 +1491,10 @@
     "CLK"
   ],
   "outputLabels": [
-    "ACC0",
-    "ACC1",
-    "ACC2",
     "ACC3",
+    "ACC2",
+    "ACC1",
+    "ACC0",
     "C_OUT"
   ]
 }

@@ -417,7 +417,7 @@
           "id": "0e6d207a-3571-4a3b-b8cb-37383e31b8f6-out-1",
           "componentId": "0e6d207a-3571-4a3b-b8cb-37383e31b8f6",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -671,7 +671,7 @@
           "id": "1cf2abac-492e-4e23-bcd8-b6bb658137ce-out-1",
           "componentId": "1cf2abac-492e-4e23-bcd8-b6bb658137ce",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -925,7 +925,7 @@
           "id": "49d5fa3f-3f96-4e59-b1de-9eea552e85c4-out-1",
           "componentId": "49d5fa3f-3f96-4e59-b1de-9eea552e85c4",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -1179,7 +1179,7 @@
           "id": "5c0d9fc1-5c79-40bf-8c8f-bd87a71d544e-out-1",
           "componentId": "5c0d9fc1-5c79-40bf-8c8f-bd87a71d544e",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -1516,35 +1516,35 @@
     }
   ],
   "inputPorts": [
-    "5fcb7d43-46d3-4685-982f-b2c071a0cc27-out-0",
-    "b535abae-1469-4bb6-9742-81ccf6f6d947-out-0",
-    "f15f59d8-fb7a-4cd8-be20-c16ddf720924-out-0",
     "9888a7d3-e6e1-406e-ae8d-7962bd04db85-out-0",
+    "f15f59d8-fb7a-4cd8-be20-c16ddf720924-out-0",
+    "b535abae-1469-4bb6-9742-81ccf6f6d947-out-0",
+    "5fcb7d43-46d3-4685-982f-b2c071a0cc27-out-0",
     "2d86df24-96df-4820-bfca-7fed98a69c2f-out-0",
     "0f2ea18f-346f-49a1-afff-7ff565232c17-out-0",
     "9c491b53-9a63-41e7-8e99-748798fc7140-out-0",
     "b216418c-cad4-4433-ba65-36532cff841f-out-0"
   ],
   "outputPorts": [
-    "3be8dbef-254f-4713-891c-2fd3b6978b70-in-0",
-    "dd81b000-a119-4af4-931b-7a5d7baa100c-in-0",
+    "a8cac023-823d-41b6-a9d8-0d72ece9d740-in-0",
     "38e782e1-2713-4292-ab56-f863854f3469-in-0",
-    "a8cac023-823d-41b6-a9d8-0d72ece9d740-in-0"
+    "dd81b000-a119-4af4-931b-7a5d7baa100c-in-0",
+    "3be8dbef-254f-4713-891c-2fd3b6978b70-in-0"
   ],
   "inputLabels": [
-    "D0",
-    "D1",
-    "D2",
     "D3",
+    "D2",
+    "D1",
+    "D0",
     "INC",
     "LOAD",
     "CLR",
     "CLK"
   ],
   "outputLabels": [
-    "Q0",
-    "Q1",
+    "Q3",
     "Q2",
-    "Q3"
+    "Q1",
+    "Q0"
   ]
 }

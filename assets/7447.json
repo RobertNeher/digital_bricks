@@ -1034,22 +1034,22 @@
   "inputPorts": [
     "a4f0d626-4a81-4438-a1d6-5e73ab5e4212-out-0",
     "9c3d27fa-a20d-4216-841b-d6ee5e9b8f93-out-0",
-    "3737e926-3fa3-4952-b285-97f5eaf6d68c-out-0",
     "aff50627-d655-4208-90f5-0935b36bde68-out-0",
-    "10785031-2b6a-45e1-aed1-9ef6e5479875-out-0",
     "74d1dbab-3b5c-454b-8362-7c44faf70f4e-out-0",
-    "8aca1850-a9d1-4d9a-9434-af68afa749cd-out-0",
-    "98531f46-b502-4cd0-972f-0925ea2c7b1b-out-0"
+    "98531f46-b502-4cd0-972f-0925ea2c7b1b-out-0",
+    "3737e926-3fa3-4952-b285-97f5eaf6d68c-out-0",
+    "10785031-2b6a-45e1-aed1-9ef6e5479875-out-0",
+    "8aca1850-a9d1-4d9a-9434-af68afa749cd-out-0"
   ],
   "inputLabels": [
     "A",
     "Label",
+    "Label",
+    "Label",
+    "Label",
     "B",
-    "Label",
     "C",
-    "Label",
-    "D",
-    "Label"
+    "D"
   ],
   "outputPorts": [
     "666b7871-12f3-4f4e-9ec4-180da8d62cd0-in-0",

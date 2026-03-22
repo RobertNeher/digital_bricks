@@ -67,7 +67,7 @@
           "id": "170dc823-d393-44a4-972e-3f478950b2dc-out-1",
           "componentId": "170dc823-d393-44a4-972e-3f478950b2dc",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -189,7 +189,7 @@
           "id": "620f519d-8566-42e9-8efd-78c66dfd71ed-out-1",
           "componentId": "620f519d-8566-42e9-8efd-78c66dfd71ed",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -649,19 +649,19 @@
     "68e700df-5a2b-44c7-932f-b5ab19cd167e-out-0"
   ],
   "outputPorts": [
-    "6c9ecd66-19f9-42ed-8ba9-3218c694b6f6-in-0",
-    "07115bd0-46b0-496c-86ac-1849ab747d67-in-0",
+    "9c41fc01-c009-4a93-88f7-bd75f1208e0a-in-0",
     "b37d98fa-584e-4c89-bcce-ba18c7d4eb89-in-0",
-    "9c41fc01-c009-4a93-88f7-bd75f1208e0a-in-0"
+    "07115bd0-46b0-496c-86ac-1849ab747d67-in-0",
+    "6c9ecd66-19f9-42ed-8ba9-3218c694b6f6-in-0"
   ],
   "inputLabels": [
     "CLK",
     "RESET"
   ],
   "outputLabels": [
-    "T0",
-    "T1",
+    "T3",
     "T2",
-    "T3"
+    "T1",
+    "T0"
   ]
 }

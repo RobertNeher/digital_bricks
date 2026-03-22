@@ -402,7 +402,7 @@
           "id": "4c506f0f-aebc-44f0-9b61-8d4e0a37492e-out-1",
           "componentId": "4c506f0f-aebc-44f0-9b61-8d4e0a37492e",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -590,7 +590,7 @@
           "id": "bed75ed3-ed8a-4126-a0fa-8b2df6c71fba-out-1",
           "componentId": "bed75ed3-ed8a-4126-a0fa-8b2df6c71fba",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -778,7 +778,7 @@
           "id": "db5243c1-9323-4d81-abb6-695fd820f404-out-1",
           "componentId": "db5243c1-9323-4d81-abb6-695fd820f404",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -966,7 +966,7 @@
           "id": "97a0ca83-f9b5-4c62-b740-87c431189f3e-out-1",
           "componentId": "97a0ca83-f9b5-4c62-b740-87c431189f3e",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -1154,7 +1154,7 @@
           "id": "3f0c44fc-13dc-4eb8-b44f-63cb8232f9f0-out-1",
           "componentId": "3f0c44fc-13dc-4eb8-b44f-63cb8232f9f0",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -1342,7 +1342,7 @@
           "id": "7f943b5e-1706-4115-904c-d7072cd859c3-out-1",
           "componentId": "7f943b5e-1706-4115-904c-d7072cd859c3",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -1530,7 +1530,7 @@
           "id": "41f3e0d8-1060-44a3-8561-0b4a825b77f2-out-1",
           "componentId": "41f3e0d8-1060-44a3-8561-0b4a825b77f2",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -1718,7 +1718,7 @@
           "id": "d76c60d8-67f8-43dc-b5dc-4d06e318ef83-out-1",
           "componentId": "d76c60d8-67f8-43dc-b5dc-4d06e318ef83",
           "type": 1,
-          "label": "Q\u0305",
+          "label": "Q̅",
           "value": true
         }
       ],
@@ -2195,49 +2195,49 @@
     }
   ],
   "inputPorts": [
-    "b28c1ffb-5d44-4508-9790-fed5c968bc66-out-0",
-    "49cd74f0-c450-4753-9b70-4b25343f7c4e-out-0",
-    "3f635076-079e-468d-a979-5f8be45d88b9-out-0",
-    "e0d60df8-dd67-4a97-9ef8-f550844f5e59-out-0",
-    "5ee5fd87-2ec9-42bd-b884-bcfdd25aa5b1-out-0",
-    "8029d9f4-8314-46d9-833d-d984a9dd694b-out-0",
-    "1080765d-62ca-4aef-99cf-867bbbc2d292-out-0",
     "8bc2fc45-edbd-4a7e-a38a-ea2ecf63f61d-out-0",
+    "1080765d-62ca-4aef-99cf-867bbbc2d292-out-0",
+    "8029d9f4-8314-46d9-833d-d984a9dd694b-out-0",
+    "5ee5fd87-2ec9-42bd-b884-bcfdd25aa5b1-out-0",
+    "e0d60df8-dd67-4a97-9ef8-f550844f5e59-out-0",
+    "3f635076-079e-468d-a979-5f8be45d88b9-out-0",
+    "49cd74f0-c450-4753-9b70-4b25343f7c4e-out-0",
+    "b28c1ffb-5d44-4508-9790-fed5c968bc66-out-0",
     "4628ec8a-a8c4-4f8e-bf9b-6408c0cf686f-out-0",
     "e57b325b-68c4-4cb5-8d74-03200e9a9f0b-out-0",
     "9e77c59e-bca8-43b9-af10-f45866a82daf-out-0"
   ],
   "outputPorts": [
-    "b541bcc2-ebcd-4e02-b290-d51b8940ec75-in-0",
-    "395d87fd-4dea-4850-9c60-c0785467c350-in-0",
-    "5cea5478-54ad-4d05-9b70-bca505fe78a4-in-0",
-    "763dd736-a66b-4893-9d21-730d9caa2761-in-0",
-    "754e4436-e76f-4cd2-9569-96c67a836939-in-0",
-    "62f6adb3-cbc5-452e-bfd4-dc6a0d0c98f6-in-0",
+    "45072bd7-7734-43df-b81a-0102f171b4fb-in-0",
     "28e82792-276e-4ad9-87e1-7803c85c5f38-in-0",
-    "45072bd7-7734-43df-b81a-0102f171b4fb-in-0"
+    "62f6adb3-cbc5-452e-bfd4-dc6a0d0c98f6-in-0",
+    "754e4436-e76f-4cd2-9569-96c67a836939-in-0",
+    "763dd736-a66b-4893-9d21-730d9caa2761-in-0",
+    "5cea5478-54ad-4d05-9b70-bca505fe78a4-in-0",
+    "395d87fd-4dea-4850-9c60-c0785467c350-in-0",
+    "b541bcc2-ebcd-4e02-b290-d51b8940ec75-in-0"
   ],
   "inputLabels": [
-    "D0",
-    "D1",
-    "D2",
-    "D3",
-    "D4",
-    "D5",
-    "D6",
     "D7",
+    "D6",
+    "D5",
+    "D4",
+    "D3",
+    "D2",
+    "D1",
+    "D0",
     "LIR",
     "RESET",
     "CLK"
   ],
   "outputLabels": [
-    "INSTR0",
-    "INSTR1",
-    "INSTR2",
-    "INSTR3",
-    "INSTR4",
-    "INSTR5",
+    "INSTR7",
     "INSTR6",
-    "INSTR7"
+    "INSTR5",
+    "INSTR4",
+    "INSTR3",
+    "INSTR2",
+    "INSTR1",
+    "INSTR0"
   ]
 }

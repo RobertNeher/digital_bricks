@@ -1,7 +1,7 @@
 {
   "components": [
     {
-      "id": "comp-0-1773487347125639",
+      "id": "fixed-1774167906274-0",
       "name": "IN_8",
       "type": 12,
       "position_dx": 100.0,
@@ -9,8 +9,8 @@
       "inputs": [],
       "outputs": [
         {
-          "id": "comp-0-1773487347125639-out-0",
-          "componentId": "comp-0-1773487347125639",
+          "id": "fixed-1774167906274-0-out-0",
+          "componentId": "fixed-1774167906274-0",
           "type": 1,
           "value": false
         }
@@ -18,30 +18,30 @@
       "label": "8"
     },
     {
-      "id": "comp-0-1773487347128826",
+      "id": "fixed-1774167906278-1",
       "name": "NOT_8",
       "type": 6,
       "position_dx": 250.0,
       "position_dy": 200.0,
       "inputs": [
         {
-          "id": "comp-0-1773487347128826-in-0",
-          "componentId": "comp-0-1773487347128826",
+          "id": "fixed-1774167906278-1-in-0",
+          "componentId": "fixed-1774167906278-1",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-0-1773487347128826-out-0",
-          "componentId": "comp-0-1773487347128826",
+          "id": "fixed-1774167906278-1-out-0",
+          "componentId": "fixed-1774167906278-1",
           "type": 1,
           "value": false
         }
       ]
     },
     {
-      "id": "comp-2-1773487347130893",
+      "id": "fixed-1774167906278-2",
       "name": "IN_4",
       "type": 12,
       "position_dx": 100.0,
@@ -49,8 +49,8 @@
       "inputs": [],
       "outputs": [
         {
-          "id": "comp-2-1773487347130893-out-0",
-          "componentId": "comp-2-1773487347130893",
+          "id": "fixed-1774167906278-2-out-0",
+          "componentId": "fixed-1774167906278-2",
           "type": 1,
           "value": false
         }
@@ -58,30 +58,30 @@
       "label": "4"
     },
     {
-      "id": "comp-2-1773487347130893",
+      "id": "fixed-1774167906278-3",
       "name": "NOT_4",
       "type": 6,
       "position_dx": 250.0,
       "position_dy": 400.0,
       "inputs": [
         {
-          "id": "comp-2-1773487347130893-in-0",
-          "componentId": "comp-2-1773487347130893",
+          "id": "fixed-1774167906278-3-in-0",
+          "componentId": "fixed-1774167906278-3",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-2-1773487347130893-out-0",
-          "componentId": "comp-2-1773487347130893",
+          "id": "fixed-1774167906278-3-out-0",
+          "componentId": "fixed-1774167906278-3",
           "type": 1,
           "value": false
         }
       ]
     },
     {
-      "id": "comp-4-1773487347130893",
+      "id": "fixed-1774167906278-4",
       "name": "IN_2",
       "type": 12,
       "position_dx": 100.0,
@@ -89,8 +89,8 @@
       "inputs": [],
       "outputs": [
         {
-          "id": "comp-4-1773487347130893-out-0",
-          "componentId": "comp-4-1773487347130893",
+          "id": "fixed-1774167906278-4-out-0",
+          "componentId": "fixed-1774167906278-4",
           "type": 1,
           "value": false
         }
@@ -98,30 +98,30 @@
       "label": "2"
     },
     {
-      "id": "comp-4-1773487347130893",
+      "id": "fixed-1774167906278-5",
       "name": "NOT_2",
       "type": 6,
       "position_dx": 250.0,
       "position_dy": 600.0,
       "inputs": [
         {
-          "id": "comp-4-1773487347130893-in-0",
-          "componentId": "comp-4-1773487347130893",
+          "id": "fixed-1774167906278-5-in-0",
+          "componentId": "fixed-1774167906278-5",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-4-1773487347130893-out-0",
-          "componentId": "comp-4-1773487347130893",
+          "id": "fixed-1774167906278-5-out-0",
+          "componentId": "fixed-1774167906278-5",
           "type": 1,
           "value": false
         }
       ]
     },
     {
-      "id": "comp-6-1773487347130893",
+      "id": "fixed-1774167906278-6",
       "name": "IN_1",
       "type": 12,
       "position_dx": 100.0,
@@ -129,8 +129,8 @@
       "inputs": [],
       "outputs": [
         {
-          "id": "comp-6-1773487347130893-out-0",
-          "componentId": "comp-6-1773487347130893",
+          "id": "fixed-1774167906278-6-out-0",
+          "componentId": "fixed-1774167906278-6",
           "type": 1,
           "value": false
         }
@@ -138,64 +138,64 @@
       "label": "1"
     },
     {
-      "id": "comp-6-1773487347130893",
+      "id": "fixed-1774167906278-7",
       "name": "NOT_1",
       "type": 6,
       "position_dx": 250.0,
       "position_dy": 800.0,
       "inputs": [
         {
-          "id": "comp-6-1773487347130893-in-0",
-          "componentId": "comp-6-1773487347130893",
+          "id": "fixed-1774167906278-7-in-0",
+          "componentId": "fixed-1774167906278-7",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-6-1773487347130893-out-0",
-          "componentId": "comp-6-1773487347130893",
+          "id": "fixed-1774167906278-7-out-0",
+          "componentId": "fixed-1774167906278-7",
           "type": 1,
           "value": false
         }
       ]
     },
     {
-      "id": "comp-8-1773487347132904",
+      "id": "fixed-1774167906278-8",
       "name": "M_0",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 50.0,
       "inputs": [
         {
-          "id": "comp-8-1773487347132904-in-0",
-          "componentId": "comp-8-1773487347132904",
+          "id": "fixed-1774167906278-8-in-0",
+          "componentId": "fixed-1774167906278-8",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-8-1773487347132904-in-1",
-          "componentId": "comp-8-1773487347132904",
+          "id": "fixed-1774167906278-8-in-1",
+          "componentId": "fixed-1774167906278-8",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-8-1773487347132904-in-2",
-          "componentId": "comp-8-1773487347132904",
+          "id": "fixed-1774167906278-8-in-2",
+          "componentId": "fixed-1774167906278-8",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-8-1773487347132904-in-3",
-          "componentId": "comp-8-1773487347132904",
+          "id": "fixed-1774167906278-8-in-3",
+          "componentId": "fixed-1774167906278-8",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-8-1773487347132904-out-0",
-          "componentId": "comp-8-1773487347132904",
+          "id": "fixed-1774167906278-8-out-0",
+          "componentId": "fixed-1774167906278-8",
           "type": 1,
           "value": false
         }
@@ -203,41 +203,41 @@
       "inputCount": 4
     },
     {
-      "id": "comp-9-1773487347132904",
+      "id": "fixed-1774167906278-9",
       "name": "M_1",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 125.0,
       "inputs": [
         {
-          "id": "comp-9-1773487347132904-in-0",
-          "componentId": "comp-9-1773487347132904",
+          "id": "fixed-1774167906278-9-in-0",
+          "componentId": "fixed-1774167906278-9",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-9-1773487347132904-in-1",
-          "componentId": "comp-9-1773487347132904",
+          "id": "fixed-1774167906278-9-in-1",
+          "componentId": "fixed-1774167906278-9",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-9-1773487347132904-in-2",
-          "componentId": "comp-9-1773487347132904",
+          "id": "fixed-1774167906278-9-in-2",
+          "componentId": "fixed-1774167906278-9",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-9-1773487347132904-in-3",
-          "componentId": "comp-9-1773487347132904",
+          "id": "fixed-1774167906278-9-in-3",
+          "componentId": "fixed-1774167906278-9",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-9-1773487347132904-out-0",
-          "componentId": "comp-9-1773487347132904",
+          "id": "fixed-1774167906278-9-out-0",
+          "componentId": "fixed-1774167906278-9",
           "type": 1,
           "value": false
         }
@@ -245,41 +245,41 @@
       "inputCount": 4
     },
     {
-      "id": "comp-10-1773487347132904",
+      "id": "fixed-1774167906278-10",
       "name": "M_2",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 200.0,
       "inputs": [
         {
-          "id": "comp-10-1773487347132904-in-0",
-          "componentId": "comp-10-1773487347132904",
+          "id": "fixed-1774167906278-10-in-0",
+          "componentId": "fixed-1774167906278-10",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-10-1773487347132904-in-1",
-          "componentId": "comp-10-1773487347132904",
+          "id": "fixed-1774167906278-10-in-1",
+          "componentId": "fixed-1774167906278-10",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-10-1773487347132904-in-2",
-          "componentId": "comp-10-1773487347132904",
+          "id": "fixed-1774167906278-10-in-2",
+          "componentId": "fixed-1774167906278-10",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-10-1773487347132904-in-3",
-          "componentId": "comp-10-1773487347132904",
+          "id": "fixed-1774167906278-10-in-3",
+          "componentId": "fixed-1774167906278-10",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-10-1773487347132904-out-0",
-          "componentId": "comp-10-1773487347132904",
+          "id": "fixed-1774167906278-10-out-0",
+          "componentId": "fixed-1774167906278-10",
           "type": 1,
           "value": false
         }
@@ -287,41 +287,41 @@
       "inputCount": 4
     },
     {
-      "id": "comp-11-1773487347133912",
+      "id": "fixed-1774167906278-11",
       "name": "M_3",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 275.0,
       "inputs": [
         {
-          "id": "comp-11-1773487347133912-in-0",
-          "componentId": "comp-11-1773487347133912",
+          "id": "fixed-1774167906278-11-in-0",
+          "componentId": "fixed-1774167906278-11",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-11-1773487347133912-in-1",
-          "componentId": "comp-11-1773487347133912",
+          "id": "fixed-1774167906278-11-in-1",
+          "componentId": "fixed-1774167906278-11",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-11-1773487347133912-in-2",
-          "componentId": "comp-11-1773487347133912",
+          "id": "fixed-1774167906278-11-in-2",
+          "componentId": "fixed-1774167906278-11",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-11-1773487347133912-in-3",
-          "componentId": "comp-11-1773487347133912",
+          "id": "fixed-1774167906278-11-in-3",
+          "componentId": "fixed-1774167906278-11",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-11-1773487347133912-out-0",
-          "componentId": "comp-11-1773487347133912",
+          "id": "fixed-1774167906278-11-out-0",
+          "componentId": "fixed-1774167906278-11",
           "type": 1,
           "value": false
         }
@@ -329,41 +329,41 @@
       "inputCount": 4
     },
     {
-      "id": "comp-12-1773487347133912",
+      "id": "fixed-1774167906278-12",
       "name": "M_4",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 350.0,
       "inputs": [
         {
-          "id": "comp-12-1773487347133912-in-0",
-          "componentId": "comp-12-1773487347133912",
+          "id": "fixed-1774167906278-12-in-0",
+          "componentId": "fixed-1774167906278-12",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-12-1773487347133912-in-1",
-          "componentId": "comp-12-1773487347133912",
+          "id": "fixed-1774167906278-12-in-1",
+          "componentId": "fixed-1774167906278-12",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-12-1773487347133912-in-2",
-          "componentId": "comp-12-1773487347133912",
+          "id": "fixed-1774167906278-12-in-2",
+          "componentId": "fixed-1774167906278-12",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-12-1773487347133912-in-3",
-          "componentId": "comp-12-1773487347133912",
+          "id": "fixed-1774167906278-12-in-3",
+          "componentId": "fixed-1774167906278-12",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-12-1773487347133912-out-0",
-          "componentId": "comp-12-1773487347133912",
+          "id": "fixed-1774167906278-12-out-0",
+          "componentId": "fixed-1774167906278-12",
           "type": 1,
           "value": false
         }
@@ -371,41 +371,41 @@
       "inputCount": 4
     },
     {
-      "id": "comp-13-1773487347134432",
+      "id": "fixed-1774167906278-13",
       "name": "M_5",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 425.0,
       "inputs": [
         {
-          "id": "comp-13-1773487347134432-in-0",
-          "componentId": "comp-13-1773487347134432",
+          "id": "fixed-1774167906278-13-in-0",
+          "componentId": "fixed-1774167906278-13",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-13-1773487347134432-in-1",
-          "componentId": "comp-13-1773487347134432",
+          "id": "fixed-1774167906278-13-in-1",
+          "componentId": "fixed-1774167906278-13",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-13-1773487347134432-in-2",
-          "componentId": "comp-13-1773487347134432",
+          "id": "fixed-1774167906278-13-in-2",
+          "componentId": "fixed-1774167906278-13",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-13-1773487347134432-in-3",
-          "componentId": "comp-13-1773487347134432",
+          "id": "fixed-1774167906278-13-in-3",
+          "componentId": "fixed-1774167906278-13",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-13-1773487347134432-out-0",
-          "componentId": "comp-13-1773487347134432",
+          "id": "fixed-1774167906278-13-out-0",
+          "componentId": "fixed-1774167906278-13",
           "type": 1,
           "value": false
         }
@@ -413,41 +413,41 @@
       "inputCount": 4
     },
     {
-      "id": "comp-14-1773487347134432",
+      "id": "fixed-1774167906278-14",
       "name": "M_6",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 500.0,
       "inputs": [
         {
-          "id": "comp-14-1773487347134432-in-0",
-          "componentId": "comp-14-1773487347134432",
+          "id": "fixed-1774167906278-14-in-0",
+          "componentId": "fixed-1774167906278-14",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-14-1773487347134432-in-1",
-          "componentId": "comp-14-1773487347134432",
+          "id": "fixed-1774167906278-14-in-1",
+          "componentId": "fixed-1774167906278-14",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-14-1773487347134432-in-2",
-          "componentId": "comp-14-1773487347134432",
+          "id": "fixed-1774167906278-14-in-2",
+          "componentId": "fixed-1774167906278-14",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-14-1773487347134432-in-3",
-          "componentId": "comp-14-1773487347134432",
+          "id": "fixed-1774167906278-14-in-3",
+          "componentId": "fixed-1774167906278-14",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-14-1773487347134432-out-0",
-          "componentId": "comp-14-1773487347134432",
+          "id": "fixed-1774167906278-14-out-0",
+          "componentId": "fixed-1774167906278-14",
           "type": 1,
           "value": false
         }
@@ -455,41 +455,41 @@
       "inputCount": 4
     },
     {
-      "id": "comp-15-1773487347134889",
+      "id": "fixed-1774167906278-15",
       "name": "M_7",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 575.0,
       "inputs": [
         {
-          "id": "comp-15-1773487347134889-in-0",
-          "componentId": "comp-15-1773487347134889",
+          "id": "fixed-1774167906278-15-in-0",
+          "componentId": "fixed-1774167906278-15",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-15-1773487347134889-in-1",
-          "componentId": "comp-15-1773487347134889",
+          "id": "fixed-1774167906278-15-in-1",
+          "componentId": "fixed-1774167906278-15",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-15-1773487347134889-in-2",
-          "componentId": "comp-15-1773487347134889",
+          "id": "fixed-1774167906278-15-in-2",
+          "componentId": "fixed-1774167906278-15",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-15-1773487347134889-in-3",
-          "componentId": "comp-15-1773487347134889",
+          "id": "fixed-1774167906278-15-in-3",
+          "componentId": "fixed-1774167906278-15",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-15-1773487347134889-out-0",
-          "componentId": "comp-15-1773487347134889",
+          "id": "fixed-1774167906278-15-out-0",
+          "componentId": "fixed-1774167906278-15",
           "type": 1,
           "value": false
         }
@@ -497,41 +497,41 @@
       "inputCount": 4
     },
     {
-      "id": "comp-16-1773487347134889",
+      "id": "fixed-1774167906278-16",
       "name": "M_8",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 650.0,
       "inputs": [
         {
-          "id": "comp-16-1773487347134889-in-0",
-          "componentId": "comp-16-1773487347134889",
+          "id": "fixed-1774167906278-16-in-0",
+          "componentId": "fixed-1774167906278-16",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-16-1773487347134889-in-1",
-          "componentId": "comp-16-1773487347134889",
+          "id": "fixed-1774167906278-16-in-1",
+          "componentId": "fixed-1774167906278-16",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-16-1773487347134889-in-2",
-          "componentId": "comp-16-1773487347134889",
+          "id": "fixed-1774167906278-16-in-2",
+          "componentId": "fixed-1774167906278-16",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-16-1773487347134889-in-3",
-          "componentId": "comp-16-1773487347134889",
+          "id": "fixed-1774167906278-16-in-3",
+          "componentId": "fixed-1774167906278-16",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-16-1773487347134889-out-0",
-          "componentId": "comp-16-1773487347134889",
+          "id": "fixed-1774167906278-16-out-0",
+          "componentId": "fixed-1774167906278-16",
           "type": 1,
           "value": false
         }
@@ -539,41 +539,41 @@
       "inputCount": 4
     },
     {
-      "id": "comp-17-1773487347134889",
+      "id": "fixed-1774167906278-17",
       "name": "M_9",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 725.0,
       "inputs": [
         {
-          "id": "comp-17-1773487347134889-in-0",
-          "componentId": "comp-17-1773487347134889",
+          "id": "fixed-1774167906278-17-in-0",
+          "componentId": "fixed-1774167906278-17",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-17-1773487347134889-in-1",
-          "componentId": "comp-17-1773487347134889",
+          "id": "fixed-1774167906278-17-in-1",
+          "componentId": "fixed-1774167906278-17",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-17-1773487347134889-in-2",
-          "componentId": "comp-17-1773487347134889",
+          "id": "fixed-1774167906278-17-in-2",
+          "componentId": "fixed-1774167906278-17",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-17-1773487347134889-in-3",
-          "componentId": "comp-17-1773487347134889",
+          "id": "fixed-1774167906278-17-in-3",
+          "componentId": "fixed-1774167906278-17",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-17-1773487347134889-out-0",
-          "componentId": "comp-17-1773487347134889",
+          "id": "fixed-1774167906278-17-out-0",
+          "componentId": "fixed-1774167906278-17",
           "type": 1,
           "value": false
         }
@@ -581,41 +581,41 @@
       "inputCount": 4
     },
     {
-      "id": "comp-18-1773487347134889",
+      "id": "fixed-1774167906278-18",
       "name": "M_10",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 800.0,
       "inputs": [
         {
-          "id": "comp-18-1773487347134889-in-0",
-          "componentId": "comp-18-1773487347134889",
+          "id": "fixed-1774167906278-18-in-0",
+          "componentId": "fixed-1774167906278-18",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-18-1773487347134889-in-1",
-          "componentId": "comp-18-1773487347134889",
+          "id": "fixed-1774167906278-18-in-1",
+          "componentId": "fixed-1774167906278-18",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-18-1773487347134889-in-2",
-          "componentId": "comp-18-1773487347134889",
+          "id": "fixed-1774167906278-18-in-2",
+          "componentId": "fixed-1774167906278-18",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-18-1773487347134889-in-3",
-          "componentId": "comp-18-1773487347134889",
+          "id": "fixed-1774167906278-18-in-3",
+          "componentId": "fixed-1774167906278-18",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-18-1773487347134889-out-0",
-          "componentId": "comp-18-1773487347134889",
+          "id": "fixed-1774167906278-18-out-0",
+          "componentId": "fixed-1774167906278-18",
           "type": 1,
           "value": false
         }
@@ -623,41 +623,41 @@
       "inputCount": 4
     },
     {
-      "id": "comp-19-1773487347134889",
+      "id": "fixed-1774167906278-19",
       "name": "M_11",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 875.0,
       "inputs": [
         {
-          "id": "comp-19-1773487347134889-in-0",
-          "componentId": "comp-19-1773487347134889",
+          "id": "fixed-1774167906278-19-in-0",
+          "componentId": "fixed-1774167906278-19",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-19-1773487347134889-in-1",
-          "componentId": "comp-19-1773487347134889",
+          "id": "fixed-1774167906278-19-in-1",
+          "componentId": "fixed-1774167906278-19",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-19-1773487347134889-in-2",
-          "componentId": "comp-19-1773487347134889",
+          "id": "fixed-1774167906278-19-in-2",
+          "componentId": "fixed-1774167906278-19",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-19-1773487347134889-in-3",
-          "componentId": "comp-19-1773487347134889",
+          "id": "fixed-1774167906278-19-in-3",
+          "componentId": "fixed-1774167906278-19",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-19-1773487347134889-out-0",
-          "componentId": "comp-19-1773487347134889",
+          "id": "fixed-1774167906278-19-out-0",
+          "componentId": "fixed-1774167906278-19",
           "type": 1,
           "value": false
         }
@@ -665,41 +665,41 @@
       "inputCount": 4
     },
     {
-      "id": "comp-20-1773487347135891",
+      "id": "fixed-1774167906278-20",
       "name": "M_12",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 950.0,
       "inputs": [
         {
-          "id": "comp-20-1773487347135891-in-0",
-          "componentId": "comp-20-1773487347135891",
+          "id": "fixed-1774167906278-20-in-0",
+          "componentId": "fixed-1774167906278-20",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-20-1773487347135891-in-1",
-          "componentId": "comp-20-1773487347135891",
+          "id": "fixed-1774167906278-20-in-1",
+          "componentId": "fixed-1774167906278-20",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-20-1773487347135891-in-2",
-          "componentId": "comp-20-1773487347135891",
+          "id": "fixed-1774167906278-20-in-2",
+          "componentId": "fixed-1774167906278-20",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-20-1773487347135891-in-3",
-          "componentId": "comp-20-1773487347135891",
+          "id": "fixed-1774167906278-20-in-3",
+          "componentId": "fixed-1774167906278-20",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-20-1773487347135891-out-0",
-          "componentId": "comp-20-1773487347135891",
+          "id": "fixed-1774167906278-20-out-0",
+          "componentId": "fixed-1774167906278-20",
           "type": 1,
           "value": false
         }
@@ -707,41 +707,41 @@
       "inputCount": 4
     },
     {
-      "id": "comp-21-1773487347135891",
+      "id": "fixed-1774167906278-21",
       "name": "M_13",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 1025.0,
       "inputs": [
         {
-          "id": "comp-21-1773487347135891-in-0",
-          "componentId": "comp-21-1773487347135891",
+          "id": "fixed-1774167906278-21-in-0",
+          "componentId": "fixed-1774167906278-21",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-21-1773487347135891-in-1",
-          "componentId": "comp-21-1773487347135891",
+          "id": "fixed-1774167906278-21-in-1",
+          "componentId": "fixed-1774167906278-21",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-21-1773487347135891-in-2",
-          "componentId": "comp-21-1773487347135891",
+          "id": "fixed-1774167906278-21-in-2",
+          "componentId": "fixed-1774167906278-21",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-21-1773487347135891-in-3",
-          "componentId": "comp-21-1773487347135891",
+          "id": "fixed-1774167906278-21-in-3",
+          "componentId": "fixed-1774167906278-21",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-21-1773487347135891-out-0",
-          "componentId": "comp-21-1773487347135891",
+          "id": "fixed-1774167906278-21-out-0",
+          "componentId": "fixed-1774167906278-21",
           "type": 1,
           "value": false
         }
@@ -749,41 +749,41 @@
       "inputCount": 4
     },
     {
-      "id": "comp-22-1773487347135891",
+      "id": "fixed-1774167906278-22",
       "name": "M_14",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 1100.0,
       "inputs": [
         {
-          "id": "comp-22-1773487347135891-in-0",
-          "componentId": "comp-22-1773487347135891",
+          "id": "fixed-1774167906278-22-in-0",
+          "componentId": "fixed-1774167906278-22",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-22-1773487347135891-in-1",
-          "componentId": "comp-22-1773487347135891",
+          "id": "fixed-1774167906278-22-in-1",
+          "componentId": "fixed-1774167906278-22",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-22-1773487347135891-in-2",
-          "componentId": "comp-22-1773487347135891",
+          "id": "fixed-1774167906278-22-in-2",
+          "componentId": "fixed-1774167906278-22",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-22-1773487347135891-in-3",
-          "componentId": "comp-22-1773487347135891",
+          "id": "fixed-1774167906278-22-in-3",
+          "componentId": "fixed-1774167906278-22",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-22-1773487347135891-out-0",
-          "componentId": "comp-22-1773487347135891",
+          "id": "fixed-1774167906278-22-out-0",
+          "componentId": "fixed-1774167906278-22",
           "type": 1,
           "value": false
         }
@@ -791,41 +791,41 @@
       "inputCount": 4
     },
     {
-      "id": "comp-23-1773487347135891",
+      "id": "fixed-1774167906278-23",
       "name": "M_15",
       "type": 0,
       "position_dx": 450.0,
       "position_dy": 1175.0,
       "inputs": [
         {
-          "id": "comp-23-1773487347135891-in-0",
-          "componentId": "comp-23-1773487347135891",
+          "id": "fixed-1774167906278-23-in-0",
+          "componentId": "fixed-1774167906278-23",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-23-1773487347135891-in-1",
-          "componentId": "comp-23-1773487347135891",
+          "id": "fixed-1774167906278-23-in-1",
+          "componentId": "fixed-1774167906278-23",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-23-1773487347135891-in-2",
-          "componentId": "comp-23-1773487347135891",
+          "id": "fixed-1774167906278-23-in-2",
+          "componentId": "fixed-1774167906278-23",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-23-1773487347135891-in-3",
-          "componentId": "comp-23-1773487347135891",
+          "id": "fixed-1774167906278-23-in-3",
+          "componentId": "fixed-1774167906278-23",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-23-1773487347135891-out-0",
-          "componentId": "comp-23-1773487347135891",
+          "id": "fixed-1774167906278-23-out-0",
+          "componentId": "fixed-1774167906278-23",
           "type": 1,
           "value": false
         }
@@ -833,89 +833,89 @@
       "inputCount": 4
     },
     {
-      "id": "comp-24-1773487347136955",
+      "id": "fixed-1774167906278-24",
       "name": "OR_A",
       "type": 2,
       "position_dx": 700.0,
       "position_dy": 150.0,
       "inputs": [
         {
-          "id": "comp-24-1773487347136955-in-0",
-          "componentId": "comp-24-1773487347136955",
+          "id": "fixed-1774167906278-24-in-0",
+          "componentId": "fixed-1774167906278-24",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-24-1773487347136955-in-1",
-          "componentId": "comp-24-1773487347136955",
+          "id": "fixed-1774167906278-24-in-1",
+          "componentId": "fixed-1774167906278-24",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-24-1773487347136955-in-2",
-          "componentId": "comp-24-1773487347136955",
+          "id": "fixed-1774167906278-24-in-2",
+          "componentId": "fixed-1774167906278-24",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-24-1773487347136955-in-3",
-          "componentId": "comp-24-1773487347136955",
+          "id": "fixed-1774167906278-24-in-3",
+          "componentId": "fixed-1774167906278-24",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-24-1773487347136955-in-4",
-          "componentId": "comp-24-1773487347136955",
+          "id": "fixed-1774167906278-24-in-4",
+          "componentId": "fixed-1774167906278-24",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-24-1773487347136955-in-5",
-          "componentId": "comp-24-1773487347136955",
+          "id": "fixed-1774167906278-24-in-5",
+          "componentId": "fixed-1774167906278-24",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-24-1773487347136955-in-6",
-          "componentId": "comp-24-1773487347136955",
+          "id": "fixed-1774167906278-24-in-6",
+          "componentId": "fixed-1774167906278-24",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-24-1773487347136955-in-7",
-          "componentId": "comp-24-1773487347136955",
+          "id": "fixed-1774167906278-24-in-7",
+          "componentId": "fixed-1774167906278-24",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-24-1773487347136955-in-8",
-          "componentId": "comp-24-1773487347136955",
+          "id": "fixed-1774167906278-24-in-8",
+          "componentId": "fixed-1774167906278-24",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-24-1773487347136955-in-9",
-          "componentId": "comp-24-1773487347136955",
+          "id": "fixed-1774167906278-24-in-9",
+          "componentId": "fixed-1774167906278-24",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-24-1773487347136955-in-10",
-          "componentId": "comp-24-1773487347136955",
+          "id": "fixed-1774167906278-24-in-10",
+          "componentId": "fixed-1774167906278-24",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-24-1773487347136955-in-11",
-          "componentId": "comp-24-1773487347136955",
+          "id": "fixed-1774167906278-24-in-11",
+          "componentId": "fixed-1774167906278-24",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-24-1773487347136955-out-0",
-          "componentId": "comp-24-1773487347136955",
+          "id": "fixed-1774167906278-24-out-0",
+          "componentId": "fixed-1774167906278-24",
           "type": 1,
           "value": false
         }
@@ -923,15 +923,15 @@
       "inputCount": 12
     },
     {
-      "id": "comp-24-1773487347136955",
+      "id": "fixed-1774167906278-25",
       "name": "OUT_A",
       "type": 13,
       "position_dx": 850.0,
       "position_dy": 150.0,
       "inputs": [
         {
-          "id": "comp-24-1773487347136955-in-0",
-          "componentId": "comp-24-1773487347136955",
+          "id": "fixed-1774167906278-25-in-0",
+          "componentId": "fixed-1774167906278-25",
           "type": 0,
           "value": false
         }
@@ -940,77 +940,77 @@
       "label": "A"
     },
     {
-      "id": "comp-26-1773487347137952",
+      "id": "fixed-1774167906278-26",
       "name": "OR_B",
       "type": 2,
       "position_dx": 700.0,
       "position_dy": 300.0,
       "inputs": [
         {
-          "id": "comp-26-1773487347137952-in-0",
-          "componentId": "comp-26-1773487347137952",
+          "id": "fixed-1774167906278-26-in-0",
+          "componentId": "fixed-1774167906278-26",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-26-1773487347137952-in-1",
-          "componentId": "comp-26-1773487347137952",
+          "id": "fixed-1774167906278-26-in-1",
+          "componentId": "fixed-1774167906278-26",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-26-1773487347137952-in-2",
-          "componentId": "comp-26-1773487347137952",
+          "id": "fixed-1774167906278-26-in-2",
+          "componentId": "fixed-1774167906278-26",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-26-1773487347137952-in-3",
-          "componentId": "comp-26-1773487347137952",
+          "id": "fixed-1774167906278-26-in-3",
+          "componentId": "fixed-1774167906278-26",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-26-1773487347137952-in-4",
-          "componentId": "comp-26-1773487347137952",
+          "id": "fixed-1774167906278-26-in-4",
+          "componentId": "fixed-1774167906278-26",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-26-1773487347137952-in-5",
-          "componentId": "comp-26-1773487347137952",
+          "id": "fixed-1774167906278-26-in-5",
+          "componentId": "fixed-1774167906278-26",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-26-1773487347137952-in-6",
-          "componentId": "comp-26-1773487347137952",
+          "id": "fixed-1774167906278-26-in-6",
+          "componentId": "fixed-1774167906278-26",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-26-1773487347137952-in-7",
-          "componentId": "comp-26-1773487347137952",
+          "id": "fixed-1774167906278-26-in-7",
+          "componentId": "fixed-1774167906278-26",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-26-1773487347137952-in-8",
-          "componentId": "comp-26-1773487347137952",
+          "id": "fixed-1774167906278-26-in-8",
+          "componentId": "fixed-1774167906278-26",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-26-1773487347137952-in-9",
-          "componentId": "comp-26-1773487347137952",
+          "id": "fixed-1774167906278-26-in-9",
+          "componentId": "fixed-1774167906278-26",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-26-1773487347137952-out-0",
-          "componentId": "comp-26-1773487347137952",
+          "id": "fixed-1774167906278-26-out-0",
+          "componentId": "fixed-1774167906278-26",
           "type": 1,
           "value": false
         }
@@ -1018,15 +1018,15 @@
       "inputCount": 10
     },
     {
-      "id": "comp-26-1773487347137952",
+      "id": "fixed-1774167906278-27",
       "name": "OUT_B",
       "type": 13,
       "position_dx": 850.0,
       "position_dy": 300.0,
       "inputs": [
         {
-          "id": "comp-26-1773487347137952-in-0",
-          "componentId": "comp-26-1773487347137952",
+          "id": "fixed-1774167906278-27-in-0",
+          "componentId": "fixed-1774167906278-27",
           "type": 0,
           "value": false
         }
@@ -1035,89 +1035,89 @@
       "label": "B"
     },
     {
-      "id": "comp-28-1773487347137952",
+      "id": "fixed-1774167906278-28",
       "name": "OR_C",
       "type": 2,
       "position_dx": 700.0,
       "position_dy": 450.0,
       "inputs": [
         {
-          "id": "comp-28-1773487347137952-in-0",
-          "componentId": "comp-28-1773487347137952",
+          "id": "fixed-1774167906278-28-in-0",
+          "componentId": "fixed-1774167906278-28",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-28-1773487347137952-in-1",
-          "componentId": "comp-28-1773487347137952",
+          "id": "fixed-1774167906278-28-in-1",
+          "componentId": "fixed-1774167906278-28",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-28-1773487347137952-in-2",
-          "componentId": "comp-28-1773487347137952",
+          "id": "fixed-1774167906278-28-in-2",
+          "componentId": "fixed-1774167906278-28",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-28-1773487347137952-in-3",
-          "componentId": "comp-28-1773487347137952",
+          "id": "fixed-1774167906278-28-in-3",
+          "componentId": "fixed-1774167906278-28",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-28-1773487347137952-in-4",
-          "componentId": "comp-28-1773487347137952",
+          "id": "fixed-1774167906278-28-in-4",
+          "componentId": "fixed-1774167906278-28",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-28-1773487347137952-in-5",
-          "componentId": "comp-28-1773487347137952",
+          "id": "fixed-1774167906278-28-in-5",
+          "componentId": "fixed-1774167906278-28",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-28-1773487347137952-in-6",
-          "componentId": "comp-28-1773487347137952",
+          "id": "fixed-1774167906278-28-in-6",
+          "componentId": "fixed-1774167906278-28",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-28-1773487347137952-in-7",
-          "componentId": "comp-28-1773487347137952",
+          "id": "fixed-1774167906278-28-in-7",
+          "componentId": "fixed-1774167906278-28",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-28-1773487347137952-in-8",
-          "componentId": "comp-28-1773487347137952",
+          "id": "fixed-1774167906278-28-in-8",
+          "componentId": "fixed-1774167906278-28",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-28-1773487347137952-in-9",
-          "componentId": "comp-28-1773487347137952",
+          "id": "fixed-1774167906278-28-in-9",
+          "componentId": "fixed-1774167906278-28",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-28-1773487347137952-in-10",
-          "componentId": "comp-28-1773487347137952",
+          "id": "fixed-1774167906278-28-in-10",
+          "componentId": "fixed-1774167906278-28",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-28-1773487347137952-in-11",
-          "componentId": "comp-28-1773487347137952",
+          "id": "fixed-1774167906278-28-in-11",
+          "componentId": "fixed-1774167906278-28",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-28-1773487347137952-out-0",
-          "componentId": "comp-28-1773487347137952",
+          "id": "fixed-1774167906278-28-out-0",
+          "componentId": "fixed-1774167906278-28",
           "type": 1,
           "value": false
         }
@@ -1125,15 +1125,15 @@
       "inputCount": 12
     },
     {
-      "id": "comp-28-1773487347137952",
+      "id": "fixed-1774167906278-29",
       "name": "OUT_C",
       "type": 13,
       "position_dx": 850.0,
       "position_dy": 450.0,
       "inputs": [
         {
-          "id": "comp-28-1773487347137952-in-0",
-          "componentId": "comp-28-1773487347137952",
+          "id": "fixed-1774167906278-29-in-0",
+          "componentId": "fixed-1774167906278-29",
           "type": 0,
           "value": false
         }
@@ -1142,83 +1142,83 @@
       "label": "C"
     },
     {
-      "id": "comp-30-1773487347138698",
+      "id": "fixed-1774167906278-30",
       "name": "OR_D",
       "type": 2,
       "position_dx": 700.0,
       "position_dy": 600.0,
       "inputs": [
         {
-          "id": "comp-30-1773487347138698-in-0",
-          "componentId": "comp-30-1773487347138698",
+          "id": "fixed-1774167906278-30-in-0",
+          "componentId": "fixed-1774167906278-30",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-30-1773487347138698-in-1",
-          "componentId": "comp-30-1773487347138698",
+          "id": "fixed-1774167906278-30-in-1",
+          "componentId": "fixed-1774167906278-30",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-30-1773487347138698-in-2",
-          "componentId": "comp-30-1773487347138698",
+          "id": "fixed-1774167906278-30-in-2",
+          "componentId": "fixed-1774167906278-30",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-30-1773487347138698-in-3",
-          "componentId": "comp-30-1773487347138698",
+          "id": "fixed-1774167906278-30-in-3",
+          "componentId": "fixed-1774167906278-30",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-30-1773487347138698-in-4",
-          "componentId": "comp-30-1773487347138698",
+          "id": "fixed-1774167906278-30-in-4",
+          "componentId": "fixed-1774167906278-30",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-30-1773487347138698-in-5",
-          "componentId": "comp-30-1773487347138698",
+          "id": "fixed-1774167906278-30-in-5",
+          "componentId": "fixed-1774167906278-30",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-30-1773487347138698-in-6",
-          "componentId": "comp-30-1773487347138698",
+          "id": "fixed-1774167906278-30-in-6",
+          "componentId": "fixed-1774167906278-30",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-30-1773487347138698-in-7",
-          "componentId": "comp-30-1773487347138698",
+          "id": "fixed-1774167906278-30-in-7",
+          "componentId": "fixed-1774167906278-30",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-30-1773487347138698-in-8",
-          "componentId": "comp-30-1773487347138698",
+          "id": "fixed-1774167906278-30-in-8",
+          "componentId": "fixed-1774167906278-30",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-30-1773487347138698-in-9",
-          "componentId": "comp-30-1773487347138698",
+          "id": "fixed-1774167906278-30-in-9",
+          "componentId": "fixed-1774167906278-30",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-30-1773487347138698-in-10",
-          "componentId": "comp-30-1773487347138698",
+          "id": "fixed-1774167906278-30-in-10",
+          "componentId": "fixed-1774167906278-30",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-30-1773487347138698-out-0",
-          "componentId": "comp-30-1773487347138698",
+          "id": "fixed-1774167906278-30-out-0",
+          "componentId": "fixed-1774167906278-30",
           "type": 1,
           "value": false
         }
@@ -1226,15 +1226,15 @@
       "inputCount": 11
     },
     {
-      "id": "comp-30-1773487347138698",
+      "id": "fixed-1774167906278-31",
       "name": "OUT_D",
       "type": 13,
       "position_dx": 850.0,
       "position_dy": 600.0,
       "inputs": [
         {
-          "id": "comp-30-1773487347138698-in-0",
-          "componentId": "comp-30-1773487347138698",
+          "id": "fixed-1774167906278-31-in-0",
+          "componentId": "fixed-1774167906278-31",
           "type": 0,
           "value": false
         }
@@ -1243,77 +1243,77 @@
       "label": "D"
     },
     {
-      "id": "comp-32-1773487347138698",
+      "id": "fixed-1774167906278-32",
       "name": "OR_E",
       "type": 2,
       "position_dx": 700.0,
       "position_dy": 750.0,
       "inputs": [
         {
-          "id": "comp-32-1773487347138698-in-0",
-          "componentId": "comp-32-1773487347138698",
+          "id": "fixed-1774167906278-32-in-0",
+          "componentId": "fixed-1774167906278-32",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-32-1773487347138698-in-1",
-          "componentId": "comp-32-1773487347138698",
+          "id": "fixed-1774167906278-32-in-1",
+          "componentId": "fixed-1774167906278-32",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-32-1773487347138698-in-2",
-          "componentId": "comp-32-1773487347138698",
+          "id": "fixed-1774167906278-32-in-2",
+          "componentId": "fixed-1774167906278-32",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-32-1773487347138698-in-3",
-          "componentId": "comp-32-1773487347138698",
+          "id": "fixed-1774167906278-32-in-3",
+          "componentId": "fixed-1774167906278-32",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-32-1773487347138698-in-4",
-          "componentId": "comp-32-1773487347138698",
+          "id": "fixed-1774167906278-32-in-4",
+          "componentId": "fixed-1774167906278-32",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-32-1773487347138698-in-5",
-          "componentId": "comp-32-1773487347138698",
+          "id": "fixed-1774167906278-32-in-5",
+          "componentId": "fixed-1774167906278-32",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-32-1773487347138698-in-6",
-          "componentId": "comp-32-1773487347138698",
+          "id": "fixed-1774167906278-32-in-6",
+          "componentId": "fixed-1774167906278-32",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-32-1773487347138698-in-7",
-          "componentId": "comp-32-1773487347138698",
+          "id": "fixed-1774167906278-32-in-7",
+          "componentId": "fixed-1774167906278-32",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-32-1773487347138698-in-8",
-          "componentId": "comp-32-1773487347138698",
+          "id": "fixed-1774167906278-32-in-8",
+          "componentId": "fixed-1774167906278-32",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-32-1773487347138698-in-9",
-          "componentId": "comp-32-1773487347138698",
+          "id": "fixed-1774167906278-32-in-9",
+          "componentId": "fixed-1774167906278-32",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-32-1773487347138698-out-0",
-          "componentId": "comp-32-1773487347138698",
+          "id": "fixed-1774167906278-32-out-0",
+          "componentId": "fixed-1774167906278-32",
           "type": 1,
           "value": false
         }
@@ -1321,15 +1321,15 @@
       "inputCount": 10
     },
     {
-      "id": "comp-32-1773487347138698",
+      "id": "fixed-1774167906278-33",
       "name": "OUT_E",
       "type": 13,
       "position_dx": 850.0,
       "position_dy": 750.0,
       "inputs": [
         {
-          "id": "comp-32-1773487347138698-in-0",
-          "componentId": "comp-32-1773487347138698",
+          "id": "fixed-1774167906278-33-in-0",
+          "componentId": "fixed-1774167906278-33",
           "type": 0,
           "value": false
         }
@@ -1338,83 +1338,83 @@
       "label": "E"
     },
     {
-      "id": "comp-34-1773487347139834",
+      "id": "fixed-1774167906278-34",
       "name": "OR_F",
       "type": 2,
       "position_dx": 700.0,
       "position_dy": 900.0,
       "inputs": [
         {
-          "id": "comp-34-1773487347139834-in-0",
-          "componentId": "comp-34-1773487347139834",
+          "id": "fixed-1774167906278-34-in-0",
+          "componentId": "fixed-1774167906278-34",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-34-1773487347139834-in-1",
-          "componentId": "comp-34-1773487347139834",
+          "id": "fixed-1774167906278-34-in-1",
+          "componentId": "fixed-1774167906278-34",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-34-1773487347139834-in-2",
-          "componentId": "comp-34-1773487347139834",
+          "id": "fixed-1774167906278-34-in-2",
+          "componentId": "fixed-1774167906278-34",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-34-1773487347139834-in-3",
-          "componentId": "comp-34-1773487347139834",
+          "id": "fixed-1774167906278-34-in-3",
+          "componentId": "fixed-1774167906278-34",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-34-1773487347139834-in-4",
-          "componentId": "comp-34-1773487347139834",
+          "id": "fixed-1774167906278-34-in-4",
+          "componentId": "fixed-1774167906278-34",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-34-1773487347139834-in-5",
-          "componentId": "comp-34-1773487347139834",
+          "id": "fixed-1774167906278-34-in-5",
+          "componentId": "fixed-1774167906278-34",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-34-1773487347139834-in-6",
-          "componentId": "comp-34-1773487347139834",
+          "id": "fixed-1774167906278-34-in-6",
+          "componentId": "fixed-1774167906278-34",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-34-1773487347139834-in-7",
-          "componentId": "comp-34-1773487347139834",
+          "id": "fixed-1774167906278-34-in-7",
+          "componentId": "fixed-1774167906278-34",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-34-1773487347139834-in-8",
-          "componentId": "comp-34-1773487347139834",
+          "id": "fixed-1774167906278-34-in-8",
+          "componentId": "fixed-1774167906278-34",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-34-1773487347139834-in-9",
-          "componentId": "comp-34-1773487347139834",
+          "id": "fixed-1774167906278-34-in-9",
+          "componentId": "fixed-1774167906278-34",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-34-1773487347139834-in-10",
-          "componentId": "comp-34-1773487347139834",
+          "id": "fixed-1774167906278-34-in-10",
+          "componentId": "fixed-1774167906278-34",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-34-1773487347139834-out-0",
-          "componentId": "comp-34-1773487347139834",
+          "id": "fixed-1774167906278-34-out-0",
+          "componentId": "fixed-1774167906278-34",
           "type": 1,
           "value": false
         }
@@ -1422,15 +1422,15 @@
       "inputCount": 11
     },
     {
-      "id": "comp-34-1773487347139834",
+      "id": "fixed-1774167906278-35",
       "name": "OUT_F",
       "type": 13,
       "position_dx": 850.0,
       "position_dy": 900.0,
       "inputs": [
         {
-          "id": "comp-34-1773487347139834-in-0",
-          "componentId": "comp-34-1773487347139834",
+          "id": "fixed-1774167906278-35-in-0",
+          "componentId": "fixed-1774167906278-35",
           "type": 0,
           "value": false
         }
@@ -1439,89 +1439,89 @@
       "label": "F"
     },
     {
-      "id": "comp-36-1773487347139834",
+      "id": "fixed-1774167906278-36",
       "name": "OR_G",
       "type": 2,
       "position_dx": 700.0,
       "position_dy": 1050.0,
       "inputs": [
         {
-          "id": "comp-36-1773487347139834-in-0",
-          "componentId": "comp-36-1773487347139834",
+          "id": "fixed-1774167906278-36-in-0",
+          "componentId": "fixed-1774167906278-36",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-36-1773487347139834-in-1",
-          "componentId": "comp-36-1773487347139834",
+          "id": "fixed-1774167906278-36-in-1",
+          "componentId": "fixed-1774167906278-36",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-36-1773487347139834-in-2",
-          "componentId": "comp-36-1773487347139834",
+          "id": "fixed-1774167906278-36-in-2",
+          "componentId": "fixed-1774167906278-36",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-36-1773487347139834-in-3",
-          "componentId": "comp-36-1773487347139834",
+          "id": "fixed-1774167906278-36-in-3",
+          "componentId": "fixed-1774167906278-36",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-36-1773487347139834-in-4",
-          "componentId": "comp-36-1773487347139834",
+          "id": "fixed-1774167906278-36-in-4",
+          "componentId": "fixed-1774167906278-36",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-36-1773487347139834-in-5",
-          "componentId": "comp-36-1773487347139834",
+          "id": "fixed-1774167906278-36-in-5",
+          "componentId": "fixed-1774167906278-36",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-36-1773487347139834-in-6",
-          "componentId": "comp-36-1773487347139834",
+          "id": "fixed-1774167906278-36-in-6",
+          "componentId": "fixed-1774167906278-36",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-36-1773487347139834-in-7",
-          "componentId": "comp-36-1773487347139834",
+          "id": "fixed-1774167906278-36-in-7",
+          "componentId": "fixed-1774167906278-36",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-36-1773487347139834-in-8",
-          "componentId": "comp-36-1773487347139834",
+          "id": "fixed-1774167906278-36-in-8",
+          "componentId": "fixed-1774167906278-36",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-36-1773487347139834-in-9",
-          "componentId": "comp-36-1773487347139834",
+          "id": "fixed-1774167906278-36-in-9",
+          "componentId": "fixed-1774167906278-36",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-36-1773487347139834-in-10",
-          "componentId": "comp-36-1773487347139834",
+          "id": "fixed-1774167906278-36-in-10",
+          "componentId": "fixed-1774167906278-36",
           "type": 0,
           "value": false
         },
         {
-          "id": "comp-36-1773487347139834-in-11",
-          "componentId": "comp-36-1773487347139834",
+          "id": "fixed-1774167906278-36-in-11",
+          "componentId": "fixed-1774167906278-36",
           "type": 0,
           "value": false
         }
       ],
       "outputs": [
         {
-          "id": "comp-36-1773487347139834-out-0",
-          "componentId": "comp-36-1773487347139834",
+          "id": "fixed-1774167906278-36-out-0",
+          "componentId": "fixed-1774167906278-36",
           "type": 1,
           "value": false
         }
@@ -1529,15 +1529,15 @@
       "inputCount": 12
     },
     {
-      "id": "comp-36-1773487347139834",
+      "id": "fixed-1774167906278-37",
       "name": "OUT_G",
       "type": 13,
       "position_dx": 850.0,
       "position_dy": 1050.0,
       "inputs": [
         {
-          "id": "comp-36-1773487347139834-in-0",
-          "componentId": "comp-36-1773487347139834",
+          "id": "fixed-1774167906278-37-in-0",
+          "componentId": "fixed-1774167906278-37",
           "type": 0,
           "value": false
         }
@@ -1548,776 +1548,776 @@
   ],
   "connections": [
     {
-      "id": "conn-0-1773487347130893",
-      "sourcePinId": "comp-0-1773487347125639-out-0",
-      "targetPinId": "comp-0-1773487347128826-in-0"
+      "id": "recovered-1774169580007-0",
+      "sourcePinId": "fixed-1774167906278-6-out-0",
+      "targetPinId": "fixed-1774167906278-7-in-0"
     },
     {
-      "id": "conn-1-1773487347130893",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-2-1773487347130893-in-0"
+      "id": "recovered-1774169580007-1",
+      "sourcePinId": "fixed-1774167906278-4-out-0",
+      "targetPinId": "fixed-1774167906278-5-in-0"
     },
     {
-      "id": "conn-2-1773487347130893",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-4-1773487347130893-in-0"
+      "id": "recovered-1774169580007-2",
+      "sourcePinId": "fixed-1774167906278-2-out-0",
+      "targetPinId": "fixed-1774167906278-3-in-0"
     },
     {
-      "id": "conn-3-1773487347132904",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-6-1773487347130893-in-0"
+      "id": "recovered-1774169580007-3",
+      "sourcePinId": "fixed-1774167906274-0-out-0",
+      "targetPinId": "fixed-1774167906278-1-in-0"
     },
     {
-      "id": "conn-4-1773487347132904",
-      "sourcePinId": "comp-0-1773487347128826-out-0",
-      "targetPinId": "comp-8-1773487347132904-in-0"
+      "id": "recovered-1774169580009-4",
+      "sourcePinId": "fixed-1774167906278-7-out-0",
+      "targetPinId": "fixed-1774167906278-8-in-0"
     },
     {
-      "id": "conn-5-1773487347132904",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-8-1773487347132904-in-1"
+      "id": "recovered-1774169580009-5",
+      "sourcePinId": "fixed-1774167906278-5-out-0",
+      "targetPinId": "fixed-1774167906278-8-in-1"
     },
     {
-      "id": "conn-6-1773487347132904",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-8-1773487347132904-in-2"
+      "id": "recovered-1774169580009-6",
+      "sourcePinId": "fixed-1774167906278-3-out-0",
+      "targetPinId": "fixed-1774167906278-8-in-2"
     },
     {
-      "id": "conn-7-1773487347132904",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-8-1773487347132904-in-3"
+      "id": "recovered-1774169580009-7",
+      "sourcePinId": "fixed-1774167906278-1-out-0",
+      "targetPinId": "fixed-1774167906278-8-in-3"
     },
     {
-      "id": "conn-8-1773487347132904",
-      "sourcePinId": "comp-0-1773487347128826-out-0",
-      "targetPinId": "comp-9-1773487347132904-in-0"
+      "id": "recovered-1774169580009-8",
+      "sourcePinId": "fixed-1774167906278-6-out-0",
+      "targetPinId": "fixed-1774167906278-9-in-0"
     },
     {
-      "id": "conn-9-1773487347132904",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-9-1773487347132904-in-1"
+      "id": "recovered-1774169580009-9",
+      "sourcePinId": "fixed-1774167906278-5-out-0",
+      "targetPinId": "fixed-1774167906278-9-in-1"
     },
     {
-      "id": "conn-10-1773487347132904",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-9-1773487347132904-in-2"
+      "id": "recovered-1774169580009-10",
+      "sourcePinId": "fixed-1774167906278-3-out-0",
+      "targetPinId": "fixed-1774167906278-9-in-2"
     },
     {
-      "id": "conn-11-1773487347132904",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-9-1773487347132904-in-3"
+      "id": "recovered-1774169580009-11",
+      "sourcePinId": "fixed-1774167906278-1-out-0",
+      "targetPinId": "fixed-1774167906278-9-in-3"
     },
     {
-      "id": "conn-12-1773487347133912",
-      "sourcePinId": "comp-0-1773487347128826-out-0",
-      "targetPinId": "comp-10-1773487347132904-in-0"
+      "id": "recovered-1774169580009-12",
+      "sourcePinId": "fixed-1774167906278-7-out-0",
+      "targetPinId": "fixed-1774167906278-10-in-0"
     },
     {
-      "id": "conn-13-1773487347133912",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-10-1773487347132904-in-1"
+      "id": "recovered-1774169580009-13",
+      "sourcePinId": "fixed-1774167906278-4-out-0",
+      "targetPinId": "fixed-1774167906278-10-in-1"
     },
     {
-      "id": "conn-14-1773487347133912",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-10-1773487347132904-in-2"
+      "id": "recovered-1774169580009-14",
+      "sourcePinId": "fixed-1774167906278-3-out-0",
+      "targetPinId": "fixed-1774167906278-10-in-2"
     },
     {
-      "id": "conn-15-1773487347133912",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-10-1773487347132904-in-3"
+      "id": "recovered-1774169580009-15",
+      "sourcePinId": "fixed-1774167906278-1-out-0",
+      "targetPinId": "fixed-1774167906278-10-in-3"
     },
     {
-      "id": "conn-16-1773487347133912",
-      "sourcePinId": "comp-0-1773487347128826-out-0",
-      "targetPinId": "comp-11-1773487347133912-in-0"
+      "id": "recovered-1774169580009-16",
+      "sourcePinId": "fixed-1774167906278-6-out-0",
+      "targetPinId": "fixed-1774167906278-11-in-0"
     },
     {
-      "id": "conn-17-1773487347133912",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-11-1773487347133912-in-1"
+      "id": "recovered-1774169580009-17",
+      "sourcePinId": "fixed-1774167906278-4-out-0",
+      "targetPinId": "fixed-1774167906278-11-in-1"
     },
     {
-      "id": "conn-18-1773487347133912",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-11-1773487347133912-in-2"
+      "id": "recovered-1774169580009-18",
+      "sourcePinId": "fixed-1774167906278-3-out-0",
+      "targetPinId": "fixed-1774167906278-11-in-2"
     },
     {
-      "id": "conn-19-1773487347133912",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-11-1773487347133912-in-3"
+      "id": "recovered-1774169580009-19",
+      "sourcePinId": "fixed-1774167906278-1-out-0",
+      "targetPinId": "fixed-1774167906278-11-in-3"
     },
     {
-      "id": "conn-20-1773487347133912",
-      "sourcePinId": "comp-0-1773487347128826-out-0",
-      "targetPinId": "comp-12-1773487347133912-in-0"
+      "id": "recovered-1774169580009-20",
+      "sourcePinId": "fixed-1774167906278-7-out-0",
+      "targetPinId": "fixed-1774167906278-12-in-0"
     },
     {
-      "id": "conn-21-1773487347133912",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-12-1773487347133912-in-1"
+      "id": "recovered-1774169580009-21",
+      "sourcePinId": "fixed-1774167906278-5-out-0",
+      "targetPinId": "fixed-1774167906278-12-in-1"
     },
     {
-      "id": "conn-22-1773487347133912",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-12-1773487347133912-in-2"
+      "id": "recovered-1774169580009-22",
+      "sourcePinId": "fixed-1774167906278-2-out-0",
+      "targetPinId": "fixed-1774167906278-12-in-2"
     },
     {
-      "id": "conn-23-1773487347133912",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-12-1773487347133912-in-3"
+      "id": "recovered-1774169580009-23",
+      "sourcePinId": "fixed-1774167906278-1-out-0",
+      "targetPinId": "fixed-1774167906278-12-in-3"
     },
     {
-      "id": "conn-24-1773487347134432",
-      "sourcePinId": "comp-0-1773487347128826-out-0",
-      "targetPinId": "comp-13-1773487347134432-in-0"
+      "id": "recovered-1774169580009-24",
+      "sourcePinId": "fixed-1774167906278-6-out-0",
+      "targetPinId": "fixed-1774167906278-13-in-0"
     },
     {
-      "id": "conn-25-1773487347134432",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-13-1773487347134432-in-1"
+      "id": "recovered-1774169580009-25",
+      "sourcePinId": "fixed-1774167906278-5-out-0",
+      "targetPinId": "fixed-1774167906278-13-in-1"
     },
     {
-      "id": "conn-26-1773487347134432",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-13-1773487347134432-in-2"
+      "id": "recovered-1774169580009-26",
+      "sourcePinId": "fixed-1774167906278-2-out-0",
+      "targetPinId": "fixed-1774167906278-13-in-2"
     },
     {
-      "id": "conn-27-1773487347134432",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-13-1773487347134432-in-3"
+      "id": "recovered-1774169580009-27",
+      "sourcePinId": "fixed-1774167906278-1-out-0",
+      "targetPinId": "fixed-1774167906278-13-in-3"
     },
     {
-      "id": "conn-28-1773487347134432",
-      "sourcePinId": "comp-0-1773487347128826-out-0",
-      "targetPinId": "comp-14-1773487347134432-in-0"
+      "id": "recovered-1774169580009-28",
+      "sourcePinId": "fixed-1774167906278-7-out-0",
+      "targetPinId": "fixed-1774167906278-14-in-0"
     },
     {
-      "id": "conn-29-1773487347134432",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-14-1773487347134432-in-1"
+      "id": "recovered-1774169580009-29",
+      "sourcePinId": "fixed-1774167906278-4-out-0",
+      "targetPinId": "fixed-1774167906278-14-in-1"
     },
     {
-      "id": "conn-30-1773487347134889",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-14-1773487347134432-in-2"
+      "id": "recovered-1774169580009-30",
+      "sourcePinId": "fixed-1774167906278-2-out-0",
+      "targetPinId": "fixed-1774167906278-14-in-2"
     },
     {
-      "id": "conn-31-1773487347134889",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-14-1773487347134432-in-3"
+      "id": "recovered-1774169580009-31",
+      "sourcePinId": "fixed-1774167906278-1-out-0",
+      "targetPinId": "fixed-1774167906278-14-in-3"
     },
     {
-      "id": "conn-32-1773487347134889",
-      "sourcePinId": "comp-0-1773487347128826-out-0",
-      "targetPinId": "comp-15-1773487347134889-in-0"
+      "id": "recovered-1774169580009-32",
+      "sourcePinId": "fixed-1774167906278-6-out-0",
+      "targetPinId": "fixed-1774167906278-15-in-0"
     },
     {
-      "id": "conn-33-1773487347134889",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-15-1773487347134889-in-1"
+      "id": "recovered-1774169580009-33",
+      "sourcePinId": "fixed-1774167906278-4-out-0",
+      "targetPinId": "fixed-1774167906278-15-in-1"
     },
     {
-      "id": "conn-34-1773487347134889",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-15-1773487347134889-in-2"
+      "id": "recovered-1774169580009-34",
+      "sourcePinId": "fixed-1774167906278-2-out-0",
+      "targetPinId": "fixed-1774167906278-15-in-2"
     },
     {
-      "id": "conn-35-1773487347134889",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-15-1773487347134889-in-3"
+      "id": "recovered-1774169580009-35",
+      "sourcePinId": "fixed-1774167906278-1-out-0",
+      "targetPinId": "fixed-1774167906278-15-in-3"
     },
     {
-      "id": "conn-36-1773487347134889",
-      "sourcePinId": "comp-0-1773487347125639-out-0",
-      "targetPinId": "comp-16-1773487347134889-in-0"
+      "id": "recovered-1774169580009-36",
+      "sourcePinId": "fixed-1774167906278-7-out-0",
+      "targetPinId": "fixed-1774167906278-16-in-0"
     },
     {
-      "id": "conn-37-1773487347134889",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-16-1773487347134889-in-1"
+      "id": "recovered-1774169580009-37",
+      "sourcePinId": "fixed-1774167906278-5-out-0",
+      "targetPinId": "fixed-1774167906278-16-in-1"
     },
     {
-      "id": "conn-38-1773487347134889",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-16-1773487347134889-in-2"
+      "id": "recovered-1774169580009-38",
+      "sourcePinId": "fixed-1774167906278-3-out-0",
+      "targetPinId": "fixed-1774167906278-16-in-2"
     },
     {
-      "id": "conn-39-1773487347134889",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-16-1773487347134889-in-3"
+      "id": "recovered-1774169580009-39",
+      "sourcePinId": "fixed-1774167906274-0-out-0",
+      "targetPinId": "fixed-1774167906278-16-in-3"
     },
     {
-      "id": "conn-40-1773487347134889",
-      "sourcePinId": "comp-0-1773487347125639-out-0",
-      "targetPinId": "comp-17-1773487347134889-in-0"
+      "id": "recovered-1774169580009-40",
+      "sourcePinId": "fixed-1774167906278-6-out-0",
+      "targetPinId": "fixed-1774167906278-17-in-0"
     },
     {
-      "id": "conn-41-1773487347134889",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-17-1773487347134889-in-1"
+      "id": "recovered-1774169580009-41",
+      "sourcePinId": "fixed-1774167906278-5-out-0",
+      "targetPinId": "fixed-1774167906278-17-in-1"
     },
     {
-      "id": "conn-42-1773487347134889",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-17-1773487347134889-in-2"
+      "id": "recovered-1774169580009-42",
+      "sourcePinId": "fixed-1774167906278-3-out-0",
+      "targetPinId": "fixed-1774167906278-17-in-2"
     },
     {
-      "id": "conn-43-1773487347134889",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-17-1773487347134889-in-3"
+      "id": "recovered-1774169580009-43",
+      "sourcePinId": "fixed-1774167906274-0-out-0",
+      "targetPinId": "fixed-1774167906278-17-in-3"
     },
     {
-      "id": "conn-44-1773487347134889",
-      "sourcePinId": "comp-0-1773487347125639-out-0",
-      "targetPinId": "comp-18-1773487347134889-in-0"
+      "id": "recovered-1774169580009-44",
+      "sourcePinId": "fixed-1774167906278-7-out-0",
+      "targetPinId": "fixed-1774167906278-18-in-0"
     },
     {
-      "id": "conn-45-1773487347134889",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-18-1773487347134889-in-1"
+      "id": "recovered-1774169580009-45",
+      "sourcePinId": "fixed-1774167906278-4-out-0",
+      "targetPinId": "fixed-1774167906278-18-in-1"
     },
     {
-      "id": "conn-46-1773487347134889",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-18-1773487347134889-in-2"
+      "id": "recovered-1774169580009-46",
+      "sourcePinId": "fixed-1774167906278-3-out-0",
+      "targetPinId": "fixed-1774167906278-18-in-2"
     },
     {
-      "id": "conn-47-1773487347134889",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-18-1773487347134889-in-3"
+      "id": "recovered-1774169580009-47",
+      "sourcePinId": "fixed-1774167906274-0-out-0",
+      "targetPinId": "fixed-1774167906278-18-in-3"
     },
     {
-      "id": "conn-48-1773487347135891",
-      "sourcePinId": "comp-0-1773487347125639-out-0",
-      "targetPinId": "comp-19-1773487347134889-in-0"
+      "id": "recovered-1774169580009-48",
+      "sourcePinId": "fixed-1774167906278-6-out-0",
+      "targetPinId": "fixed-1774167906278-19-in-0"
     },
     {
-      "id": "conn-49-1773487347135891",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-19-1773487347134889-in-1"
+      "id": "recovered-1774169580009-49",
+      "sourcePinId": "fixed-1774167906278-4-out-0",
+      "targetPinId": "fixed-1774167906278-19-in-1"
     },
     {
-      "id": "conn-50-1773487347135891",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-19-1773487347134889-in-2"
+      "id": "recovered-1774169580009-50",
+      "sourcePinId": "fixed-1774167906278-3-out-0",
+      "targetPinId": "fixed-1774167906278-19-in-2"
     },
     {
-      "id": "conn-51-1773487347135891",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-19-1773487347134889-in-3"
+      "id": "recovered-1774169580009-51",
+      "sourcePinId": "fixed-1774167906274-0-out-0",
+      "targetPinId": "fixed-1774167906278-19-in-3"
     },
     {
-      "id": "conn-52-1773487347135891",
-      "sourcePinId": "comp-0-1773487347125639-out-0",
-      "targetPinId": "comp-20-1773487347135891-in-0"
+      "id": "recovered-1774169580009-52",
+      "sourcePinId": "fixed-1774167906278-7-out-0",
+      "targetPinId": "fixed-1774167906278-20-in-0"
     },
     {
-      "id": "conn-53-1773487347135891",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-20-1773487347135891-in-1"
+      "id": "recovered-1774169580009-53",
+      "sourcePinId": "fixed-1774167906278-5-out-0",
+      "targetPinId": "fixed-1774167906278-20-in-1"
     },
     {
-      "id": "conn-54-1773487347135891",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-20-1773487347135891-in-2"
+      "id": "recovered-1774169580009-54",
+      "sourcePinId": "fixed-1774167906278-2-out-0",
+      "targetPinId": "fixed-1774167906278-20-in-2"
     },
     {
-      "id": "conn-55-1773487347135891",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-20-1773487347135891-in-3"
+      "id": "recovered-1774169580009-55",
+      "sourcePinId": "fixed-1774167906274-0-out-0",
+      "targetPinId": "fixed-1774167906278-20-in-3"
     },
     {
-      "id": "conn-56-1773487347135891",
-      "sourcePinId": "comp-0-1773487347125639-out-0",
-      "targetPinId": "comp-21-1773487347135891-in-0"
+      "id": "recovered-1774169580009-56",
+      "sourcePinId": "fixed-1774167906278-6-out-0",
+      "targetPinId": "fixed-1774167906278-21-in-0"
     },
     {
-      "id": "conn-57-1773487347135891",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-21-1773487347135891-in-1"
+      "id": "recovered-1774169580009-57",
+      "sourcePinId": "fixed-1774167906278-5-out-0",
+      "targetPinId": "fixed-1774167906278-21-in-1"
     },
     {
-      "id": "conn-58-1773487347135891",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-21-1773487347135891-in-2"
+      "id": "recovered-1774169580009-58",
+      "sourcePinId": "fixed-1774167906278-2-out-0",
+      "targetPinId": "fixed-1774167906278-21-in-2"
     },
     {
-      "id": "conn-59-1773487347135891",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-21-1773487347135891-in-3"
+      "id": "recovered-1774169580009-59",
+      "sourcePinId": "fixed-1774167906274-0-out-0",
+      "targetPinId": "fixed-1774167906278-21-in-3"
     },
     {
-      "id": "conn-60-1773487347135891",
-      "sourcePinId": "comp-0-1773487347125639-out-0",
-      "targetPinId": "comp-22-1773487347135891-in-0"
+      "id": "recovered-1774169580009-60",
+      "sourcePinId": "fixed-1774167906278-7-out-0",
+      "targetPinId": "fixed-1774167906278-22-in-0"
     },
     {
-      "id": "conn-61-1773487347135891",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-22-1773487347135891-in-1"
+      "id": "recovered-1774169580009-61",
+      "sourcePinId": "fixed-1774167906278-4-out-0",
+      "targetPinId": "fixed-1774167906278-22-in-1"
     },
     {
-      "id": "conn-62-1773487347135891",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-22-1773487347135891-in-2"
+      "id": "recovered-1774169580009-62",
+      "sourcePinId": "fixed-1774167906278-2-out-0",
+      "targetPinId": "fixed-1774167906278-22-in-2"
     },
     {
-      "id": "conn-63-1773487347135891",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-22-1773487347135891-in-3"
+      "id": "recovered-1774169580009-63",
+      "sourcePinId": "fixed-1774167906274-0-out-0",
+      "targetPinId": "fixed-1774167906278-22-in-3"
     },
     {
-      "id": "conn-64-1773487347135891",
-      "sourcePinId": "comp-0-1773487347125639-out-0",
-      "targetPinId": "comp-23-1773487347135891-in-0"
+      "id": "recovered-1774169580009-64",
+      "sourcePinId": "fixed-1774167906278-6-out-0",
+      "targetPinId": "fixed-1774167906278-23-in-0"
     },
     {
-      "id": "conn-65-1773487347135891",
-      "sourcePinId": "comp-2-1773487347130893-out-0",
-      "targetPinId": "comp-23-1773487347135891-in-1"
+      "id": "recovered-1774169580009-65",
+      "sourcePinId": "fixed-1774167906278-4-out-0",
+      "targetPinId": "fixed-1774167906278-23-in-1"
     },
     {
-      "id": "conn-66-1773487347135891",
-      "sourcePinId": "comp-4-1773487347130893-out-0",
-      "targetPinId": "comp-23-1773487347135891-in-2"
+      "id": "recovered-1774169580009-66",
+      "sourcePinId": "fixed-1774167906278-2-out-0",
+      "targetPinId": "fixed-1774167906278-23-in-2"
     },
     {
-      "id": "conn-67-1773487347135891",
-      "sourcePinId": "comp-6-1773487347130893-out-0",
-      "targetPinId": "comp-23-1773487347135891-in-3"
+      "id": "recovered-1774169580009-67",
+      "sourcePinId": "fixed-1774167906274-0-out-0",
+      "targetPinId": "fixed-1774167906278-23-in-3"
     },
     {
-      "id": "conn-68-1773487347136955",
-      "sourcePinId": "comp-8-1773487347132904-out-0",
-      "targetPinId": "comp-24-1773487347136955-in-0"
+      "id": "recovered-1774169580009-68",
+      "sourcePinId": "fixed-1774167906278-8-out-0",
+      "targetPinId": "fixed-1774167906278-24-in-0"
     },
     {
-      "id": "conn-69-1773487347136955",
-      "sourcePinId": "comp-10-1773487347132904-out-0",
-      "targetPinId": "comp-24-1773487347136955-in-1"
+      "id": "recovered-1774169580009-69",
+      "sourcePinId": "fixed-1774167906278-10-out-0",
+      "targetPinId": "fixed-1774167906278-24-in-1"
     },
     {
-      "id": "conn-70-1773487347136955",
-      "sourcePinId": "comp-11-1773487347133912-out-0",
-      "targetPinId": "comp-24-1773487347136955-in-2"
+      "id": "recovered-1774169580009-70",
+      "sourcePinId": "fixed-1774167906278-11-out-0",
+      "targetPinId": "fixed-1774167906278-24-in-2"
     },
     {
-      "id": "conn-71-1773487347136955",
-      "sourcePinId": "comp-13-1773487347134432-out-0",
-      "targetPinId": "comp-24-1773487347136955-in-3"
+      "id": "recovered-1774169580009-71",
+      "sourcePinId": "fixed-1774167906278-13-out-0",
+      "targetPinId": "fixed-1774167906278-24-in-3"
     },
     {
-      "id": "conn-72-1773487347136955",
-      "sourcePinId": "comp-14-1773487347134432-out-0",
-      "targetPinId": "comp-24-1773487347136955-in-4"
+      "id": "recovered-1774169580011-72",
+      "sourcePinId": "fixed-1774167906278-14-out-0",
+      "targetPinId": "fixed-1774167906278-24-in-4"
     },
     {
-      "id": "conn-73-1773487347136955",
-      "sourcePinId": "comp-15-1773487347134889-out-0",
-      "targetPinId": "comp-24-1773487347136955-in-5"
+      "id": "recovered-1774169580011-73",
+      "sourcePinId": "fixed-1774167906278-15-out-0",
+      "targetPinId": "fixed-1774167906278-24-in-5"
     },
     {
-      "id": "conn-74-1773487347136955",
-      "sourcePinId": "comp-16-1773487347134889-out-0",
-      "targetPinId": "comp-24-1773487347136955-in-6"
+      "id": "recovered-1774169580011-74",
+      "sourcePinId": "fixed-1774167906278-16-out-0",
+      "targetPinId": "fixed-1774167906278-24-in-6"
     },
     {
-      "id": "conn-75-1773487347136955",
-      "sourcePinId": "comp-17-1773487347134889-out-0",
-      "targetPinId": "comp-24-1773487347136955-in-7"
+      "id": "recovered-1774169580011-75",
+      "sourcePinId": "fixed-1774167906278-17-out-0",
+      "targetPinId": "fixed-1774167906278-24-in-7"
     },
     {
-      "id": "conn-76-1773487347136955",
-      "sourcePinId": "comp-18-1773487347134889-out-0",
-      "targetPinId": "comp-24-1773487347136955-in-8"
+      "id": "recovered-1774169580011-76",
+      "sourcePinId": "fixed-1774167906278-18-out-0",
+      "targetPinId": "fixed-1774167906278-24-in-8"
     },
     {
-      "id": "conn-77-1773487347136955",
-      "sourcePinId": "comp-20-1773487347135891-out-0",
-      "targetPinId": "comp-24-1773487347136955-in-9"
+      "id": "recovered-1774169580011-77",
+      "sourcePinId": "fixed-1774167906278-20-out-0",
+      "targetPinId": "fixed-1774167906278-24-in-9"
     },
     {
-      "id": "conn-78-1773487347137952",
-      "sourcePinId": "comp-22-1773487347135891-out-0",
-      "targetPinId": "comp-24-1773487347136955-in-10"
+      "id": "recovered-1774169580011-78",
+      "sourcePinId": "fixed-1774167906278-22-out-0",
+      "targetPinId": "fixed-1774167906278-24-in-10"
     },
     {
-      "id": "conn-79-1773487347137952",
-      "sourcePinId": "comp-23-1773487347135891-out-0",
-      "targetPinId": "comp-24-1773487347136955-in-11"
+      "id": "recovered-1774169580011-79",
+      "sourcePinId": "fixed-1774167906278-23-out-0",
+      "targetPinId": "fixed-1774167906278-24-in-11"
     },
     {
-      "id": "conn-80-1773487347137952",
-      "sourcePinId": "comp-24-1773487347136955-out-0",
-      "targetPinId": "comp-24-1773487347136955-in-0"
+      "id": "recovered-1774169580011-80",
+      "sourcePinId": "fixed-1774167906278-24-out-0",
+      "targetPinId": "fixed-1774167906278-25-in-0"
     },
     {
-      "id": "conn-81-1773487347137952",
-      "sourcePinId": "comp-8-1773487347132904-out-0",
-      "targetPinId": "comp-26-1773487347137952-in-0"
+      "id": "recovered-1774169580011-81",
+      "sourcePinId": "fixed-1774167906278-8-out-0",
+      "targetPinId": "fixed-1774167906278-26-in-0"
     },
     {
-      "id": "conn-82-1773487347137952",
-      "sourcePinId": "comp-9-1773487347132904-out-0",
-      "targetPinId": "comp-26-1773487347137952-in-1"
+      "id": "recovered-1774169580011-82",
+      "sourcePinId": "fixed-1774167906278-9-out-0",
+      "targetPinId": "fixed-1774167906278-26-in-1"
     },
     {
-      "id": "conn-83-1773487347137952",
-      "sourcePinId": "comp-10-1773487347132904-out-0",
-      "targetPinId": "comp-26-1773487347137952-in-2"
+      "id": "recovered-1774169580011-83",
+      "sourcePinId": "fixed-1774167906278-10-out-0",
+      "targetPinId": "fixed-1774167906278-26-in-2"
     },
     {
-      "id": "conn-84-1773487347137952",
-      "sourcePinId": "comp-11-1773487347133912-out-0",
-      "targetPinId": "comp-26-1773487347137952-in-3"
+      "id": "recovered-1774169580011-84",
+      "sourcePinId": "fixed-1774167906278-11-out-0",
+      "targetPinId": "fixed-1774167906278-26-in-3"
     },
     {
-      "id": "conn-85-1773487347137952",
-      "sourcePinId": "comp-12-1773487347133912-out-0",
-      "targetPinId": "comp-26-1773487347137952-in-4"
+      "id": "recovered-1774169580011-85",
+      "sourcePinId": "fixed-1774167906278-12-out-0",
+      "targetPinId": "fixed-1774167906278-26-in-4"
     },
     {
-      "id": "conn-86-1773487347137952",
-      "sourcePinId": "comp-15-1773487347134889-out-0",
-      "targetPinId": "comp-26-1773487347137952-in-5"
+      "id": "recovered-1774169580011-86",
+      "sourcePinId": "fixed-1774167906278-15-out-0",
+      "targetPinId": "fixed-1774167906278-26-in-5"
     },
     {
-      "id": "conn-87-1773487347137952",
-      "sourcePinId": "comp-16-1773487347134889-out-0",
-      "targetPinId": "comp-26-1773487347137952-in-6"
+      "id": "recovered-1774169580011-87",
+      "sourcePinId": "fixed-1774167906278-16-out-0",
+      "targetPinId": "fixed-1774167906278-26-in-6"
     },
     {
-      "id": "conn-88-1773487347137952",
-      "sourcePinId": "comp-17-1773487347134889-out-0",
-      "targetPinId": "comp-26-1773487347137952-in-7"
+      "id": "recovered-1774169580011-88",
+      "sourcePinId": "fixed-1774167906278-17-out-0",
+      "targetPinId": "fixed-1774167906278-26-in-7"
     },
     {
-      "id": "conn-89-1773487347137952",
-      "sourcePinId": "comp-18-1773487347134889-out-0",
-      "targetPinId": "comp-26-1773487347137952-in-8"
+      "id": "recovered-1774169580011-89",
+      "sourcePinId": "fixed-1774167906278-18-out-0",
+      "targetPinId": "fixed-1774167906278-26-in-8"
     },
     {
-      "id": "conn-90-1773487347137952",
-      "sourcePinId": "comp-21-1773487347135891-out-0",
-      "targetPinId": "comp-26-1773487347137952-in-9"
+      "id": "recovered-1774169580011-90",
+      "sourcePinId": "fixed-1774167906278-21-out-0",
+      "targetPinId": "fixed-1774167906278-26-in-9"
     },
     {
-      "id": "conn-91-1773487347137952",
-      "sourcePinId": "comp-26-1773487347137952-out-0",
-      "targetPinId": "comp-26-1773487347137952-in-0"
+      "id": "recovered-1774169580011-91",
+      "sourcePinId": "fixed-1774167906278-26-out-0",
+      "targetPinId": "fixed-1774167906278-27-in-0"
     },
     {
-      "id": "conn-92-1773487347137952",
-      "sourcePinId": "comp-8-1773487347132904-out-0",
-      "targetPinId": "comp-28-1773487347137952-in-0"
+      "id": "recovered-1774169580011-92",
+      "sourcePinId": "fixed-1774167906278-8-out-0",
+      "targetPinId": "fixed-1774167906278-28-in-0"
     },
     {
-      "id": "conn-93-1773487347138698",
-      "sourcePinId": "comp-9-1773487347132904-out-0",
-      "targetPinId": "comp-28-1773487347137952-in-1"
+      "id": "recovered-1774169580011-93",
+      "sourcePinId": "fixed-1774167906278-9-out-0",
+      "targetPinId": "fixed-1774167906278-28-in-1"
     },
     {
-      "id": "conn-94-1773487347138698",
-      "sourcePinId": "comp-11-1773487347133912-out-0",
-      "targetPinId": "comp-28-1773487347137952-in-2"
+      "id": "recovered-1774169580011-94",
+      "sourcePinId": "fixed-1774167906278-11-out-0",
+      "targetPinId": "fixed-1774167906278-28-in-2"
     },
     {
-      "id": "conn-95-1773487347138698",
-      "sourcePinId": "comp-12-1773487347133912-out-0",
-      "targetPinId": "comp-28-1773487347137952-in-3"
+      "id": "recovered-1774169580011-95",
+      "sourcePinId": "fixed-1774167906278-12-out-0",
+      "targetPinId": "fixed-1774167906278-28-in-3"
     },
     {
-      "id": "conn-96-1773487347138698",
-      "sourcePinId": "comp-13-1773487347134432-out-0",
-      "targetPinId": "comp-28-1773487347137952-in-4"
+      "id": "recovered-1774169580011-96",
+      "sourcePinId": "fixed-1774167906278-13-out-0",
+      "targetPinId": "fixed-1774167906278-28-in-4"
     },
     {
-      "id": "conn-97-1773487347138698",
-      "sourcePinId": "comp-14-1773487347134432-out-0",
-      "targetPinId": "comp-28-1773487347137952-in-5"
+      "id": "recovered-1774169580011-97",
+      "sourcePinId": "fixed-1774167906278-14-out-0",
+      "targetPinId": "fixed-1774167906278-28-in-5"
     },
     {
-      "id": "conn-98-1773487347138698",
-      "sourcePinId": "comp-15-1773487347134889-out-0",
-      "targetPinId": "comp-28-1773487347137952-in-6"
+      "id": "recovered-1774169580011-98",
+      "sourcePinId": "fixed-1774167906278-15-out-0",
+      "targetPinId": "fixed-1774167906278-28-in-6"
     },
     {
-      "id": "conn-99-1773487347138698",
-      "sourcePinId": "comp-16-1773487347134889-out-0",
-      "targetPinId": "comp-28-1773487347137952-in-7"
+      "id": "recovered-1774169580011-99",
+      "sourcePinId": "fixed-1774167906278-16-out-0",
+      "targetPinId": "fixed-1774167906278-28-in-7"
     },
     {
-      "id": "conn-100-1773487347138698",
-      "sourcePinId": "comp-17-1773487347134889-out-0",
-      "targetPinId": "comp-28-1773487347137952-in-8"
+      "id": "recovered-1774169580011-100",
+      "sourcePinId": "fixed-1774167906278-17-out-0",
+      "targetPinId": "fixed-1774167906278-28-in-8"
     },
     {
-      "id": "conn-101-1773487347138698",
-      "sourcePinId": "comp-18-1773487347134889-out-0",
-      "targetPinId": "comp-28-1773487347137952-in-9"
+      "id": "recovered-1774169580011-101",
+      "sourcePinId": "fixed-1774167906278-18-out-0",
+      "targetPinId": "fixed-1774167906278-28-in-9"
     },
     {
-      "id": "conn-102-1773487347138698",
-      "sourcePinId": "comp-19-1773487347134889-out-0",
-      "targetPinId": "comp-28-1773487347137952-in-10"
+      "id": "recovered-1774169580011-102",
+      "sourcePinId": "fixed-1774167906278-19-out-0",
+      "targetPinId": "fixed-1774167906278-28-in-10"
     },
     {
-      "id": "conn-103-1773487347138698",
-      "sourcePinId": "comp-21-1773487347135891-out-0",
-      "targetPinId": "comp-28-1773487347137952-in-11"
+      "id": "recovered-1774169580011-103",
+      "sourcePinId": "fixed-1774167906278-21-out-0",
+      "targetPinId": "fixed-1774167906278-28-in-11"
     },
     {
-      "id": "conn-104-1773487347138698",
-      "sourcePinId": "comp-28-1773487347137952-out-0",
-      "targetPinId": "comp-28-1773487347137952-in-0"
+      "id": "recovered-1774169580011-104",
+      "sourcePinId": "fixed-1774167906278-28-out-0",
+      "targetPinId": "fixed-1774167906278-29-in-0"
     },
     {
-      "id": "conn-105-1773487347138698",
-      "sourcePinId": "comp-8-1773487347132904-out-0",
-      "targetPinId": "comp-30-1773487347138698-in-0"
+      "id": "recovered-1774169580011-105",
+      "sourcePinId": "fixed-1774167906278-8-out-0",
+      "targetPinId": "fixed-1774167906278-30-in-0"
     },
     {
-      "id": "conn-106-1773487347138698",
-      "sourcePinId": "comp-10-1773487347132904-out-0",
-      "targetPinId": "comp-30-1773487347138698-in-1"
+      "id": "recovered-1774169580011-106",
+      "sourcePinId": "fixed-1774167906278-10-out-0",
+      "targetPinId": "fixed-1774167906278-30-in-1"
     },
     {
-      "id": "conn-107-1773487347138698",
-      "sourcePinId": "comp-11-1773487347133912-out-0",
-      "targetPinId": "comp-30-1773487347138698-in-2"
+      "id": "recovered-1774169580011-107",
+      "sourcePinId": "fixed-1774167906278-11-out-0",
+      "targetPinId": "fixed-1774167906278-30-in-2"
     },
     {
-      "id": "conn-108-1773487347138698",
-      "sourcePinId": "comp-13-1773487347134432-out-0",
-      "targetPinId": "comp-30-1773487347138698-in-3"
+      "id": "recovered-1774169580011-108",
+      "sourcePinId": "fixed-1774167906278-13-out-0",
+      "targetPinId": "fixed-1774167906278-30-in-3"
     },
     {
-      "id": "conn-109-1773487347138698",
-      "sourcePinId": "comp-14-1773487347134432-out-0",
-      "targetPinId": "comp-30-1773487347138698-in-4"
+      "id": "recovered-1774169580011-109",
+      "sourcePinId": "fixed-1774167906278-14-out-0",
+      "targetPinId": "fixed-1774167906278-30-in-4"
     },
     {
-      "id": "conn-110-1773487347138698",
-      "sourcePinId": "comp-16-1773487347134889-out-0",
-      "targetPinId": "comp-30-1773487347138698-in-5"
+      "id": "recovered-1774169580011-110",
+      "sourcePinId": "fixed-1774167906278-16-out-0",
+      "targetPinId": "fixed-1774167906278-30-in-5"
     },
     {
-      "id": "conn-111-1773487347138698",
-      "sourcePinId": "comp-17-1773487347134889-out-0",
-      "targetPinId": "comp-30-1773487347138698-in-6"
+      "id": "recovered-1774169580011-111",
+      "sourcePinId": "fixed-1774167906278-17-out-0",
+      "targetPinId": "fixed-1774167906278-30-in-6"
     },
     {
-      "id": "conn-112-1773487347138698",
-      "sourcePinId": "comp-19-1773487347134889-out-0",
-      "targetPinId": "comp-30-1773487347138698-in-7"
+      "id": "recovered-1774169580011-112",
+      "sourcePinId": "fixed-1774167906278-19-out-0",
+      "targetPinId": "fixed-1774167906278-30-in-7"
     },
     {
-      "id": "conn-113-1773487347138698",
-      "sourcePinId": "comp-20-1773487347135891-out-0",
-      "targetPinId": "comp-30-1773487347138698-in-8"
+      "id": "recovered-1774169580011-113",
+      "sourcePinId": "fixed-1774167906278-20-out-0",
+      "targetPinId": "fixed-1774167906278-30-in-8"
     },
     {
-      "id": "conn-114-1773487347138698",
-      "sourcePinId": "comp-21-1773487347135891-out-0",
-      "targetPinId": "comp-30-1773487347138698-in-9"
+      "id": "recovered-1774169580011-114",
+      "sourcePinId": "fixed-1774167906278-21-out-0",
+      "targetPinId": "fixed-1774167906278-30-in-9"
     },
     {
-      "id": "conn-115-1773487347138698",
-      "sourcePinId": "comp-22-1773487347135891-out-0",
-      "targetPinId": "comp-30-1773487347138698-in-10"
+      "id": "recovered-1774169580011-115",
+      "sourcePinId": "fixed-1774167906278-22-out-0",
+      "targetPinId": "fixed-1774167906278-30-in-10"
     },
     {
-      "id": "conn-116-1773487347138698",
-      "sourcePinId": "comp-30-1773487347138698-out-0",
-      "targetPinId": "comp-30-1773487347138698-in-0"
+      "id": "recovered-1774169580011-116",
+      "sourcePinId": "fixed-1774167906278-30-out-0",
+      "targetPinId": "fixed-1774167906278-31-in-0"
     },
     {
-      "id": "conn-117-1773487347138698",
-      "sourcePinId": "comp-8-1773487347132904-out-0",
-      "targetPinId": "comp-32-1773487347138698-in-0"
+      "id": "recovered-1774169580011-117",
+      "sourcePinId": "fixed-1774167906278-8-out-0",
+      "targetPinId": "fixed-1774167906278-32-in-0"
     },
     {
-      "id": "conn-118-1773487347138698",
-      "sourcePinId": "comp-10-1773487347132904-out-0",
-      "targetPinId": "comp-32-1773487347138698-in-1"
+      "id": "recovered-1774169580011-118",
+      "sourcePinId": "fixed-1774167906278-10-out-0",
+      "targetPinId": "fixed-1774167906278-32-in-1"
     },
     {
-      "id": "conn-119-1773487347138698",
-      "sourcePinId": "comp-14-1773487347134432-out-0",
-      "targetPinId": "comp-32-1773487347138698-in-2"
+      "id": "recovered-1774169580011-119",
+      "sourcePinId": "fixed-1774167906278-14-out-0",
+      "targetPinId": "fixed-1774167906278-32-in-2"
     },
     {
-      "id": "conn-120-1773487347138698",
-      "sourcePinId": "comp-16-1773487347134889-out-0",
-      "targetPinId": "comp-32-1773487347138698-in-3"
+      "id": "recovered-1774169580011-120",
+      "sourcePinId": "fixed-1774167906278-16-out-0",
+      "targetPinId": "fixed-1774167906278-32-in-3"
     },
     {
-      "id": "conn-121-1773487347138698",
-      "sourcePinId": "comp-18-1773487347134889-out-0",
-      "targetPinId": "comp-32-1773487347138698-in-4"
+      "id": "recovered-1774169580011-121",
+      "sourcePinId": "fixed-1774167906278-18-out-0",
+      "targetPinId": "fixed-1774167906278-32-in-4"
     },
     {
-      "id": "conn-122-1773487347138698",
-      "sourcePinId": "comp-19-1773487347134889-out-0",
-      "targetPinId": "comp-32-1773487347138698-in-5"
+      "id": "recovered-1774169580011-122",
+      "sourcePinId": "fixed-1774167906278-19-out-0",
+      "targetPinId": "fixed-1774167906278-32-in-5"
     },
     {
-      "id": "conn-123-1773487347138698",
-      "sourcePinId": "comp-20-1773487347135891-out-0",
-      "targetPinId": "comp-32-1773487347138698-in-6"
+      "id": "recovered-1774169580011-123",
+      "sourcePinId": "fixed-1774167906278-20-out-0",
+      "targetPinId": "fixed-1774167906278-32-in-6"
     },
     {
-      "id": "conn-124-1773487347139834",
-      "sourcePinId": "comp-21-1773487347135891-out-0",
-      "targetPinId": "comp-32-1773487347138698-in-7"
+      "id": "recovered-1774169580011-124",
+      "sourcePinId": "fixed-1774167906278-21-out-0",
+      "targetPinId": "fixed-1774167906278-32-in-7"
     },
     {
-      "id": "conn-125-1773487347139834",
-      "sourcePinId": "comp-22-1773487347135891-out-0",
-      "targetPinId": "comp-32-1773487347138698-in-8"
+      "id": "recovered-1774169580011-125",
+      "sourcePinId": "fixed-1774167906278-22-out-0",
+      "targetPinId": "fixed-1774167906278-32-in-8"
     },
     {
-      "id": "conn-126-1773487347139834",
-      "sourcePinId": "comp-23-1773487347135891-out-0",
-      "targetPinId": "comp-32-1773487347138698-in-9"
+      "id": "recovered-1774169580011-126",
+      "sourcePinId": "fixed-1774167906278-23-out-0",
+      "targetPinId": "fixed-1774167906278-32-in-9"
     },
     {
-      "id": "conn-127-1773487347139834",
-      "sourcePinId": "comp-32-1773487347138698-out-0",
-      "targetPinId": "comp-32-1773487347138698-in-0"
+      "id": "recovered-1774169580011-127",
+      "sourcePinId": "fixed-1774167906278-32-out-0",
+      "targetPinId": "fixed-1774167906278-33-in-0"
     },
     {
-      "id": "conn-128-1773487347139834",
-      "sourcePinId": "comp-8-1773487347132904-out-0",
-      "targetPinId": "comp-34-1773487347139834-in-0"
+      "id": "recovered-1774169580011-128",
+      "sourcePinId": "fixed-1774167906278-8-out-0",
+      "targetPinId": "fixed-1774167906278-34-in-0"
     },
     {
-      "id": "conn-129-1773487347139834",
-      "sourcePinId": "comp-12-1773487347133912-out-0",
-      "targetPinId": "comp-34-1773487347139834-in-1"
+      "id": "recovered-1774169580011-129",
+      "sourcePinId": "fixed-1774167906278-12-out-0",
+      "targetPinId": "fixed-1774167906278-34-in-1"
     },
     {
-      "id": "conn-130-1773487347139834",
-      "sourcePinId": "comp-13-1773487347134432-out-0",
-      "targetPinId": "comp-34-1773487347139834-in-2"
+      "id": "recovered-1774169580011-130",
+      "sourcePinId": "fixed-1774167906278-13-out-0",
+      "targetPinId": "fixed-1774167906278-34-in-2"
     },
     {
-      "id": "conn-131-1773487347139834",
-      "sourcePinId": "comp-14-1773487347134432-out-0",
-      "targetPinId": "comp-34-1773487347139834-in-3"
+      "id": "recovered-1774169580011-131",
+      "sourcePinId": "fixed-1774167906278-14-out-0",
+      "targetPinId": "fixed-1774167906278-34-in-3"
     },
     {
-      "id": "conn-132-1773487347139834",
-      "sourcePinId": "comp-16-1773487347134889-out-0",
-      "targetPinId": "comp-34-1773487347139834-in-4"
+      "id": "recovered-1774169580011-132",
+      "sourcePinId": "fixed-1774167906278-16-out-0",
+      "targetPinId": "fixed-1774167906278-34-in-4"
     },
     {
-      "id": "conn-133-1773487347139834",
-      "sourcePinId": "comp-17-1773487347134889-out-0",
-      "targetPinId": "comp-34-1773487347139834-in-5"
+      "id": "recovered-1774169580011-133",
+      "sourcePinId": "fixed-1774167906278-17-out-0",
+      "targetPinId": "fixed-1774167906278-34-in-5"
     },
     {
-      "id": "conn-134-1773487347139834",
-      "sourcePinId": "comp-18-1773487347134889-out-0",
-      "targetPinId": "comp-34-1773487347139834-in-6"
+      "id": "recovered-1774169580011-134",
+      "sourcePinId": "fixed-1774167906278-18-out-0",
+      "targetPinId": "fixed-1774167906278-34-in-6"
     },
     {
-      "id": "conn-135-1773487347139834",
-      "sourcePinId": "comp-19-1773487347134889-out-0",
-      "targetPinId": "comp-34-1773487347139834-in-7"
+      "id": "recovered-1774169580011-135",
+      "sourcePinId": "fixed-1774167906278-19-out-0",
+      "targetPinId": "fixed-1774167906278-34-in-7"
     },
     {
-      "id": "conn-136-1773487347139834",
-      "sourcePinId": "comp-20-1773487347135891-out-0",
-      "targetPinId": "comp-34-1773487347139834-in-8"
+      "id": "recovered-1774169580011-136",
+      "sourcePinId": "fixed-1774167906278-20-out-0",
+      "targetPinId": "fixed-1774167906278-34-in-8"
     },
     {
-      "id": "conn-137-1773487347139834",
-      "sourcePinId": "comp-22-1773487347135891-out-0",
-      "targetPinId": "comp-34-1773487347139834-in-9"
+      "id": "recovered-1774169580011-137",
+      "sourcePinId": "fixed-1774167906278-22-out-0",
+      "targetPinId": "fixed-1774167906278-34-in-9"
     },
     {
-      "id": "conn-138-1773487347139834",
-      "sourcePinId": "comp-23-1773487347135891-out-0",
-      "targetPinId": "comp-34-1773487347139834-in-10"
+      "id": "recovered-1774169580011-138",
+      "sourcePinId": "fixed-1774167906278-23-out-0",
+      "targetPinId": "fixed-1774167906278-34-in-10"
     },
     {
-      "id": "conn-139-1773487347139834",
-      "sourcePinId": "comp-34-1773487347139834-out-0",
-      "targetPinId": "comp-34-1773487347139834-in-0"
+      "id": "recovered-1774169580011-139",
+      "sourcePinId": "fixed-1774167906278-34-out-0",
+      "targetPinId": "fixed-1774167906278-35-in-0"
     },
     {
-      "id": "conn-140-1773487347139834",
-      "sourcePinId": "comp-10-1773487347132904-out-0",
-      "targetPinId": "comp-36-1773487347139834-in-0"
+      "id": "recovered-1774169580011-140",
+      "sourcePinId": "fixed-1774167906278-10-out-0",
+      "targetPinId": "fixed-1774167906278-36-in-0"
     },
     {
-      "id": "conn-141-1773487347139834",
-      "sourcePinId": "comp-11-1773487347133912-out-0",
-      "targetPinId": "comp-36-1773487347139834-in-1"
+      "id": "recovered-1774169580011-141",
+      "sourcePinId": "fixed-1774167906278-11-out-0",
+      "targetPinId": "fixed-1774167906278-36-in-1"
     },
     {
-      "id": "conn-142-1773487347139834",
-      "sourcePinId": "comp-12-1773487347133912-out-0",
-      "targetPinId": "comp-36-1773487347139834-in-2"
+      "id": "recovered-1774169580011-142",
+      "sourcePinId": "fixed-1774167906278-12-out-0",
+      "targetPinId": "fixed-1774167906278-36-in-2"
     },
     {
-      "id": "conn-143-1773487347139834",
-      "sourcePinId": "comp-13-1773487347134432-out-0",
-      "targetPinId": "comp-36-1773487347139834-in-3"
+      "id": "recovered-1774169580011-143",
+      "sourcePinId": "fixed-1774167906278-13-out-0",
+      "targetPinId": "fixed-1774167906278-36-in-3"
     },
     {
-      "id": "conn-144-1773487347139834",
-      "sourcePinId": "comp-14-1773487347134432-out-0",
-      "targetPinId": "comp-36-1773487347139834-in-4"
+      "id": "recovered-1774169580011-144",
+      "sourcePinId": "fixed-1774167906278-14-out-0",
+      "targetPinId": "fixed-1774167906278-36-in-4"
     },
     {
-      "id": "conn-145-1773487347139834",
-      "sourcePinId": "comp-16-1773487347134889-out-0",
-      "targetPinId": "comp-36-1773487347139834-in-5"
+      "id": "recovered-1774169580011-145",
+      "sourcePinId": "fixed-1774167906278-16-out-0",
+      "targetPinId": "fixed-1774167906278-36-in-5"
     },
     {
-      "id": "conn-146-1773487347139834",
-      "sourcePinId": "comp-17-1773487347134889-out-0",
-      "targetPinId": "comp-36-1773487347139834-in-6"
+      "id": "recovered-1774169580011-146",
+      "sourcePinId": "fixed-1774167906278-17-out-0",
+      "targetPinId": "fixed-1774167906278-36-in-6"
     },
     {
-      "id": "conn-147-1773487347139834",
-      "sourcePinId": "comp-18-1773487347134889-out-0",
-      "targetPinId": "comp-36-1773487347139834-in-7"
+      "id": "recovered-1774169580011-147",
+      "sourcePinId": "fixed-1774167906278-18-out-0",
+      "targetPinId": "fixed-1774167906278-36-in-7"
     },
     {
-      "id": "conn-148-1773487347139834",
-      "sourcePinId": "comp-19-1773487347134889-out-0",
-      "targetPinId": "comp-36-1773487347139834-in-8"
+      "id": "recovered-1774169580011-148",
+      "sourcePinId": "fixed-1774167906278-19-out-0",
+      "targetPinId": "fixed-1774167906278-36-in-8"
     },
     {
-      "id": "conn-149-1773487347139834",
-      "sourcePinId": "comp-21-1773487347135891-out-0",
-      "targetPinId": "comp-36-1773487347139834-in-9"
+      "id": "recovered-1774169580011-149",
+      "sourcePinId": "fixed-1774167906278-21-out-0",
+      "targetPinId": "fixed-1774167906278-36-in-9"
     },
     {
-      "id": "conn-150-1773487347139834",
-      "sourcePinId": "comp-22-1773487347135891-out-0",
-      "targetPinId": "comp-36-1773487347139834-in-10"
+      "id": "recovered-1774169580011-150",
+      "sourcePinId": "fixed-1774167906278-22-out-0",
+      "targetPinId": "fixed-1774167906278-36-in-10"
     },
     {
-      "id": "conn-151-1773487347139834",
-      "sourcePinId": "comp-23-1773487347135891-out-0",
-      "targetPinId": "comp-36-1773487347139834-in-11"
+      "id": "recovered-1774169580011-151",
+      "sourcePinId": "fixed-1774167906278-23-out-0",
+      "targetPinId": "fixed-1774167906278-36-in-11"
     },
     {
-      "id": "conn-152-1773487347139834",
-      "sourcePinId": "comp-36-1773487347139834-out-0",
-      "targetPinId": "comp-36-1773487347139834-in-0"
+      "id": "recovered-1774169580011-152",
+      "sourcePinId": "fixed-1774167906278-36-out-0",
+      "targetPinId": "fixed-1774167906278-37-in-0"
     }
   ],
   "inputPorts": [
-    "comp-0-1773487347125639-out-0",
-    "comp-2-1773487347130893-out-0",
-    "comp-4-1773487347130893-out-0",
-    "comp-6-1773487347130893-out-0"
+    "fixed-1774167906274-0-out-0",
+    "fixed-1774167906278-2-out-0",
+    "fixed-1774167906278-4-out-0",
+    "fixed-1774167906278-6-out-0"
   ],
   "inputLabels": [
     "8",
@@ -2326,13 +2326,13 @@
     "1"
   ],
   "outputPorts": [
-    "comp-24-1773487347136955-in-0",
-    "comp-26-1773487347137952-in-0",
-    "comp-28-1773487347137952-in-0",
-    "comp-30-1773487347138698-in-0",
-    "comp-32-1773487347138698-in-0",
-    "comp-34-1773487347139834-in-0",
-    "comp-36-1773487347139834-in-0"
+    "fixed-1774167906278-25-in-0",
+    "fixed-1774167906278-27-in-0",
+    "fixed-1774167906278-29-in-0",
+    "fixed-1774167906278-31-in-0",
+    "fixed-1774167906278-33-in-0",
+    "fixed-1774167906278-35-in-0",
+    "fixed-1774167906278-37-in-0"
   ],
   "outputLabels": [
     "A",

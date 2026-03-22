@@ -2,7 +2,7 @@
   "components": [
     {
       "id": "f62e826a-0f05-4c3c-a6ec-84cbddaf2a1f",
-      "type": 12,
+      "type": 14,
       "position_dx": 780,
       "position_dy": 1700,
       "inputs": [],
@@ -16,11 +16,11 @@
         }
       ],
       "isPressed": false,
-      "label": "Label"
+      "label": "Button 1"
     },
     {
       "id": "7927635e-7957-4b8a-abea-952ad04b2d74",
-      "type": 12,
+      "type": 14,
       "position_dx": 780,
       "position_dy": 1800,
       "inputs": [],
@@ -34,11 +34,11 @@
         }
       ],
       "isPressed": false,
-      "label": "Label"
+      "label": "Button 2"
     },
     {
       "id": "e736e5be-2189-4a24-912a-d1f46256c9e6",
-      "type": 12,
+      "type": 14,
       "position_dx": 780,
       "position_dy": 1900,
       "inputs": [],
@@ -52,11 +52,11 @@
         }
       ],
       "isPressed": false,
-      "label": "Label"
+      "label": "Button 3"
     },
     {
       "id": "0fc10e80-4692-42d3-a870-9518b145272b",
-      "type": 12,
+      "type": 14,
       "position_dx": 780,
       "position_dy": 2000,
       "inputs": [],
@@ -70,22 +70,12 @@
         }
       ],
       "isPressed": false,
-      "label": "Label"
+      "label": "Button 4"
     }
   ],
   "connections": [],
-  "inputPorts": [
-    "f62e826a-0f05-4c3c-a6ec-84cbddaf2a1f-out-0",
-    "7927635e-7957-4b8a-abea-952ad04b2d74-out-0",
-    "e736e5be-2189-4a24-912a-d1f46256c9e6-out-0",
-    "0fc10e80-4692-42d3-a870-9518b145272b-out-0"
-  ],
-  "inputLabels": [
-    "Label",
-    "Label",
-    "Label",
-    "Label"
-  ],
+  "inputPorts": [],
+  "inputLabels": [],
   "outputPorts": [],
   "outputLabels": []
 }
