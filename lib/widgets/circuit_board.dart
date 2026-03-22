@@ -43,6 +43,14 @@ class MoveIntent extends Intent {
   const MoveIntent(this.delta);
 }
 
+class UndoIntent extends Intent {
+  const UndoIntent();
+}
+
+class RedoIntent extends Intent {
+  const RedoIntent();
+}
+
 class _CircuitBoardState extends State<CircuitBoard> {
   final TransformationController _transformController =
       TransformationController();
@@ -114,6 +122,15 @@ class _CircuitBoardState extends State<CircuitBoard> {
         const SingleActivator(LogicalKeyboardKey.arrowRight): const MoveIntent(
           Offset(20, 0),
         ),
+        const SingleActivator(LogicalKeyboardKey.keyZ, control: true):
+            const UndoIntent(),
+        const SingleActivator(LogicalKeyboardKey.keyY, control: true):
+            const RedoIntent(),
+        const SingleActivator(
+          LogicalKeyboardKey.keyZ,
+          control: true,
+          shift: true,
+        ): const RedoIntent(),
       },
       actions: <Type, Action<Intent>>{
         DeleteIntent: DeleteComponentAction(provider),
@@ -127,6 +144,18 @@ class _CircuitBoardState extends State<CircuitBoard> {
         ),
         CancelSelectionIntent: CancelSelectionAction(provider),
         MoveIntent: MoveComponentAction(provider),
+        UndoIntent: CallbackAction<UndoIntent>(
+          onInvoke: (intent) {
+            provider.undo();
+            return null;
+          },
+        ),
+        RedoIntent: CallbackAction<RedoIntent>(
+          onInvoke: (intent) {
+            provider.redo();
+            return null;
+          },
+        ),
       },
       child: DragTarget<Object>(
         onAcceptWithDetails: (details) {
@@ -164,6 +193,7 @@ class _CircuitBoardState extends State<CircuitBoard> {
                     );
                   },
                   onTap: () {
+                    _focusNode.requestFocus();
                     provider.clearSelection();
                   },
                   child: Container(

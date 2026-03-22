@@ -122,6 +122,12 @@ class ComponentWidget extends StatelessWidget {
                               ).refresh();
                             }
                           : null,
+                      onPanStart: (details) {
+                        Provider.of<CircuitProvider>(
+                          context,
+                          listen: false,
+                        ).saveCheckpoint();
+                      },
                       onPanUpdate:
                           (component is MarkdownComponent &&
                               (component as MarkdownComponent).isEditing)

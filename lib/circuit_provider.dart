@@ -24,6 +24,39 @@ extension Vec2ToOffset on Vec2 {
   Offset toOffset() => Offset(dx, dy);
 }
 
+/// Helper class to manage the undo/redo stack using JSON snapshots.
+class CircuitHistory {
+  final List<String> undoStack = [];
+  final List<String> redoStack = [];
+  final int maxSteps = 50;
+
+  void push(String snapshot) {
+    if (undoStack.isNotEmpty && undoStack.last == snapshot) return;
+    undoStack.add(snapshot);
+    if (undoStack.length > maxSteps) {
+      undoStack.removeAt(0);
+    }
+    redoStack.clear();
+  }
+
+  String? undo(String currentSnapshot) {
+    if (undoStack.isEmpty) return null;
+    redoStack.add(currentSnapshot);
+    return undoStack.removeLast();
+  }
+
+  String? redo(String currentSnapshot) {
+    if (redoStack.isEmpty) return null;
+    undoStack.add(currentSnapshot);
+    return redoStack.removeLast();
+  }
+
+  void clear() {
+    undoStack.clear();
+    redoStack.clear();
+  }
+}
+
 class CircuitProvider extends ChangeNotifier {
   List<LogicComponent> components = [];
   List<Connection> connections = [];
@@ -32,6 +65,12 @@ class CircuitProvider extends ChangeNotifier {
   String circuitSessionId = const Uuid().v4();
   String? currentFilePath;
   String get pathSeparator => FileOps.pathSeparator;
+
+  final CircuitHistory _history = CircuitHistory();
+  bool _isApplyingHistory = false;
+
+  bool get canUndo => _history.undoStack.isNotEmpty;
+  bool get canRedo => _history.redoStack.isNotEmpty;
 
   bool get hasUnpackedComponents =>
       components.any((c) => c is IntegratedCircuit && c.isUnpacked);
@@ -132,14 +171,61 @@ class CircuitProvider extends ChangeNotifier {
     return null;
   }
 
-  // --- Actions ---
+  // --- History Management ---
+
+  void saveCheckpoint() {
+    if (_isApplyingHistory) return;
+    final snapshot = _createSnapshot();
+    _history.push(snapshot);
+  }
+
+  String _createSnapshot() {
+    final map = {
+      'components': components.map((c) => c.toJson()).toList(),
+      'connections': connections.map((c) => c.toJson()).toList(),
+    };
+    return jsonEncode(map);
+  }
+
+  void undo() {
+    if (!canUndo) return;
+    final current = _createSnapshot();
+    final previous = _history.undo(current);
+    if (previous != null) {
+      _applySnapshot(previous);
+    }
+  }
+
+  void redo() {
+    if (!canRedo) return;
+    final current = _createSnapshot();
+    final next = _history.redo(current);
+    if (next != null) {
+      _applySnapshot(next);
+    }
+  }
+
+  void _applySnapshot(String snapshot) {
+    _isApplyingHistory = true;
+    try {
+      final map = jsonDecode(snapshot) as Map<String, dynamic>;
+      applyCircuitData(map, clearCanvas: true);
+    } finally {
+      _isApplyingHistory = false;
+      notifyListeners();
+    }
+  }
+
+  // -- Actions ---
 
   void addComponent(LogicComponent component) {
+    saveCheckpoint();
     components.add(component);
     notifyListeners();
   }
 
   void removeComponent(String id) {
+    saveCheckpoint();
     // If it's part of an unpacked IC, remove it from that IC too
     final parent = findParentIC(id);
     if (parent != null) {
@@ -170,6 +256,7 @@ class CircuitProvider extends ChangeNotifier {
   }
 
   void addConnection(String sourcePinId, String targetPinId) {
+    saveCheckpoint();
     connections.removeWhere((c) => c.targetPinId == targetPinId);
 
     connections.add(
@@ -183,6 +270,7 @@ class CircuitProvider extends ChangeNotifier {
   }
 
   void removeConnection(String connectionId) {
+    saveCheckpoint();
     _removeConnectionInternal(connectionId);
     notifyListeners();
   }
@@ -244,6 +332,8 @@ class CircuitProvider extends ChangeNotifier {
 
   void moveSelectedComponents(Offset delta) {
     if (selectedComponentIds.isEmpty) return;
+    // We don't save checkpoint here because this is called 60 times a second during drag.
+    // The UI (CircuitBoard) should call saveCheckpoint() BEFORE starting a drag.
     for (var c in components) {
       if (selectedComponentIds.contains(c.id)) {
         c.position += delta.toVec2();
@@ -253,6 +343,7 @@ class CircuitProvider extends ChangeNotifier {
   }
 
   void updateComponentPosition(String id, Offset delta) {
+    // Note: Called during drag. Checkpoints should be handled by the drag start/end events if possible.
     try {
       var comp = components.firstWhere((c) => c.id == id);
       comp.position += delta.toVec2();
@@ -264,6 +355,7 @@ class CircuitProvider extends ChangeNotifier {
 
   void deleteSelectedComponents() {
     if (selectedComponentIds.isEmpty) return;
+    saveCheckpoint();
 
     // Create a copy to iterate safely
     final idsToRemove = Set<String>.from(selectedComponentIds);
@@ -276,6 +368,7 @@ class CircuitProvider extends ChangeNotifier {
   }
 
   void repackSelectedComponents() {
+    saveCheckpoint();
     // 0. Check if any selected component is a child of an unpacked IC
     for (var id in selectedComponentIds) {
       final parent = findParentIC(id);
@@ -340,16 +433,21 @@ class CircuitProvider extends ChangeNotifier {
   }
 
   void clearCircuit() {
+    saveCheckpoint();
     components.clear();
     connections.clear();
     selectedComponentIds.clear();
     currentFilePath = null;
     circuitSessionId = const Uuid().v4();
+    _history.clear(); // Clearing the board usually resets history too? 
+    // Actually, maybe not, maybe we should be able to UNDO a clear!
+    // But since it's a "New File" operation, let's clear it for now.
     notifyListeners();
   }
 
   void alignSelectedComponents(String axis) {
     if (selectedComponentIds.length < 2) return;
+    saveCheckpoint();
 
     List<LogicComponent> selected = components
         .where((c) => selectedComponentIds.contains(c.id))
@@ -577,6 +675,7 @@ class CircuitProvider extends ChangeNotifier {
   }
 
   void unpackIntegratedCircuit(String id) {
+    saveCheckpoint();
     final index = components.indexWhere((c) => c.id == id);
     if (index == -1) return;
 
@@ -626,6 +725,7 @@ class CircuitProvider extends ChangeNotifier {
   }
 
   void repackExistingIC(String id) {
+    saveCheckpoint();
     final index = components.indexWhere((c) => c.id == id);
     if (index == -1) return;
 
