@@ -59,6 +59,10 @@ class PasteIntent extends Intent {
   const PasteIntent();
 }
 
+class CutIntent extends Intent {
+  const CutIntent();
+}
+
 class _CircuitBoardState extends State<CircuitBoard> {
   final TransformationController _transformController =
       TransformationController();
@@ -143,6 +147,8 @@ class _CircuitBoardState extends State<CircuitBoard> {
             const CopyIntent(),
         const SingleActivator(LogicalKeyboardKey.keyV, control: true):
             const PasteIntent(),
+        const SingleActivator(LogicalKeyboardKey.keyX, control: true):
+            const CutIntent(),
       },
       actions: <Type, Action<Intent>>{
         DeleteIntent: DeleteComponentAction(provider),
@@ -170,6 +176,7 @@ class _CircuitBoardState extends State<CircuitBoard> {
         ),
         CopyIntent: CopyComponentAction(provider),
         PasteIntent: PasteComponentAction(provider),
+        CutIntent: CutComponentAction(provider),
       },
       child: DragTarget<Object>(
         onAcceptWithDetails: (details) {
@@ -307,6 +314,11 @@ class _CircuitBoardState extends State<CircuitBoard> {
                               tooltip: "Copy Selection",
                               onPressed: () =>
                                   provider.copySelectedComponents(),
+                            ),
+                            IconButton(
+                              icon: const Icon(Icons.cut),
+                              tooltip: "Cut Selection",
+                              onPressed: () => provider.cutSelectedComponents(),
                             ),
                             IconButton(
                               icon: const Icon(Icons.delete, color: Colors.red),
@@ -665,6 +677,16 @@ class PasteComponentAction extends CircuitAction<PasteIntent> {
   @override
   Object? invoke(PasteIntent intent) {
     provider.pasteComponents();
+    return null;
+  }
+}
+
+class CutComponentAction extends CircuitAction<CutIntent> {
+  final CircuitProvider provider;
+  CutComponentAction(this.provider);
+  @override
+  Object? invoke(CutIntent intent) {
+    provider.cutSelectedComponents();
     return null;
   }
 }

@@ -80,6 +80,7 @@ Modularize your designs by creating custom **Integrated Circuits (ICs)**.
 | `Arrows` | Move Selected Items (20px steps) |
 | `Del / Backspace` | Delete Selected Items |
 | `Ctrl + C` | Copy Selected Items |
+| `Ctrl + X` | Cut Selected Items |
 | `Ctrl + V` | Paste Items from Clipboard |
 
 ---

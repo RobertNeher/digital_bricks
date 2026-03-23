@@ -517,6 +517,13 @@ class CircuitProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  void cutSelectedComponents() {
+    if (selectedComponentIds.isEmpty) return;
+    saveCheckpoint();
+    copySelectedComponents();
+    deleteSelectedComponents();
+  }
+
   void pasteComponents() {
     if (_clipboard == null) return;
     saveCheckpoint();
@@ -582,6 +589,14 @@ class CircuitProvider extends ChangeNotifier {
           );
         }
       }
+
+      // 4. Update the clipboard for the next paste by incrementing the offset
+      // This ensures subsequent pastes don't overlap exactly.
+      for (var j in compsJson) {
+        j['position_dx'] = (j['position_dx'] as num).toDouble() + 40.0;
+        j['position_dy'] = (j['position_dy'] as num).toDouble() + 40.0;
+      }
+      _clipboard = jsonEncode(data);
 
       notifyListeners();
     } catch (e) {
