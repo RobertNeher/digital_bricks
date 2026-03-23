@@ -945,7 +945,7 @@ class _MarkdownEditorWidgetState extends State<_MarkdownEditorWidget> {
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: SizedBox(
-            width: 250.0 - 16, // Use the component width minus padding
+            width: ComponentLayout.getLayoutMetadata(widget.component).bodyWidth - 16, // Use the component width minus padding
             child: MarkdownBody(
               shrinkWrap: true,
               fitContent: true,
