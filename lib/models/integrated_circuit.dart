@@ -24,8 +24,8 @@ class IntegratedCircuit extends LogicComponent {
     // Also cleanup connections involving this component? 
     // Usually repacking handles it, but good to be clean.
     internalConnections.removeWhere((conn) => 
-      conn.sourcePinId.split('-').first == id || 
-      conn.targetPinId.split('-').first == id
+      LogicComponent.extractComponentId(conn.sourcePinId) == id || 
+      LogicComponent.extractComponentId(conn.targetPinId) == id
     );
   }
 

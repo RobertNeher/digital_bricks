@@ -98,6 +98,9 @@ abstract class LogicComponent {
     };
   }
 
-  // For deserialization, we will likely need a factory or static method
-  // that switches on ComponentType
+  static String extractComponentId(String pinId) {
+    if (pinId.contains('-in-')) return pinId.split('-in-').first;
+    if (pinId.contains('-out-')) return pinId.split('-out-').first;
+    return pinId.split('-').first;
+  }
 }

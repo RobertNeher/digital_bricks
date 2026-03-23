@@ -17,6 +17,7 @@
 * **Interactive Indicators**: Customizable LEDs with labels and adjustable High/Low colors. Multi-segment displays (7 and 16 segments) with independent decimal point control.
 * **User Input**: Interactive Buttons with labels and toggleable Constant Sources.
 * **Markdown Support**: Embed documentation directly into your circuit using Markdown components.
+* **Copy & Paste**: Duplicate components and their internal connections instantly with high-precision ID remapping.
 
 ### 🔌 Display Pin Layouts
 
@@ -78,6 +79,8 @@ Modularize your designs by creating custom **Integrated Circuits (ICs)**.
 | `Esc` | Clear Selection |
 | `Arrows` | Move Selected Items (20px steps) |
 | `Del / Backspace` | Delete Selected Items |
+| `Ctrl + C` | Copy Selected Items |
+| `Ctrl + V` | Paste Items from Clipboard |
 
 ---
 
@@ -131,7 +134,6 @@ py python_generators/gen_rom.py --addr 4 --word 8 --file sample_program.hex --ou
 ```
 
 
-=======
 ### 🧠 Generic RAM Generator (Random Access Memory)
 Generates a RAM IC with configurable address and word sizes.
 ```bash
@@ -181,10 +183,7 @@ py python_generators/gen_multicycle_ctrl.py
 Follow these steps to create and run custom programs in your Intel 4004 circuit:
 
 1.  **Write Assembly**: Create a `.asm` file using the supported mnemonics (e.g., `LDM`, `XCH`, `WRM`).
-<<<<<<< HEAD
     - Example: [test_program.asm](file:///c:/Users/Robert/Documents/digital_bricks/test_program.asm)
-=======
->>>>>>> ram-concept
 2.  **Compile to Hex**: Use the assembler to translate your mnemonics into raw hex values.
     ```bash
     py python_generators/asm_4004.py my_program.asm -o my_program.hex
@@ -196,10 +195,7 @@ Follow these steps to create and run custom programs in your Intel 4004 circuit:
 4.  **Load into Simulator**:
     - Open the Digital Bricks simulator.
     - Load your `my_rom.json` as an **Integrated Circuit**.
-<<<<<<< HEAD
     - Connect the address pins to your program counter/address bus and data pins to your data bus.
-=======
->>>>>>> ram-concept
 
 ---
 

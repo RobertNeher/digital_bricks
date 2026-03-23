@@ -72,6 +72,9 @@ class CircuitProvider extends ChangeNotifier {
   bool get canUndo => _history.undoStack.isNotEmpty;
   bool get canRedo => _history.redoStack.isNotEmpty;
 
+  String? _clipboard;
+  bool get canPaste => _clipboard != null;
+
   bool get hasUnpackedComponents =>
       components.any((c) => c is IntegratedCircuit && c.isUnpacked);
 
@@ -244,8 +247,8 @@ class CircuitProvider extends ChangeNotifier {
     List<Connection> connectionsToRemove = connections
         .where(
           (conn) =>
-              conn.sourcePinId.split('-').first == id ||
-              conn.targetPinId.split('-').first == id,
+              LogicComponent.extractComponentId(conn.sourcePinId) == id ||
+              LogicComponent.extractComponentId(conn.targetPinId) == id,
         )
         .toList();
 
@@ -385,10 +388,10 @@ class CircuitProvider extends ChangeNotifier {
     // 1. Identify internal connections
     final internalConns = connections.where((conn) {
       bool sourceInside = selectedComps.any(
-        (c) => conn.sourcePinId.split('-').first == c.id,
+        (c) => LogicComponent.extractComponentId(conn.sourcePinId) == c.id,
       );
       bool targetInside = selectedComps.any(
-        (c) => conn.targetPinId.split('-').first == c.id,
+        (c) => LogicComponent.extractComponentId(conn.targetPinId) == c.id,
       );
       return sourceInside && targetInside;
     }).toList();
@@ -486,6 +489,104 @@ class CircuitProvider extends ChangeNotifier {
     }
 
     notifyListeners();
+  }
+
+  // --- Copy / Paste ---
+
+  void copySelectedComponents() {
+    if (selectedComponentIds.isEmpty) return;
+
+    final selectedComps = components
+        .where((c) => selectedComponentIds.contains(c.id))
+        .toList();
+
+    // Identify internal connections
+    final internalConns = connections.where((conn) {
+      String srcCompId = LogicComponent.extractComponentId(conn.sourcePinId);
+      String destCompId = LogicComponent.extractComponentId(conn.targetPinId);
+      return selectedComponentIds.contains(srcCompId) &&
+          selectedComponentIds.contains(destCompId);
+    }).toList();
+
+    final data = {
+      'components': selectedComps.map((c) => c.toJson()).toList(),
+      'connections': internalConns.map((c) => c.toJson()).toList(),
+    };
+
+    _clipboard = jsonEncode(data);
+    notifyListeners();
+  }
+
+  void pasteComponents() {
+    if (_clipboard == null) return;
+    saveCheckpoint();
+
+    try {
+      final data = jsonDecode(_clipboard!) as Map<String, dynamic>;
+      final List<dynamic> compsJson = data['components'];
+      final List<dynamic> connsJson = data['connections'];
+
+      final Map<String, String> idMap = {}; // oldId -> newId
+      final List<LogicComponent> newComps = [];
+
+      // 1. Create new components with new IDs
+      for (var j in compsJson) {
+        String oldId = j['id'];
+        String newId = const Uuid().v4();
+        idMap[oldId] = newId;
+
+        // Temporarily modify JSON for deserialization
+        final clone = Map<String, dynamic>.from(j);
+        clone['id'] = newId;
+        // Offset position
+        clone['position_dx'] = (j['position_dx'] as num).toDouble() + 40.0;
+        clone['position_dy'] = (j['position_dy'] as num).toDouble() + 40.0;
+
+        var comp = _deserializeComponent(clone);
+        if (comp != null) {
+          newComps.add(comp);
+        }
+      }
+
+      // 2. Add components and select them
+      selectedComponentIds.clear();
+      for (var comp in newComps) {
+        components.add(comp);
+        selectedComponentIds.add(comp.id);
+      }
+
+      // 3. Remap and add connections
+      for (var j in connsJson) {
+        String oldSrcPin = j['sourcePinId'];
+        String oldTgtPin = j['targetPinId'];
+
+        String oldSrcCompId = LogicComponent.extractComponentId(oldSrcPin);
+        String oldTgtCompId = LogicComponent.extractComponentId(oldTgtPin);
+
+        String? newSrcCompId = idMap[oldSrcCompId];
+        String? newTgtCompId = idMap[oldTgtCompId];
+
+        if (newSrcCompId != null && newTgtCompId != null) {
+          // Reconstruct pin IDs (e.g., compId-out-0)
+          String newSrcPin =
+              oldSrcPin.replaceFirst(oldSrcCompId, newSrcCompId);
+          String newTgtPin =
+              oldTgtPin.replaceFirst(oldTgtCompId, newTgtCompId);
+
+          connections.add(
+            Connection(
+              id: const Uuid().v4(),
+              sourcePinId: newSrcPin,
+              targetPinId: newTgtPin,
+            ),
+          );
+        }
+      }
+
+      notifyListeners();
+    } catch (e) {
+      debugPrint("Error pasting components: $e");
+    }
   }
 
   // --- Save / Load ---
@@ -758,8 +859,8 @@ class CircuitProvider extends ChangeNotifier {
     // 2. Identify all connections between internal components currently on board
     final internalIds = ic.internalComponents.map((c) => c.id).toSet();
     final currentInternalConns = connections.where((conn) {
-      String srcCompId = conn.sourcePinId.split('-').first;
-      String destCompId = conn.targetPinId.split('-').first;
+      String srcCompId = LogicComponent.extractComponentId(conn.sourcePinId);
+      String destCompId = LogicComponent.extractComponentId(conn.targetPinId);
       return internalIds.contains(srcCompId) && internalIds.contains(destCompId);
     }).toList();
 

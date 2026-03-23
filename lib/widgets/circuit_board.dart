@@ -51,6 +51,14 @@ class RedoIntent extends Intent {
   const RedoIntent();
 }
 
+class CopyIntent extends Intent {
+  const CopyIntent();
+}
+
+class PasteIntent extends Intent {
+  const PasteIntent();
+}
+
 class _CircuitBoardState extends State<CircuitBoard> {
   final TransformationController _transformController =
       TransformationController();
@@ -131,6 +139,10 @@ class _CircuitBoardState extends State<CircuitBoard> {
           control: true,
           shift: true,
         ): const RedoIntent(),
+        const SingleActivator(LogicalKeyboardKey.keyC, control: true):
+            const CopyIntent(),
+        const SingleActivator(LogicalKeyboardKey.keyV, control: true):
+            const PasteIntent(),
       },
       actions: <Type, Action<Intent>>{
         DeleteIntent: DeleteComponentAction(provider),
@@ -156,6 +168,8 @@ class _CircuitBoardState extends State<CircuitBoard> {
             return null;
           },
         ),
+        CopyIntent: CopyComponentAction(provider),
+        PasteIntent: PasteComponentAction(provider),
       },
       child: DragTarget<Object>(
         onAcceptWithDetails: (details) {
@@ -234,8 +248,8 @@ class _CircuitBoardState extends State<CircuitBoard> {
                 ),
               ),
 
-              // Selection Toolbar (Overlay)
-              if (provider.selectedComponentIds.isNotEmpty)
+              // Selection/Clipboard Toolbar (Overlay)
+              if (provider.selectedComponentIds.isNotEmpty || provider.canPaste)
                 Positioned(
                   bottom: 20,
                   left: 0,
@@ -260,44 +274,63 @@ class _CircuitBoardState extends State<CircuitBoard> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          IconButton(
-                            icon: const Icon(Icons.align_horizontal_left),
-                            tooltip: "Align Left",
-                            onPressed: () =>
-                                provider.alignSelectedComponents('left'),
-                          ),
-                          IconButton(
-                            icon: const Icon(Icons.align_vertical_top),
-                            tooltip: "Align Top",
-                            onPressed: () =>
-                                provider.alignSelectedComponents('top'),
-                          ),
-                          const SizedBox(width: 8),
-                          Container(width: 1, height: 24, color: Colors.grey),
-                          const SizedBox(width: 8),
+                          if (provider.selectedComponentIds.isNotEmpty) ...[
+                            IconButton(
+                              icon: const Icon(Icons.align_horizontal_left),
+                              tooltip: "Align Left",
+                              onPressed: () =>
+                                  provider.alignSelectedComponents('left'),
+                            ),
+                            IconButton(
+                              icon: const Icon(Icons.align_vertical_top),
+                              tooltip: "Align Top",
+                              onPressed: () =>
+                                  provider.alignSelectedComponents('top'),
+                            ),
+                            const SizedBox(width: 8),
+                            Container(width: 1, height: 24, color: Colors.grey),
+                            const SizedBox(width: 8),
+                            IconButton(
+                              icon: Icon(
+                                Icons.archive,
+                                color: provider.hasUnpackedComponents
+                                    ? Colors.blue
+                                    : Colors.grey,
+                              ),
+                              tooltip: "Repack Selection",
+                              onPressed: provider.hasUnpackedComponents
+                                  ? () => provider.repackSelectedComponents()
+                                  : null,
+                            ),
+                            IconButton(
+                              icon: const Icon(Icons.copy),
+                              tooltip: "Copy Selection",
+                              onPressed: () =>
+                                  provider.copySelectedComponents(),
+                            ),
+                            IconButton(
+                              icon: const Icon(Icons.delete, color: Colors.red),
+                              tooltip: "Delete Selected",
+                              onPressed: () =>
+                                  provider.deleteSelectedComponents(),
+                            ),
+                          ],
                           IconButton(
                             icon: Icon(
-                              Icons.archive,
-                              color: provider.hasUnpackedComponents
-                                  ? Colors.blue
-                                  : Colors.grey,
+                              Icons.paste,
+                              color: provider.canPaste ? null : Colors.grey,
                             ),
-                            tooltip: "Repack Selection",
-                            onPressed: provider.hasUnpackedComponents
-                                ? () => provider.repackSelectedComponents()
+                            tooltip: "Paste",
+                            onPressed: provider.canPaste
+                                ? () => provider.pasteComponents()
                                 : null,
                           ),
-                          IconButton(
-                            icon: const Icon(Icons.delete, color: Colors.red),
-                            tooltip: "Delete Selected",
-                            onPressed: () =>
-                                provider.deleteSelectedComponents(),
-                          ),
-                          IconButton(
-                            icon: const Icon(Icons.close),
-                            tooltip: "Clear Selection",
-                            onPressed: () => provider.clearSelection(),
-                          ),
+                          if (provider.selectedComponentIds.isNotEmpty)
+                            IconButton(
+                              icon: const Icon(Icons.close),
+                              tooltip: "Clear Selection",
+                              onPressed: () => provider.clearSelection(),
+                            ),
                         ],
                       ),
                     ),
@@ -364,6 +397,25 @@ class _CircuitBoardState extends State<CircuitBoard> {
                 provider.selectAll();
                 Navigator.pop(ctx);
               },
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.paste,
+                color: provider.canPaste ? null : Colors.grey,
+              ),
+              title: Text(
+                "Paste",
+                style: TextStyle(
+                  color: provider.canPaste ? null : Colors.grey,
+                ),
+              ),
+              enabled: provider.canPaste,
+              onTap: provider.canPaste
+                  ? () {
+                      provider.pasteComponents();
+                      Navigator.pop(ctx);
+                    }
+                  : null,
             ),
             ListTile(
               leading: const Icon(Icons.layers_clear),
@@ -593,6 +645,26 @@ class MoveComponentAction extends CircuitAction<MoveIntent> {
   @override
   Object? invoke(MoveIntent intent) {
     provider.moveSelectedComponents(intent.delta);
+    return null;
+  }
+}
+
+class CopyComponentAction extends CircuitAction<CopyIntent> {
+  final CircuitProvider provider;
+  CopyComponentAction(this.provider);
+  @override
+  Object? invoke(CopyIntent intent) {
+    provider.copySelectedComponents();
+    return null;
+  }
+}
+
+class PasteComponentAction extends CircuitAction<PasteIntent> {
+  final CircuitProvider provider;
+  PasteComponentAction(this.provider);
+  @override
+  Object? invoke(PasteIntent intent) {
+    provider.pasteComponents();
     return null;
   }
 }

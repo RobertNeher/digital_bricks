@@ -123,23 +123,33 @@ class ComponentWidget extends StatelessWidget {
                             }
                           : null,
                       onPanStart: (details) {
-                        Provider.of<CircuitProvider>(
+                        final provider = Provider.of<CircuitProvider>(
                           context,
                           listen: false,
-                        ).saveCheckpoint();
+                        );
+                        provider.saveCheckpoint();
+                        // If we start dragging a component that isn't selected, select it.
+                        if (!provider.isSelected(component.id)) {
+                          provider.selectComponent(component.id, additive: false);
+                        }
                       },
                       onPanUpdate:
                           (component is MarkdownComponent &&
-                              (component as MarkdownComponent).isEditing)
+                                  (component as MarkdownComponent).isEditing)
                           ? null
                           : (details) {
-                              Provider.of<CircuitProvider>(
+                              final provider = Provider.of<CircuitProvider>(
                                 context,
                                 listen: false,
-                              ).updateComponentPosition(
-                                component.id,
-                                details.delta,
                               );
+                              if (provider.isSelected(component.id)) {
+                                provider.moveSelectedComponents(details.delta);
+                              } else {
+                                provider.updateComponentPosition(
+                                  component.id,
+                                  details.delta,
+                                );
+                              }
                             },
                       onSecondaryTapDown: (details) =>
                           _showContextMenu(context),
