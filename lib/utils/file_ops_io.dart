@@ -30,7 +30,7 @@ class FileOpsImpl {
         return outputFile;
       }
     } catch (e) {
-      print("Error in FileOpsImpl.saveFile: $e");
+      // Suppress print
       // Fallback: try without initialDirectory
       try {
         String? outputFile = await FilePicker.platform.saveFile(
@@ -47,24 +47,21 @@ class FileOpsImpl {
           return outputFile;
         }
       } catch (e2) {
-        print("Fallback Save As failed: $e2");
+        // Suppress print
       }
     }
     return null;
   }
 
   static Future<void> saveFileToPath(String path, String content) async {
-    print("Attempting to save to $path");
     try {
       final file = File(path);
       if (!await file.exists()) {
         await file.create(recursive: true);
-        print("Created file at $path");
       }
       await file.writeAsString(content, flush: true);
-      print("Successfully wrote ${content.length} bytes to $path");
     } catch (e) {
-      print("Failed to write to $path: $e");
+      // Suppress print
     }
   }
 
@@ -90,7 +87,7 @@ class FileOpsImpl {
         final entities = await dir.list().toList();
         return entities.map((e) => e.path).toList();
       } catch (e) {
-        print("Error listing files at $path: $e");
+        // Suppress print
       }
     }
     return [];
@@ -102,9 +99,7 @@ class FileOpsImpl {
     if (!await dir.exists()) {
       try {
         await dir.create(recursive: true);
-        // print("Created assets directory at $path");
       } catch (e) {
-        // print("Failed to create assets directory: $e");
         return null; // Can't validly return a path if we can't create it
       }
     }

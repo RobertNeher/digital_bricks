@@ -600,7 +600,7 @@ class CircuitProvider extends ChangeNotifier {
 
       notifyListeners();
     } catch (e) {
-      debugPrint("Error pasting components: $e");
+      // Error is caught but we suppress the print for production-like feel
     }
   }
 
@@ -619,7 +619,6 @@ class CircuitProvider extends ChangeNotifier {
     // Web: FilePicker.saveFile is not useful for path selection. Just trigger download.
     // Web: Use FileOps.saveFile which now supports FS Access API (Save As Picker)
     if (kIsWeb) {
-      debugPrint("saveCircuitAs: Web detected, invoking FileOps.saveFile...");
       // We pass a default name, but saveFile will trigger the picker.
       String? savedName = await FileOps.saveFile(
         jsonEncode({
@@ -631,16 +630,13 @@ class CircuitProvider extends ChangeNotifier {
 
       if (savedName != null) {
         currentFilePath = savedName;
-        debugPrint("saveCircuitAs: Saved to $savedName");
       }
       return;
     }
 
     // Desktop/Mobile: Use FilePicker
-    debugPrint("saveCircuitAs: requesting save file dialog...");
     try {
       String? initialDir = await FileOps.getAssetsDirectory();
-      debugPrint("saveCircuitAs: using initialDir: $initialDir");
 
       String? outputFile = await FilePicker.platform.saveFile(
         dialogTitle: 'Save Circuit As',
@@ -649,7 +645,6 @@ class CircuitProvider extends ChangeNotifier {
         type: FileType.custom,
         allowedExtensions: ['json'],
       );
-      debugPrint("saveCircuitAs: dialog returned: $outputFile");
 
       if (outputFile != null) {
         if (!outputFile.toLowerCase().endsWith('.json')) {
@@ -658,10 +653,9 @@ class CircuitProvider extends ChangeNotifier {
         currentFilePath = outputFile;
         await saveCircuitToPath(outputFile);
       } else {
-        debugPrint("saveCircuitAs: cancelled by user");
+        // saveCircuitAs: cancelled by user
       }
     } catch (e) {
-      debugPrint("saveCircuitAs: ERROR: $e");
       // Fallback: try without initialDirectory
       try {
         String? outputFile = await FilePicker.platform.saveFile(
@@ -678,23 +672,18 @@ class CircuitProvider extends ChangeNotifier {
           await saveCircuitToPath(outputFile);
         }
       } catch (e2) {
-        debugPrint("saveCircuitAs: Fallback failed: $e2");
+        // Suppress print
       }
     }
   }
 
   Future<void> saveCircuitToPath(String path) async {
-    debugPrint("saveCircuitToPath: saving to $path");
     final jsonMap = {
       'components': components.map((c) => c.toJson()).toList(),
       'connections': connections.map((c) => c.toJson()).toList(),
     };
     String content = jsonEncode(jsonMap);
-    debugPrint(
-      "saveCircuitToPath: encoding complete, writing using FileOps...",
-    );
     await FileOps.saveFileToPath(path, content);
-    debugPrint("saveCircuitToPath: write complete");
   }
 
   Future<({Map<String, dynamic> data, String name})?>
@@ -718,7 +707,6 @@ class CircuitProvider extends ChangeNotifier {
       }
       return (data: data, name: name);
     } catch (e) {
-      debugPrint("Error decoding circuit: $e");
       return null;
     }
   }

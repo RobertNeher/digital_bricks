@@ -49,7 +49,7 @@ class FileOpsImpl {
             : fileName;
       }
     } catch (e) {
-      print("File System Access API failed or cancelled: $e");
+      // Suppress print
       if (e.toString().contains('AbortError') || e.toString().contains('User cancelled')) {
         return null; // User explicitly cancelled
       }

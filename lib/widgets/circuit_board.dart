@@ -551,8 +551,7 @@ class _CircuitBoardState extends State<CircuitBoard> {
             listen: false,
           ).addComponentByType(data, Offset(snapX, snapY));
         }
-      } catch (e, stack) {
-        debugPrint('Error dropping component: $e\n$stack');
+      } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Error placing component: $e'),
