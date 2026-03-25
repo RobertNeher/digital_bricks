@@ -13,8 +13,7 @@ import 'segment_display_painter.dart';
 import 'ic_painter.dart';
 import '../models/integrated_circuit.dart';
 import '../models/markdown_component.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:markdown/markdown.dart' as md;
+import 'package:flutter_markdown_plus/flutter_markdown_plus.dart';
 import '../utils/segment_patterns.dart';
 
 class ComponentWidget extends StatelessWidget {
@@ -130,12 +129,15 @@ class ComponentWidget extends StatelessWidget {
                         provider.saveCheckpoint();
                         // If we start dragging a component that isn't selected, select it.
                         if (!provider.isSelected(component.id)) {
-                          provider.selectComponent(component.id, additive: false);
+                          provider.selectComponent(
+                            component.id,
+                            additive: false,
+                          );
                         }
                       },
                       onPanUpdate:
                           (component is MarkdownComponent &&
-                                  (component as MarkdownComponent).isEditing)
+                              (component as MarkdownComponent).isEditing)
                           ? null
                           : (details) {
                               final provider = Provider.of<CircuitProvider>(
@@ -910,7 +912,10 @@ class _MarkdownEditorWidgetState extends State<_MarkdownEditorWidget> {
             padding: const EdgeInsets.all(4),
             decoration: BoxDecoration(
               color: Colors.white.withOpacity(0.9),
-              border: Border.all(color: Colors.blue.withOpacity(0.5), width: 1.0),
+              border: Border.all(
+                color: Colors.blue.withOpacity(0.5),
+                width: 1.0,
+              ),
               borderRadius: BorderRadius.circular(4),
             ),
             child: GestureDetector(
@@ -925,12 +930,17 @@ class _MarkdownEditorWidgetState extends State<_MarkdownEditorWidget> {
                 autofocus: true,
                 onChanged: (val) {
                   widget.component.text = val;
-                  Provider.of<CircuitProvider>(context, listen: false).refresh();
+                  Provider.of<CircuitProvider>(
+                    context,
+                    listen: false,
+                  ).refresh();
                 },
                 style: TextStyle(
                   fontSize: 12,
                   fontFamily: 'monospace',
-                  color: Theme.of(context).textTheme.bodyMedium?.color ?? Colors.black,
+                  color:
+                      Theme.of(context).textTheme.bodyMedium?.color ??
+                      Colors.black,
                   height: 1.2,
                 ),
                 cursorColor: Theme.of(context).primaryColor,
@@ -955,19 +965,33 @@ class _MarkdownEditorWidgetState extends State<_MarkdownEditorWidget> {
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: SizedBox(
-            width: ComponentLayout.getLayoutMetadata(widget.component).bodyWidth - 16, // Use the component width minus padding
+            width:
+                ComponentLayout.getLayoutMetadata(widget.component).bodyWidth -
+                16, // Use the component width minus padding
             child: MarkdownBody(
               shrinkWrap: true,
               fitContent: true,
               data: widget.component.text.isEmpty
                   ? MarkdownComponent.defaultTemplate
                   : widget.component.text,
-              styleSheet: MarkdownStyleSheet.fromTheme(Theme.of(context)).copyWith(
-                p: const TextStyle(color: Colors.black, fontSize: 12),
-                h1: const TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
-                h2: const TextStyle(color: Colors.black, fontSize: 14, fontWeight: FontWeight.bold),
-                tableBody: const TextStyle(color: Colors.black, fontSize: 11),
-              ),
+              styleSheet: MarkdownStyleSheet.fromTheme(Theme.of(context))
+                  .copyWith(
+                    p: const TextStyle(color: Colors.black, fontSize: 12),
+                    h1: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    h2: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    tableBody: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 11,
+                    ),
+                  ),
               extensionSet: md.ExtensionSet.gitHubFlavored,
             ),
           ),

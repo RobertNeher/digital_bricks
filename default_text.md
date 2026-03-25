@@ -2,7 +2,7 @@
 
 ## Features ##
 Quadruple 2-Input Positive-NAND Gates
-
+![](assets/images/nand_gate.png)
 |     |     |
 | --- | --- |
 | Number of channels | 4 |
@@ -17,7 +17,7 @@ Quadruple 2-Input Positive-NAND Gates
 
 
 ## PIN Layout ##
-![](xyz.png)
+![](assets/images/pin_layout_7400.png)
 
 ## Truth Table ##
 | A | B | Y |
