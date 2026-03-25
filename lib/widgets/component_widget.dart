@@ -14,6 +14,7 @@ import 'ic_painter.dart';
 import '../models/integrated_circuit.dart';
 import '../models/markdown_component.dart';
 import 'package:flutter_markdown_plus/flutter_markdown_plus.dart';
+import 'package:markdown/markdown.dart' as md;
 import '../utils/segment_patterns.dart';
 
 class ComponentWidget extends StatelessWidget {
